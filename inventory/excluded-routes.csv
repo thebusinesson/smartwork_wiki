@@ -1,0 +1,305 @@
+﻿메뉴경로,라우트,제외사유,비고
+메뉴 외 공통 화면,/,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/change-password,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/initial-account-setup,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/forgot-password,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/dashboard,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/organization-chart,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/*,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 참조번호별 로그 조회,/tax-operations/reference-log,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 참조번호별 로그 조회,/tax-operations/reference-log/:referenceNumber,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > Error 발생 현황,/tax-operations/error-status,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 사업자별 로그 조회,/tax-operations/logs-by-business,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 상태불일치 조회,/tax-operations/status-mismatch,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 상태불일치 처리 등록,/tax-operations/status-mismatch-register,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 연동오류 로그조회,/tax-operations/integration-error-logs,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 대량서비스 모니터링,/tax-operations/bulk-service-monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 공휴일 관리,/tax-operations/holiday-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 합계표 마감일 관리,/tax-operations/summary-deadline-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 합계표 마감일 관리,/tax-operations/summary-deadline-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 지연발행일 관리,/tax-operations/delayed-issuance-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 지연발행일 관리,/tax-operations/delayed-issuance-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 참조/승인번호 변경,/tax-operations/reference-approval-change,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 수신자 변경 이력 조회,/tax-invoice/recipient-change-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 내 거래처 조회,/tax-invoice/my-customers,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 담당자 권한 조회,/tax-invoice/manager-permission,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 부서 조회,/tax-invoice/departments,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 지사(사업장) 조회,/tax-invoice/branches,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 마감설정 조회,/tax-invoice/closing-settings,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 매입 자동 승인 설정 조회,/tax-invoice/purchase-auto-approval-settings,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 알림발송 서비스 설정 조회,/tax-invoice/notification-service-settings,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 알림발송 서비스 이용내역,/tax-invoice/notification-service-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 다운로드 요청/처리 조회,/tax-invoice/download-requests,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 비회원 수신 비밀번호 조회,/tax-invoice/guest-password,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 이벤트당첨(역매입대납) 업체 조회,/tax-invoice/event-winner-vendors,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 거래명세서 조회,/tax-invoice/transaction-statement,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 비회원 수신설정 조회,/tax-invoice/guest-reception-settings,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 지로세금계산서 조회,/tax-invoice/giro-tax-invoice,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 지로 원본 다운로드,/tax-invoice/giro-original-download,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 국세청 전송 현황,/tax-invoice/nts-transmission-status,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 국세청 전송 개별 조회,/tax-invoice/nts-transmission,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > SMTP 전송결과 조회,/tax-invoice/smtp-transmission-results,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자세금계산서 > 거래명세서 조회,/tax-invoice/transaction-statement/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 국세청 전송 설정 관리,/nts-transmission/transmission-settings,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 세금계산서 운영/관리 > 국세청전송 마감일 관리,/nts-transmission/transmission-deadlines,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 예약전송 모니터링,/nts-transmission/scheduled-transmission-monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 전송 전 오류 조회,/nts-transmission/pre-transmission-errors,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 전송 전 오류 조회,/nts-transmission/pre-transmission-errors/:issueId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 처리결과 오류 조회,/nts-transmission/result-errors,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 일자별 전송결과,/nts-transmission/transmission-results-by-date,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 전송 거부업체 조회,/nts-transmission/rejected-vendors,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 국세청 수집 관리 조회,/nts-transmission/collection-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 예약전송 모니터링,/nts-transmission/scheduled-transmission-monitoring/detail,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 국세청 전송 관리 > 처리결과 오류 조회,/nts-transmission/result-errors/:resultCode,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 광고배너 등록 및 조회,/banner/management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 광고배너 등록 및 조회,/banner/management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 광고배너 등록 및 조회,/banner/management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 키워드 배너등록,/banner/keyword,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 키워드 배너등록,/banner/keyword/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 키워드 배너등록,/banner/keyword/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 신규 검색페이지별 검색어로그,/banner/search-term-log,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 배너 통계정보 > 배너광고 효과 측정,/banner/effect-measurement,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 광고배너 관리 > 키워드 모수 조회,/banner/keyword-volume,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 배너 통계정보 > 배너광고 통계,/banner/daily-statistics,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 배너 통계정보 > 키워드 배너 광고 통계,/banner/keyword-daily-statistics,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+광고/마케팅 운영 관리 > 배너 통계정보 > 키워드 배너 광고 통계,/banner/keyword-daily-statistics/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > SCM > 카페 조회,/smartbill-scm/cafe,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > SCM > 카페 조회,/smartbill-scm/cafe/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > SCM > SCM 조회,/smartbill-scm/scm,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > SCM > SCM 조회,/smartbill-scm/scm/main-edit/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > SCM > SCM 조회,/smartbill-scm/scm/menu-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > SCM > SCM 조회,/smartbill-scm/scm/design-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 홈택스 DTI 수집 > Wetax 납부대상 관리,/hometax-dti/wetax-payment-targets,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 홈택스 DTI 수집 > Wetax 납부대상 관리,/hometax-dti/wetax-payment-targets/uploads/:uploadSeq,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 모니터링,/openscrap/monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 모니터링,/openscrap/monitoring/:batchId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 업체 관리,/openscrap/vendors,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 업체 관리,/openscrap/vendors/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 매출/매입 조회,/openscrap/sales-purchases,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 매출/매입 조회,/openscrap/sales-purchases/:issueId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 오픈스크랩 > 오류 로그 조회,/openscrap/error-logs,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 본사 입금 관리,/payment/head-office-deposit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 본사 입금 등록,/payment/head-office-deposit-register,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 본사 입금 등록,/payment/head-office-deposit-register/detail,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 본사 입금 관리,/payment/head-office-deposit/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 입금 관리,/payment/os-iv-deposit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 매출·입금 등록,/payment/manual-transactions,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 매출·입금 등록,/payment/manual-transactions/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 매출·입금 등록,/payment/manual-transactions/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 매출·입금 등록,/payment/manual-transactions/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 거래처 관리,/payment/manual-clients,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 거래처 관리,/payment/manual-clients/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 거래처 관리,/payment/manual-clients/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 단발성 거래처 관리,/payment/manual-clients/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/apply,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb13/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb14/application/:eb13Idx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb14/result/:eb14Idx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb14/file/:eb14Idx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb14/file-preview/:eb14Idx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb14/upload/:eb13Idx/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB13/EB14) CMS 계좌 관리,/payment/cms-account/eb14/upload/:eb14Idx/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB11) CMS 통합 변경내역 반영,/payment/cms-integration,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB11) CMS 통합 변경내역 반영,/payment/cms-integration/:fileId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb21/apply,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb21/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb22/:id/application,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb22/:id/result,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb22/file/:eb22Idx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb22/file-preview/:eb22Idx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb22/upload/:ea21Idx/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > (EB21/EB22) CMS 자동이체 관리,/payment/cms-withdrawal-request/eb22/upload/:eb22Idx/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 업체별 CMS 계좌 현황,/payment/cms-account-status,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 출금신청 예외처리 관리,/payment/withdrawal-exception,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 출금신청 예외처리 관리,/payment/withdrawal-exception/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 출금신청 예외처리 관리,/payment/withdrawal-exception/bulk,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 출금신청 예외처리 관리,/payment/withdrawal-exception/:serviceCode/:comNo,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 신용카드 자동결제 승인요청,/payment/credit-card-auto-payment,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 입금관리 > 신용카드 자동결제 승인요청,/payment/credit-card-auto-payment/:withdrawalMonth/:division,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 전자계약 조회,/electronic-contract/electronic-contract-inquiry,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 담당자 권한 조회,/electronic-contract/manager-access-info,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 전자계약 용량 조회,/electronic-contract/electronic-contract-capacity,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 다운로드 조회,/electronic-contract/download-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 단방향 이용 고객 조회,/electronic-contract/one-way-user,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 단방향 이용 고객 조회,/electronic-contract/one-way-user/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 삼양사 사용내역 조회,/electronic-contract/samyang-usage-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 연동업체 관리,/electronic-contract/linked-vendor-manage,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 연동업체 관리,/electronic-contract/linked-vendor-manage/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 스마트빌 인증서 관리,/electronic-contract/smartbill-certificate,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 스마트빌 인증서 관리,/electronic-contract/smartbill-certificate/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 전자계약 오류 조회,/electronic-contract/error-inquiry,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 참조번호별 로그 조회,/electronic-contract/reference-log,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 연동업체 장애관리,/electronic-contract/linked-vendor-failure,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 연동업체 장애관리,/electronic-contract/linked-vendor-failure/detail,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 전자계약 조회,/electronic-contract/electronic-contract-inquiry/:dctNo,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 전자계약 용량 조회,/electronic-contract/electronic-contract-capacity/:comNo,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 단방향 이용 고객 조회,/electronic-contract/one-way-user/:companyNo/:processIdNo,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 연동업체 관리,/electronic-contract/linked-vendor-manage/:comNo,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 스마트빌 인증서 관리,/electronic-contract/smartbill-certificate/:certificateSerial,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 전자계약 > 전자계약 오류 조회,/electronic-contract/error-inquiry/:dctNo,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 허브업체 이용 현황,/statistics/hub-company-usage,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 허브업체 이용 현황,/statistics/hub-company-usage/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 세금계산서 매출 분석 다운로드,/statistics/dti-sales-analysis,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 웹→연동 인식 사업장 발행현황,/statistics/web-link-issue,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 월별 고객·매출 통합 현황,/statistics/monthly-customer-sales,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 월별 웹·연동 고객 현황,/statistics/monthly-web-link-customer,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 전자계약 서비스 월간 지표,/statistics/dct-monthly-metrics,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 청구 월별 웹·연동 고객 사용 데이터,/statistics/billing-monthly-web-link-usage,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 신규 연동 고객 등록 현황,/statistics/new-link-registration,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 보나뱅크 발행 현황,/statistics/bonabank-issue,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 서비스별 매출액 조회,/statistics/service-sales,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > OpenAPI 사용현황,/statistics/open-api-usage,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > WORKPLACE 월별 OAPI 사용량 집계,/statistics/workplace-monthly-oapi-usage,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 현금영수증 틸코블렛 API 호출 현황,/statistics/cash-receipt-tilko-bullet-api-call,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 매출 데이터 다운로드,/statistics/sales-data-download,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 매출채권 데이터 다운로드,/statistics/ar-data-download,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 휴폐업 업체 요약,/statistics/suspended-closed-company-summary,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 통계 정보 > 휴폐업 업체 리스트,/statistics/suspended-closed-company,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 채권 관리 > 매출 채권 현황 다운로드,/ar-management/account-receivable-status-download,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 채권 관리 > 매출 채권 현황 다운로드,/ar-management/account-receivable-status-download/write-off-registration/individual,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 채권 관리 > 매출 채권 현황 다운로드,/ar-management/account-receivable-status-download/write-off-registration/individual/result,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 채권 관리 > 매출 채권 현황 다운로드,/ar-management/account-receivable-status-download/write-off-registration/uploads,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 채권 관리 > 매출 채권 현황 다운로드,/ar-management/account-receivable-status-download/write-off-registration/uploads/:uploadId/result,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 채권 관리 > 매출 채권 현황 다운로드,/ar-management/account-receivable-status-download/write-off-registration/uploads/:uploadId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 영업 관리,/hub-collab/sales-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 영업 관리,/hub-collab/sales-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 영업 관리,/hub-collab/sales-management/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 영업 관리,/hub-collab/sales-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 프로젝트 완료 관리,/hub-collab/project-completion,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > System Key 관리,/hub-collab/system-key-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > System Key 관리,/hub-collab/system-key-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > System Key 관리,/hub-collab/system-key-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > System Key 관리,/hub-collab/system-key-management/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 벌크계좌 관리,/hub-collab/bulk-account-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 벌크계좌 관리,/hub-collab/bulk-account-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 협업 관리 > 연동 협업 관리 > 벌크계좌 관리,/hub-collab/bulk-account-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 허브업체 관리,/hub-vendor/hub-vendor-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 허브업체 관리,/hub-vendor/hub-vendor-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 허브업체 관리,/hub-vendor/hub-vendor-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 허브업체 관리,/hub-vendor/hub-vendor-management/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 허브업체 관리,/hub-vendor/hub-vendor-management/:id/checklist,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [구연동]연동업체 관리,/hub-vendor/vendor-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [구연동]연동업체 관리,/hub-vendor/vendor-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [구연동]연동업체 관리,/hub-vendor/vendor-management/bulk-edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [구연동]연동업체 관리,/hub-vendor/vendor-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [구연동]연동업체 관리,/hub-vendor/vendor-management/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [구연동]연동업체 관리,/hub-vendor/vendor-management/:id/checklist,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [차세대]연동업체 관리,/hub-vendor/nextgen-vendor-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [차세대]연동업체 관리,/hub-vendor/nextgen-vendor-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [차세대]연동업체 관리,/hub-vendor/nextgen-vendor-management/bulk-edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > [차세대]연동업체 관리,/hub-vendor/nextgen-vendor-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 조직도/비회원 연동 사용 조회,/hub-vendor/orgchart-guest-integration,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 연동플랫폼 통합관리,/hub-vendor/platform-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 연동플랫폼 통합관리,/hub-vendor/platform-management/:platformId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 연동플랫폼 통합관리,/hub-vendor/platform-management/system-port/:portId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 첨부파일 연동업체관리,/hub-vendor/attachment-vendor-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 첨부파일 연동업체관리,/hub-vendor/attachment-vendor-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > 첨부파일 연동업체관리,/hub-vendor/attachment-vendor-management/:vendorId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > OpenAPI 허브 관리,/hub-vendor/openapi-hub-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > OpenAPI 허브 관리,/hub-vendor/openapi-hub-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동/허브 업체 관리 > 연동/허브 업체 관리 > OpenAPI 허브 관리,/hub-vendor/openapi-hub-management/:hubId,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 연동업체 문의 처리,/hub-service/inquiry-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 연동업체 문의 처리,/hub-service/inquiry-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 연동업체 문의 처리,/hub-service/inquiry-management/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 연동업체 문의 처리,/hub-service/inquiry-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 서비스 공지 메일관리 > 메일 발송 업체 관리,/hub-service/service-notice-email,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 서비스 공지 메일관리 > 메일 발송 업체 관리,/hub-service/service-notice-email/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 서비스 공지 메일관리 > 메일 발송 업체 관리,/hub-service/service-notice-email/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 서비스 공지 메일관리 > 고객 이메일 발송,/hub-service/service-notice-email/customer-email-send,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 서비스 공지 메일관리 > 메일 발송 고객 정보 조회,/hub-service/service-notice-email/send-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 허브업체 서비스 점검 관리,/hub-service/maintenance,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 허브업체 서비스 점검 관리,/hub-service/maintenance/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > OpenAPI 로그 조회,/hub-service/openapi-log,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > OpenAPI 로그 조회,/hub-service/openapi-log/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > OpenAPI 인증토큰 관리,/hub-service/openapi-auth-token,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 인증서 OID 관리,/hub-service/certificate-oid,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 인증서 OID 관리,/hub-service/certificate-oid/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 인증서 OID 관리,/hub-service/certificate-oid/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 연동업체 라우팅 일괄 변경,/hub-service/vendor-routing-bulk-change,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > [구연동] 라우팅 예외 관리,/hub-service/routing-exception,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 자동이체 예외 설정,/hub-service/auto-transfer-exception,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 자동이체 예외 설정,/hub-service/auto-transfer-exception/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 자동이체 예외 설정,/hub-service/auto-transfer-exception/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > [구연동] 복구솔루션,/hub-service/status-change-recovery,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > [차세대] 복구솔루션,/hub-service/new-integration-recovery,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > [차세대] 복구솔루션,/hub-service/new-integration-recovery/checklists,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외; 리다이렉트 전용,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > [차세대] 발행전문 조회,/hub-service/nextgen-issuance-inquiry,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+연동 서비스 관리 > 연동 서비스 관리 > 대량연동 관리,/hub-service/bulk-integration-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외; 준비중 화면,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 구매확인서 조회,/purchase-confirmation/purchase-confirmation,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 송신거래 약정키 등록,/purchase-confirmation/transmission-agreement-key/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 송신거래 약정키 등록,/purchase-confirmation/transmission-agreement-key,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 식별자 정보 등록,/purchase-confirmation/identifier-key/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 식별자 정보 등록,/purchase-confirmation/identifier-key,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 구매확인서 조회,/purchase-confirmation/purchase-confirmation/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 송신거래 약정키 등록,/purchase-confirmation/transmission-agreement-key/:sridkey,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 서비스관리 > 구매확인서 > 식별자 정보 등록,/purchase-confirmation/identifier-key/:interIdx,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 일별 이용료 발행,/billing-management/daily-usage-fee-billing,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 결제 방식별 일일 정산,/billing-management/daily-settlement-by-payment,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 영수 대량 발행,/billing-management/bulk-receipt-issue,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 영수 대량 발행 오류 로그 조회,/billing-management/bulk-receipt-issue-logs,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > KT 대납 리스트,/billing-management/kt-proxy-payment-list,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 클로버 관리,/billing-management/clover-charge,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 클로버 관리,/billing-management/clover-charge/input,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+서비스 현황 > 요금관리 > 클로버 관리,/billing-management/clover-charge/:businessNumber,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회원 정보,/member-management/member,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회원 정보,/member-management/member/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회원 정보,/member-management/member/:id/change-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 대량 회원가입,/member-management/member/bulk-registration,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 아이디/비밀번호 관리,/member-management/id-password,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회원 비밀번호 초기화,/member-management/id-password/password-reset,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회원 이메일 다운로드,/member-management/email-download,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회원 이메일 다운로드,/member-management/email-download/history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 예외 관리 > [업체]예외 처리 정보,/exception-management/exception-vendor,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 예외 관리 > [업체]예외 처리 정보,/exception-management/exception-vendor/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 예외 관리 > [업체]예외 처리 정보,/exception-management/exception-vendor/:businessNumber,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 예외 관리 > [비회원]예외 처리 정보,/exception-management/exception-non-member,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 예외 관리 > [비회원]예외 처리 정보,/exception-management/exception-non-member/register,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 예외 관리 > SMS 수신거부 관리,/exception-management/sms-opt-out,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 고객관리 > 스마트빌 회원·회사정보 관리 > 휴폐업 조회,/company-management/suspended-closed-inquiry,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무개선 및 요청리스트,/system-management/request-improve,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무개선 및 요청리스트,/system-management/request-improve/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무개선 및 요청리스트,/system-management/request-improve/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무개선 및 요청리스트,/system-management/request-improve/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 서버 용량 관리,/system-management/server-capacity,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 서버 용량 관리,/system-management/server-capacity/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 시스템 모니터링,/system-management/system-monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 시스템 SMS 모니터링,/system-management/sms-monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 발행 관리,/system-management/issue-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 이메일 전송 모니터링,/system-management/email-monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 이메일 전송 모니터링,/system-management/email-monitoring/details,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 연동 서버 모니터링,/system-management/server-monitoring,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 서버 시간 관리,/system-management/server-time-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 시스템 SMS 모니터링 로그,/system-management/sms-monitoring-log,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 빌서버 연결 서버,/system-management/build-server-connection,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 접속이력관리,/system-management/access-history,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 접속이력관리,/system-management/access-history/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무 리스트,/system-management/work,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무 리스트 등록,/system-management/work/register,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무 리스트 등록,/system-management/work/register/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 업무 리스트 등록,/system-management/work/register/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 웹링크 식별자 관리,/system-management/weblink-identifier,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 웹링크 식별자 관리,/system-management/weblink-identifier/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 웹링크 식별자 관리,/system-management/weblink-identifier/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SB 운영관리 > 시스템 관리 > 웹링크 식별자 관리,/system-management/weblink-identifier/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 계정 관리,/settings/account-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 계정 관리,/settings/account-management/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 계정 관리,/settings/account-management/:id/edit,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 계정 관리,/settings/account-management/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외; 리다이렉트 전용,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 조직 관리,/settings/organization-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 권한 관리,/settings/permissions,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 권한 관리,/settings/permissions/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 권한 관리,/settings/permissions/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 로그 관리,/settings/log-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 공지 관리,/settings/notice-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+SW 설정 > 로그인 관리,/settings/login-management,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+고객지원 > 고객 문의 관리 > 서비스 도입 문의,/customer-support/service-inquiry,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+고객지원 > 고객 문의 관리 > 서비스 도입 문의,/customer-support/service-inquiry/new,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+고객지원 > 고객 문의 관리 > 서비스 도입 문의,/customer-support/service-inquiry/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+고객지원 > 고객 문의 관리 > 제휴 문의,/customer-support/affiliation-inquiry,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+고객지원 > 고객 문의 관리 > 제휴 문의,/customer-support/affiliation-inquiry/:id,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+고객지원 > 고객 문의 관리 > 블랙리스트 관리,/customer-support/blacklist,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/my-account,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외; 리다이렉트 전용,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/my-account/profile,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님
+메뉴 외 공통 화면,/my-account/settings,제공 WBS의 유지윤 담당 105개 태스크에 매핑되지 않아 이번 범위에서 제외,미작업 판정 또는 다른 담당자 확정은 아님

@@ -1,0 +1,106 @@
+﻿WBS No,태스크명,작업자,제공텍스트행,현재메뉴경로,대응독립화면수,근거
+17,[API 개발 및 FE 연동] 회사정보 조회,유지윤,36,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+18,[API 개발 및 FE 연동] SSO 정보 등록 팝업,유지윤,37,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+19,[API 개발 및 FE 연동] WEB-HOOK 정보 등록 팝업,유지윤,38,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+20,[API 개발 및 FE 연동] 요금제 변경내역,유지윤,39,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+21,[API 개발 및 FE 연동] 자동이체 이력 조회 팝업,유지윤,40,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+22,[API 개발 및 FE 연동] 전체 회원 조회,유지윤,41,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+23,[API 개발 및 FE 연동] 회원 권한 조회,유지윤,42,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+24,[API 개발 및 FE 연동] 회사 정보 변경내역,유지윤,43,/company-management/company-info,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+25,[API 개발 및 FE 연동] 스마트빌 가입 조회,유지윤,45,/company-management/registration-inquiry,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+33,[API 개발 및 FE 연동] 가입회원 조회,유지윤,55,/smartbill-status/status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+34,[API 개발 및 FE 연동] 탈퇴회원 조회,유지윤,56,/smartbill-status/withdrawal-status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+35,[API 개발 및 FE 연동] 가입 사업장 조회,유지윤,57,/smartbill-status/status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+36,[API 개발 및 FE 연동] 탈퇴 사업장 조회,유지윤,58,/smartbill-status/withdrawal-status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+37,[API 개발 및 FE 연동] 회원 정보 조회,유지윤,60,/glosign-enterprise/members,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+38,[API 개발 및 FE 연동] 회사 정보 조회,유지윤,61,/glosign-enterprise/companies,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+39,[API 개발 및 FE 연동] 회사 정보 > 전체 회원 조회,유지윤,62,/glosign-enterprise/companies,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+40,[API 개발 및 FE 연동] 개인 블록체인 비밀번호 초기화,유지윤,63,/glosign-enterprise/status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+41,[API 개발 및 FE 연동] 회사 블록체인 비밀번호 초기화,유지윤,64,/glosign-enterprise/status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+42,[API 개발 및 FE 연동] 열람정보 초기화 조회,유지윤,65,/glosign-enterprise/personal-password-reset,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+43,[API 개발 및 FE 연동] 세금계산서 조회,유지윤,69,/tax-invoice/tax-invoice,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+44,[API 개발 및 FE 연동] 세금계산서 조회 > 일괄 메일 발송,유지윤,70,/tax-invoice/tax-invoice,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+45,[API 개발 및 FE 연동] 세금계산서 조회 > 문서 이력 조회 팝업,유지윤,71,/tax-invoice/tax-invoice,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+46,[API 개발 및 FE 연동] 세금계산서 조회 > XML 원본 다운로드 팝업,유지윤,72,/tax-invoice/tax-invoice,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+47,[API 개발 및 FE 연동] 세금계산서 조회 > (단독) 거래명세서 조회,유지윤,73,/tax-invoice/tax-invoice,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+48,[API 개발 및 FE 연동] 과거세금계산서 조회,유지윤,74,/tax-invoice/legacy-tax-invoice,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+109,[API 개발 및 FE 연동] 채권잔액 확인서 조회,유지윤,140,/bond-service/bond-balance-inquiry,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+110,[API 개발 및 FE 연동] 담당자 권한 조회,유지윤,141,/bond-service/drc-right,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+111,[API 개발 및 FE 연동] 연동업체 관리 조회,유지윤,142,/bond-service/drc-company-link,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+112,[API 개발 및 FE 연동] 연동업체 관리 등록/수정,유지윤,143,/bond-service/drc-company-link,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+113,[API 개발 및 FE 연동] 연동업체 관리 허브업체 등록 선택 팝업,유지윤,144,/bond-service/drc-company-link,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+114,[API 개발 및 FE 연동] 연동 로그 조회,유지윤,145,/bond-service/integration-log,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+115,[API 개발 및 FE 연동] 연동 로그 조회 허브업체 등록 선택 팝업,유지윤,146,/bond-service/integration-log,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+116,[API 개발 및 FE 연동] 연동업체 장애 관리 조회,유지윤,147,/bond-service/integration-partner-error,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+117,[API 개발 및 FE 연동] 채권잔액 전송 관리 조회,유지윤,148,/bond-service/receivable-balance-transfer,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+118,[API 개발 및 FE 연동] 채권잔액 확인서 로그,유지윤,149,/bond-service/receivable-balance-transfer,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+123,[API 개발 및 FE 연동] 모니터링 조회,유지윤,157,/hometax-dti/monitoring,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+124,[API 개발 및 FE 연동] 인증키 관리 조회,유지윤,158,/hometax-dti/auth-key,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+125,[API 개발 및 FE 연동] 인증키 관리 등록/수정,유지윤,159,/hometax-dti/auth-key,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+126,[API 개발 및 FE 연동] 오류 로그 조회,유지윤,160,/hometax-dti/error-logs,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+127,[API 개발 및 FE 연동] 오류 상세 로그 팝업,유지윤,161,/hometax-dti/error-logs,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+128,[API 개발 및 FE 연동] 인증서 등록 현황 조회,유지윤,162,/hometax-dti/certificate-status,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+129,[API 개발 및 FE 연동] 인증서 만료일 관리 조회,유지윤,163,/hometax-dti/certificate-expiry,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+130,[API 개발 및 FE 연동] 인증서 로그인 실패 조회,유지윤,164,/hometax-dti/login-failures,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+131,[API 개발 및 FE 연동] 이메일파싱 모니터링 조회,유지윤,165,/hometax-dti/email-parsing,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+138,[API 개발 및 FE 연동] 회사 정보 조회,유지윤,174,/bonabank/company,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+139,[화면 개발] 회사 정보 조회,유지윤,175,/bonabank/company,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+140,[API 개발 및 FE 연동] 회원 정보 조회,유지윤,176,/bonabank/member,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+141,[화면 개발] 회원 정보 조회,유지윤,177,/bonabank/member,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+142,[API 개발 및 FE 연동] 세금계산서 조회,유지윤,178,/bonabank/tax-invoice,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+143,[화면 개발] 세금계산서 조회,유지윤,179,/bonabank/tax-invoice,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+144,[API 개발 및 FE 연동] 세금계산서 통계,유지윤,180,/bonabank/tax-invoice-statistics,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+145,[화면 개발] 세금계산서 통계,유지윤,181,/bonabank/tax-invoice-statistics,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+146,[API 개발 및 FE 연동] 국세청 전송 조회,유지윤,182,/bonabank/nts-failures,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+147,[화면 개발] 국세청 전송 조회,유지윤,183,/bonabank/nts-failures,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+148,[API 개발 및 FE 연동] 공지사항 관리,유지윤,184,/bonabank/notices,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+149,[화면 개발] 공지사항 관리,유지윤,185,/bonabank/notices,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+150,[API 개발 및 FE 연동] 오류 접수/등록,유지윤,189,/error-management/error-reports,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+151,[API 개발 및 FE 연동] 문의업체/담당자 선택 팝업,유지윤,190,/error-management/error-reports,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+152,[API 개발 및 FE 연동] 전체 오류 조회/처리 조회,유지윤,191,/error-management/error-reports,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+153,[API 개발 및 FE 연동] 전체 오류 조회/처리 등록/수정,유지윤,192,/error-management/error-reports,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+154,[API 개발 및 FE 연동] 전체 오류 조회/처리 연동 업체 선택 팝업,유지윤,193,/error-management/error-reports,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+155,[API 개발 및 FE 연동] 오류 코드 관리 조회,유지윤,194,/error-management/error-code-management,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+156,[API 개발 및 FE 연동] 오류 코드 관리 등록/수정,유지윤,195,/error-management/error-code-management,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+157,[API 개발 및 FE 연동] 소스관리 조회,유지윤,197,/source-management/source-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+158,[API 개발 및 FE 연동] 소스관리 등록/수정,유지윤,198,/source-management/source-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+184,[API 개발 및 FE 연동] 입금 현황 조회,유지윤,230,/payment/status,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+185,[API 개발 및 FE 연동] 예치금 관리 조회,유지윤,232,/payment/deposit,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+186,[API 개발 및 FE 연동] 예치금 일별 조회,유지윤,233,/payment/daily-deposit-inquiry,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+187,[API 개발 및 FE 연동] 벌크계좌 입금 관리 조회,유지윤,235,/payment/bulk-account-deposit,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+188,[API 개발 및 FE 연동] 입금처리 팝업,유지윤,236,/payment/bulk-account-deposit,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+189,[API 개발 및 FE 연동] 입금처리 상세 조회,유지윤,237,/payment/bulk-account-deposit,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+212,[API 개발 및 FE 연동] 무통장입금 취소내역 조회,유지윤,268,/payment/bank-transfer-cancel,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+213,[API 개발 및 FE 연동] 환불 관리 조회,유지윤,270,/payment/refund-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+214,[API 개발 및 FE 연동] 환불 가능 금액 조회,유지윤,271,/payment/refund-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+215,[API 개발 및 FE 연동] 환불 관리 등록/수정,유지윤,272,/payment/refund-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+219,[API 개발 및 FE 연동] 미납 예외업체 관리 조회,유지윤,278,/service-overview/unpaid-exception-manager,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+220,[API 개발 및 FE 연동] 미납 예외업체 관리 등록/수정,유지윤,279,/service-overview/unpaid-exception-manager,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+223,"[API 개발 및 FE 연동] 월별이용 현황(세금,계약) 조회",유지윤,284,/statistics/monthly-usage,3,사용자가 WBS 탭 원문으로 제공한 텍스트
+224,[API 개발 및 FE 연동] 월별 세금계산서 이용 현황 조회,유지윤,285,/statistics/monthly-tax-invoice-usage,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+225,[API 개발 및 FE 연동] 매출/매입 이용 현황 조회,유지윤,286,/statistics/sales-purchases-usage,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+226,[API 개발 및 FE 연동] 세금계산서 일별 데이터 집계 조회,유지윤,287,/statistics/daily-tax-invoice-aggregate,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+334,[API 개발 및 FE 연동] 공지사항 조회,유지윤,457,/customer-support/notice,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+335,[API 개발 및 FE 연동] 공지사항 등록/수정,유지윤,458,/customer-support/notice,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+336,[API 개발 및 FE 연동] FAQ 조회,유지윤,460,/customer-support/faq,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+337,[API 개발 및 FE 연동] FAQ 등록/수정,유지윤,461,/customer-support/faq,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+338,[API 개발 및 FE 연동] 1:1 문의 조회,유지윤,463,/customer-support/qna,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+339,[API 개발 및 FE 연동] 답글 등록,유지윤,464,/customer-support/qna,5,사용자가 WBS 탭 원문으로 제공한 텍스트
+340,[API 개발 및 FE 연동] 자료실 조회,유지윤,466,/customer-support/pds,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+341,[API 개발 및 FE 연동] 자료실 등록/수정,유지윤,467,/customer-support/pds,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+342,[API 개발 및 FE 연동] 쿠폰 조회,유지윤,470,/customer-support/coupon,2,사용자가 WBS 탭 원문으로 제공한 텍스트
+343,[API 개발 및 FE 연동] 쿠폰 이력 조회,유지윤,472,/customer-support/coupon-history,1,사용자가 WBS 탭 원문으로 제공한 텍스트
+344,[API 개발 및 FE 연동] WEB 자료실 조회,유지윤,475,/customer-support/web-resources,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+345,[API 개발 및 FE 연동] WEB 자료실 등록/수정,유지윤,476,/customer-support/web-resources,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+346,[API 개발 및 FE 연동] WEB 문의 가이드 조회,유지윤,478,/customer-support/web-inquiry-guide,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+347,[API 개발 및 FE 연동] WEB 문의 가이드 등록/수정,유지윤,479,/customer-support/web-inquiry-guide,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+348,[API 개발 및 FE 연동] SAP 자료실 조회,유지윤,481,/customer-support/sap-resources,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+349,[API 개발 및 FE 연동] SAP 자료실 등록/수정,유지윤,482,/customer-support/sap-resources,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+350,[API 개발 및 FE 연동] SAP 문의 가이드 조회,유지윤,484,/customer-support/sap-inquiry-guide,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+351,[API 개발 및 FE 연동] SAP 문의 가이드 등록/수정,유지윤,485,/customer-support/sap-inquiry-guide,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+352,[API 개발 및 FE 연동] NSAP 자료실 조회,유지윤,487,/customer-support/nsap-resources,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+353,[API 개발 및 FE 연동] NSAP 자료실 등록/수정,유지윤,488,/customer-support/nsap-resources,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+354,[API 개발 및 FE 연동] NSAP 문의 가이드 조회,유지윤,490,/customer-support/nsap-inquiry-guide,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+355,[API 개발 및 FE 연동] NSAP 문의 가이드 등록/수정,유지윤,491,/customer-support/nsap-inquiry-guide,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+356,[API 개발 및 FE 연동] 연동업체 소스 관리 조회,유지윤,493,/customer-support/vendor-source-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트
+357,[API 개발 및 FE 연동] 연동업체 소스 관리 등록/수정,유지윤,494,/customer-support/vendor-source-management,4,사용자가 WBS 탭 원문으로 제공한 텍스트

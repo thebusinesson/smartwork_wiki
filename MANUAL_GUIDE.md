@@ -15,7 +15,7 @@
 | 도메인 | 메뉴 경로 | 화면·유형 | 라우트 | 담당 | 상태 | 문서·비고 |
 |---|---|---|---|---|---|---|
 
-원본 WBS를 읽기 전에는 대상 행과 페이지 수를 확정하지 않는다. 현재 기존 `inventory/` 파일은 Git 이력 기반 사전 조사이며 WBS 확정 목록이 아니다.
+원본 WBS를 읽기 전에는 대상 행과 페이지 수를 확정하지 않는다. `inventory/pages.md`, `inventory/menus.csv`, `inventory/routes.csv`는 이전 Git 이력 기반 사전 조사 자료다. 이번 WBS 확정 범위는 `inventory/wbs-pages.md`, `inventory/wbs-pages.csv`, `inventory/wbs-tasks.csv`를 사용한다.
 
 ## 페이지별 공통 양식
 
