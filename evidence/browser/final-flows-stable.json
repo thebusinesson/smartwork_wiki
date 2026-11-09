@@ -1,0 +1,782 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/bonabank/tax-invoice/:dtiIdx",
+      "phase": "same-observed-invoice-alternate-entry",
+      "observedAt": "2026-11-09T06:36:57.860Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크세금계산서 조회"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [
+        "wday"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/coupon",
+      "phase": "business-number-search",
+      "limited": "화면에 마스킹되지 않은 테스트 사업자번호를 확보하지 못함"
+    },
+    {
+      "route": "/payment/bulk-account-deposit",
+      "phase": "business-number-search",
+      "limited": "화면에 마스킹되지 않은 테스트 사업자번호를 확보하지 못함"
+    },
+    {
+      "route": "/hometax-dti/auth-key",
+      "phase": "registration-dialog-open",
+      "observedAt": "2026-11-09T06:37:00.501Z",
+      "routeMatched": true,
+      "headings": [
+        "홈택스 DTI 수집인증키 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": false
+        },
+        {
+          "name": "엑셀 다운로드",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "허브업체명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "허브업체명",
+        "Version",
+        "사용 여부",
+        "신/구",
+        "DB",
+        "부서사용자 ID",
+        "연동 구분",
+        "운영 여부",
+        "ERP",
+        "스케줄러",
+        "실행간격(시간)",
+        "SAP",
+        "NONSAP"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0,
+      "dialogCount": 1,
+      "dialogButtons": [
+        "선택",
+        "",
+        "",
+        "취소",
+        "등록",
+        "Close"
+      ]
+    },
+    {
+      "route": "/company-management/registration-inquiry",
+      "phase": "filter-open",
+      "observedAt": "2026-11-09T06:37:03.097Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리스마트빌 가입조회"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "업로드",
+          "disabled": true
+        },
+        {
+          "name": "샘플 다운로드",
+          "disabled": false
+        },
+        {
+          "name": "검색 필터 닫기",
+          "disabled": false
+        },
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "업로드 일자",
+        "파일명",
+        "업체수",
+        "스마트빌 가입 확인"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/company-management/registration-inquiry",
+      "phase": "filter-close",
+      "observedAt": "2026-11-09T06:37:04.370Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리스마트빌 가입조회"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "업로드",
+          "disabled": true
+        },
+        {
+          "name": "샘플 다운로드",
+          "disabled": false
+        },
+        {
+          "name": "검색 필터 열기",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "업로드 일자",
+        "파일명",
+        "업체수",
+        "스마트빌 가입 확인"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/notices",
+      "phase": "synthetic-no-match-search",
+      "observedAt": "2026-11-09T06:37:06.925Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크공지사항 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성일",
+        "조회수"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "조회된 공지사항이 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/status",
+      "phase": "tab-switch",
+      "observedAt": "2026-11-09T06:37:09.454Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈비밀번호 초기화"
+      ],
+      "buttons": [
+        {
+          "name": "회사 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "개인 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "회원 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "비밀번호 초기화",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "새 비밀번호를 입력해 주세요. (영문+숫자 6~12자)",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 12,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0,
+      "tab": "회사 블록체인 비밀번호 초기화"
+    },
+    {
+      "route": "/glosign-enterprise/status",
+      "phase": "tab-switch",
+      "observedAt": "2026-11-09T06:37:10.729Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈비밀번호 초기화"
+      ],
+      "buttons": [
+        {
+          "name": "회사 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "개인 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "회원 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "비밀번호 초기화",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회원 이메일을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "새 비밀번호를 입력해 주세요. (영문+숫자 6~12자)",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 12,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0,
+      "tab": "개인 블록체인 비밀번호 초기화"
+    },
+    {
+      "route": "/glosign-enterprise/status",
+      "phase": "tab-switch",
+      "observedAt": "2026-11-09T06:37:12.009Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈비밀번호 초기화"
+      ],
+      "buttons": [
+        {
+          "name": "회사 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "개인 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "회원 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "글로싸인 관리 화면 열기",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0,
+      "tab": "회원 비밀번호 초기화"
+    },
+    {
+      "route": "/bonabank/tax-invoice-statistics",
+      "phase": "tab-switch",
+      "observedAt": "2026-11-09T06:37:14.538Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크세금계산서 통계"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "대상 년월을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "문서구분",
+        "접수 대기",
+        "접수 완료",
+        "신고실패",
+        "신고완료",
+        "총계",
+        "공급가액 총계",
+        "회사명",
+        "사업자 번호",
+        "접수대기",
+        "접수 완료",
+        "신고실패",
+        "신고완료",
+        "총계",
+        "공급가액 총계"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 버튼을 눌러 데이터를 조회해 주세요.",
+        "검색 버튼을 눌러 데이터를 조회해 주세요."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0,
+      "tab": "월별 국세청 신고 통계"
+    },
+    {
+      "route": "/bonabank/tax-invoice-statistics",
+      "phase": "tab-switch",
+      "observedAt": "2026-11-09T06:37:15.808Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크세금계산서 통계"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "대상 년월을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "회사명",
+        "사업자 번호",
+        "전월",
+        "당월",
+        "증감현황",
+        "비고",
+        "신고완료",
+        "공급가액 총계",
+        "신고완료",
+        "공급가액 총계",
+        "신고완료",
+        "공급가액 총계",
+        "담당자",
+        "연락처"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [
+        "tab"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0,
+      "tab": "업체별 증감 현황"
+    }
+  ]
+}

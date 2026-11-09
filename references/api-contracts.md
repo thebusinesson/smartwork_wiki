@@ -1,6 +1,6 @@
 # API 계약과 호출 근거
 
-코드 기준: `dc216b313`, 확인일 2026-11-09. 화면에 연결된 HTTP API 276개를 정리했다. 실제 API 실행은 수행하지 않았다.
+코드 기준: `dc216b313`, 확인일 2026-11-09. 화면에 연결된 HTTP API 278개를 정리했다. 브라우저 대조에서 인감 이미지 조회 2개를 추가했다. 실제 조회 요청 실행 범위는 [브라우저 검증표](browser-verification.md)를 참조하며 모든 API의 성공·권한 거부를 검증한 것은 아니다.
 
 API 경로의 `{…}`는 서버 경로 변수다. 페이지의 `:…`와 변수명이 다를 수 있으므로 목록에서 받은 식별자를 사용한다. `ApiResponse<T>` 래핑·페이징 계약과 DTO 제약은 코드 기준이며 실행 확인과 구분한다.
 
@@ -41,7 +41,7 @@ fun deleteNotice(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankNoticeErrorCode.BONA_NOTICE_DELETE_FAILED`, `BonabankNoticeErrorCode.BONA_NOTICE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api002"></a>
 ## DELETE /api/v1/company-management/company-info/{companyId}/seal
@@ -76,7 +76,7 @@ fun deleteSealImage(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api003"></a>
 ## DELETE /api/v1/service-status/unpaid-exceptions
@@ -117,7 +117,7 @@ fun delete(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `UnpaidExceptionErrorCode.UNPAID_EXCEPTION_DELETE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api004"></a>
 ## DELETE /api/v1/support/faqs/{id}
@@ -156,7 +156,7 @@ fun deleteFaq(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminFaqErrorCode.ADMIN_FAQ_DELETE_FAILED`, `AdminFaqErrorCode.ADMIN_FAQ_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api005"></a>
 ## DELETE /api/v1/support/notices/{id}
@@ -195,7 +195,7 @@ fun deleteNotice(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminNoticeErrorCode.ADMIN_NOTICE_DELETE_FAILED`, `AdminNoticeErrorCode.ADMIN_NOTICE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api006"></a>
 ## DELETE /api/v1/support/pds/{id}
@@ -250,7 +250,7 @@ fun deletePds(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_DELETE_FAILED`, `AdminPdsErrorCode.ADMIN_PDS_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api007"></a>
 ## DELETE /api/v1/support/qnas/{id}
@@ -289,7 +289,7 @@ fun deleteQna(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_DELETE_FAILED`, `AdminQnaErrorCode.ADMIN_QNA_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api008"></a>
 ## DELETE /api/v1/support/spf-boards/{type}/{id}
@@ -348,7 +348,7 @@ fun deleteBoard(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_FORBIDDEN_NOT_AUTHOR`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_NOT_FOUND`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api009"></a>
 ## DELETE /api/v1/support/spf-boards/{type}/{id}/replies/{replyId}
@@ -395,7 +395,7 @@ fun deleteReply(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_FORBIDDEN_NOT_AUTHOR`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_REPLY_NOT_FOUND`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api010"></a>
 ## DELETE /api/v1/tax-operations/error-codes/by-code/{errorCode}
@@ -434,7 +434,7 @@ fun delete(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorCodeManagementErrorCode.ERROR_CODE_DELETE_FAILED`, `ErrorCodeManagementErrorCode.ERROR_CODE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api011"></a>
 ## DELETE /api/v1/tax-operations/source-management/{id}
@@ -471,7 +471,7 @@ fun delete(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `SourceManagementErrorCode.SOURCE_MNG_DELETE_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_DEPLOY_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api012"></a>
 ## GET /api/v1/bonabank/companies
@@ -547,7 +547,7 @@ fun searchCompanies(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankCompanyErrorCode.BONA_COM_INVALID_DATE_RANGE`, `BonabankCompanyErrorCode.BONA_COM_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api013"></a>
 ## GET /api/v1/bonabank/companies/download
@@ -611,7 +611,7 @@ fun downloadCompanies(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankCompanyErrorCode.BONA_COM_INVALID_DATE_RANGE`, `BonabankCompanyErrorCode.BONA_COM_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api014"></a>
 ## GET /api/v1/bonabank/companies/{id}
@@ -703,7 +703,7 @@ fun getCompanyDetail(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankCompanyErrorCode.BONA_COM_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api015"></a>
 ## GET /api/v1/bonabank/members
@@ -794,7 +794,7 @@ fun searchMembers(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankMemberErrorCode.BONA_MEM_INVALID_DATE_RANGE`, `BonabankMemberErrorCode.BONA_MEM_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api016"></a>
 ## GET /api/v1/bonabank/members/{id}
@@ -898,7 +898,7 @@ fun getMemberDetail(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankMemberErrorCode.BONA_MEM_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api017"></a>
 ## GET /api/v1/bonabank/notices
@@ -961,7 +961,7 @@ fun searchNotices(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `BonabankNoticeErrorCode.BONA_NOTICE_INVALID_FILTER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api018"></a>
 ## GET /api/v1/bonabank/notices/{id}
@@ -1008,7 +1008,7 @@ fun fetchNotice(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `BonabankNoticeErrorCode.BONA_NOTICE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api019"></a>
 ## GET /api/v1/bonabank/nts-failures
@@ -1086,7 +1086,7 @@ fun searchNtsFailures(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankNtsFailureErrorCode.BONA_NTSFAIL_INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api020"></a>
 ## GET /api/v1/bonabank/nts-failures/download
@@ -1139,7 +1139,7 @@ fun downloadNtsFailures(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankNtsFailureErrorCode.BONA_NTSFAIL_INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api021"></a>
 ## GET /api/v1/bonabank/tax-invoice-statistics/company-change
@@ -1215,7 +1215,7 @@ fun searchCompanyChange(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_DATE_RANGE`, `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api022"></a>
 ## GET /api/v1/bonabank/tax-invoice-statistics/company-change/download
@@ -1271,7 +1271,7 @@ fun downloadCompanyChange(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_DATE_RANGE`, `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api023"></a>
 ## GET /api/v1/bonabank/tax-invoice-statistics/monthly
@@ -1365,7 +1365,7 @@ fun searchMonthly(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_DATE_RANGE`, `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api024"></a>
 ## GET /api/v1/bonabank/tax-invoice-statistics/monthly/download
@@ -1422,7 +1422,7 @@ fun downloadMonthly(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_DATE_RANGE`, `BonabankTaxStatisticsErrorCode.BONA_TAXSTATS_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api025"></a>
 ## GET /api/v1/bonabank/tax-invoices
@@ -1518,7 +1518,7 @@ fun searchTaxInvoices(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankTaxInvoiceErrorCode.BONA_DTI_DATE_RANGE_REQUIRED`, `BonabankTaxInvoiceErrorCode.BONA_DTI_INVALID_DATE_RANGE`, `BonabankTaxInvoiceErrorCode.BONA_DTI_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api026"></a>
 ## GET /api/v1/bonabank/tax-invoices/download
@@ -1589,7 +1589,7 @@ fun downloadTaxInvoices(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankTaxInvoiceErrorCode.BONA_DTI_DATE_RANGE_REQUIRED`, `BonabankTaxInvoiceErrorCode.BONA_DTI_INVALID_DATE_RANGE`, `BonabankTaxInvoiceErrorCode.BONA_DTI_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api027"></a>
 ## GET /api/v1/bonabank/tax-invoices/{dtiIdx}
@@ -1702,7 +1702,7 @@ fun getTaxInvoiceDetail(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankTaxInvoiceErrorCode.BONA_DTI_INVALID_WDAY`, `BonabankTaxInvoiceErrorCode.BONA_DTI_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api028"></a>
 ## GET /api/v1/bond-service/creditor-balance-certificates
@@ -1786,7 +1786,7 @@ fun search(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api029"></a>
 ## GET /api/v1/bond-service/creditor-balance-certificates/{drcNo}
@@ -1895,7 +1895,7 @@ fun findDetail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api030"></a>
 ## GET /api/v1/bond-service/creditor-balance-certificates/{drcNo}/files/{fileNo}/download
@@ -1936,7 +1936,7 @@ fun downloadFile(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_FILE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api031"></a>
 ## GET /api/v1/bond-service/drc-company-links
@@ -2005,7 +2005,7 @@ fun searchCompanyLinks(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api032"></a>
 ## GET /api/v1/bond-service/drc-company-links/company-search
@@ -2044,7 +2044,7 @@ fun searchCompaniesForRegistration(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api033"></a>
 ## GET /api/v1/bond-service/drc-company-links/hub-companies
@@ -2076,7 +2076,7 @@ fun findHubCompanies(): ResponseEntity<ApiResponse<List<DrcHubCompanyResponse>>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api034"></a>
 ## GET /api/v1/bond-service/drc-company-links/{comNo}
@@ -2136,7 +2136,7 @@ fun findDetail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api035"></a>
 ## GET /api/v1/bond-service/drc-hub-errors
@@ -2203,7 +2203,7 @@ fun searchHubErrors(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api036"></a>
 ## GET /api/v1/bond-service/drc-hub-errors/detail
@@ -2271,7 +2271,7 @@ fun findDetail(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api037"></a>
 ## GET /api/v1/bond-service/drc-hub-errors/hub-companies
@@ -2303,7 +2303,7 @@ fun findHubCompanies(): ResponseEntity<ApiResponse<List<HubCompanyResponse>>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api038"></a>
 ## GET /api/v1/bond-service/drc-logs
@@ -2383,7 +2383,7 @@ fun searchLogs(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api039"></a>
 ## GET /api/v1/bond-service/drc-rights
@@ -2445,7 +2445,7 @@ fun searchCompanies(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_RIGHT_KEYWORD_TOO_SHORT`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api040"></a>
 ## GET /api/v1/bond-service/drc-rights/{comNo}
@@ -2517,7 +2517,7 @@ fun findDetail(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api041"></a>
 ## GET /api/v1/bond-service/receivable-balance-transfers
@@ -2600,7 +2600,7 @@ fun searchTransfers(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_INVALID_STATUS_CODE`, `CreditorBalanceCertificateErrorCode.DRC_INVALID_TRANSFER_STATUS`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api042"></a>
 ## GET /api/v1/bond-service/receivable-balance-transfers/logs/{logIdx}
@@ -2651,7 +2651,7 @@ fun findLogXml(
 - 외부 HTTP/SOAP/데몬 연계: 외부 응답·시간 초과·중복 처리 여부 확인
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_LOG_NOT_FOUND`, `CreditorBalanceCertificateErrorCode.DRC_LOG_XML_TYPE_INVALID`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api043"></a>
 ## GET /api/v1/bond-service/receivable-balance-transfers/{conversationId}/logs
@@ -2685,7 +2685,7 @@ fun findLogs(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api044"></a>
 ## GET /api/v1/company-management/company-info
@@ -2754,7 +2754,7 @@ fun searchCompanyInfo(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api045"></a>
 ## GET /api/v1/company-management/company-info/download
@@ -2811,7 +2811,7 @@ fun download(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api046"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/change-history
@@ -2869,7 +2869,7 @@ fun getChangeHistory(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api047"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/cms-history
@@ -2929,7 +2929,7 @@ fun getCmsHistory(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api048"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/members
@@ -3030,7 +3030,7 @@ fun getCompanyMembers(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api049"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/prepay-history
@@ -3084,7 +3084,7 @@ fun getPrepayHistory(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api050"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/pricing-plan-history
@@ -3142,7 +3142,7 @@ fun getPricingPlanHistory(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api051"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/seal
@@ -3185,7 +3185,7 @@ fun fetchSealImage(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `CustomerErrorCode.COMPANY_SEAL_INVALID`, `CustomerErrorCode.COMPANY_SEAL_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api052"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/sso
@@ -3234,7 +3234,7 @@ fun getSsoInfo(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api053"></a>
 ## GET /api/v1/company-management/company-info/{companyId}/webhook
@@ -3283,7 +3283,7 @@ fun getWebhookInfo(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api054"></a>
 ## GET /api/v1/company-management/company-info/{companyKey}/member-permissions
@@ -3338,7 +3338,7 @@ fun getMemberPermissions(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api055"></a>
 ## GET /api/v1/company-management/company-info/{id}
@@ -3658,7 +3658,7 @@ fun getCompanyDetail(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api056"></a>
 ## GET /api/v1/daily-electronic-contract-usage
@@ -3718,7 +3718,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.DAILY_ELECTRONIC_CONTRACT_USAGE_INVALID_YEAR_MONTH`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api057"></a>
 ## GET /api/v1/daily-tax-invoice-aggregate
@@ -3783,7 +3783,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.DAILY_TAX_INVOICE_AGGREGATE_INVALID_YEAR_MONTH`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api058"></a>
 ## GET /api/v1/daily-tax-invoice-aggregate/download
@@ -3834,7 +3834,7 @@ fun download(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.DAILY_TAX_INVOICE_AGGREGATE_INVALID_YEAR_MONTH`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api059"></a>
 ## GET /api/v1/etax/legacy-tax-invoices
@@ -3946,7 +3946,7 @@ fun searchList(dto: TaxInvoiceSearchRequest): ResponseEntity<ApiResponse<TaxInvo
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.VALIDATION_ERROR`, `LegacyTaxInvoiceErrorCode.LEGACY_DTI_DATE_RANGE_REQUIRED`, `LegacyTaxInvoiceErrorCode.LEGACY_DTI_INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api060"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/download
@@ -4029,7 +4029,7 @@ fun downloadList(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.VALIDATION_ERROR`, `LegacyTaxInvoiceErrorCode.LEGACY_DTI_DATE_RANGE_REQUIRED`, `LegacyTaxInvoiceErrorCode.LEGACY_DTI_INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api061"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/reference/{referenceNumber}/detail
@@ -4103,7 +4103,7 @@ fun getDetailByReference(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api062"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/standalone-statements/{id}
@@ -4168,7 +4168,7 @@ fun getStandaloneDetail(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.VALIDATION_ERROR`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api063"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/{id}/detail
@@ -4245,7 +4245,7 @@ fun getDetail(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api064"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/{id}/dti
@@ -4284,7 +4284,7 @@ fun downloadDti(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api065"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/{id}/manager-mapping
@@ -4322,7 +4322,7 @@ fun getManagerMapping(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api066"></a>
 ## GET /api/v1/etax/legacy-tax-invoices/{id}/xml
@@ -4361,7 +4361,7 @@ fun downloadXml(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api067"></a>
 ## GET /api/v1/glosign-enterprise/companies
@@ -4429,7 +4429,7 @@ fun searchCompanies(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api068"></a>
 ## GET /api/v1/glosign-enterprise/companies/{orgSeq}/summary
@@ -4480,7 +4480,7 @@ fun findCompanySummary(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api069"></a>
 ## GET /api/v1/glosign-enterprise/companies/{orgSeq}/users
@@ -4542,7 +4542,7 @@ fun searchCompanyUsers(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api070"></a>
 ## GET /api/v1/glosign-enterprise/lock-reset
@@ -4612,7 +4612,7 @@ fun searchLockRecords(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api071"></a>
 ## GET /api/v1/glosign-enterprise/members
@@ -4687,7 +4687,7 @@ fun searchMembers(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api072"></a>
 ## GET /api/v1/glosign-enterprise/password-reset/address
@@ -4734,7 +4734,7 @@ fun lookupAddress(
 - 외부 HTTP/SOAP/데몬 연계: 외부 응답·시간 초과·중복 처리 여부 확인
 - 코드에서 참조하는 오류: `GlosignEnterpriseErrorCode.BLOCKCHAIN_ADDRESS_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api073"></a>
 ## GET /api/v1/members/{memNo}/history
@@ -4790,7 +4790,7 @@ fun getMemberHistory(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api074"></a>
 ## GET /api/v1/registration-inquiry/sample-template
@@ -4819,7 +4819,7 @@ fun downloadSampleTemplate(): ResponseEntity<Resource>
 
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api075"></a>
 ## GET /api/v1/registration-inquiry/uploads
@@ -4874,7 +4874,7 @@ fun getUploadList(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api076"></a>
 ## GET /api/v1/registration-inquiry/uploads/{uploadId}/companies
@@ -4952,7 +4952,7 @@ fun getUploadDetail(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `RegistrationInquiryErrorCode.UPLOAD_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api077"></a>
 ## GET /api/v1/registration-inquiry/uploads/{uploadId}/download
@@ -5002,7 +5002,7 @@ fun downloadResults(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api078"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/auth-keys
@@ -5087,7 +5087,7 @@ fun searchAuthKeys(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AuthKeyErrorCode.AUTH_KEY_INVALID_FILTER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api079"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/auth-keys/download
@@ -5148,7 +5148,7 @@ fun downloadAuthKeys(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AuthKeyErrorCode.AUTH_KEY_INVALID_FILTER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api080"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/auth-keys/hub-vendors
@@ -5180,7 +5180,7 @@ fun getHubVendors(): ResponseEntity<ApiResponse<List<AuthKeyHubVendorResponse>>>
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api081"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/auth-keys/{sbKey}
@@ -5250,7 +5250,7 @@ fun getAuthKeyDetail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AuthKeyErrorCode.AUTH_KEY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api082"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/certificate-expire
@@ -5317,7 +5317,7 @@ fun searchExpiries(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api083"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/certificate-expire/download
@@ -5375,7 +5375,7 @@ fun downloadExpiries(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api084"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/certificate-login-fail
@@ -5440,7 +5440,7 @@ fun searchLoginFails(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CertificateLoginFailErrorCode.CERT_LOGIN_FAIL_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api085"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/certificate-registration
@@ -5520,7 +5520,7 @@ fun searchRegistrations(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CertificateRegistrationErrorCode.CERT_REG_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api086"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/certificate-registration/download
@@ -5584,7 +5584,7 @@ fun downloadRegistrations(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CertificateRegistrationErrorCode.CERT_REG_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api087"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/certificate-registration/sales-reps
@@ -5616,7 +5616,7 @@ fun getSalesReps(): ResponseEntity<ApiResponse<List<SalesRepResponse>>>
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api088"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/email-parsing-monitoring
@@ -5697,7 +5697,7 @@ fun searchAuto(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EmailParsingMonitoringErrorCode.EP_MON_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api089"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/email-parsing-monitoring/detail
@@ -5768,7 +5768,7 @@ fun searchDetail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EmailParsingMonitoringErrorCode.EP_MON_DETAIL_KEY_REQUIRED`, `EmailParsingMonitoringErrorCode.EP_MON_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api090"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/email-parsing-monitoring/download
@@ -5835,7 +5835,7 @@ fun downloadAuto(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EmailParsingMonitoringErrorCode.EP_MON_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api091"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/error-logs
@@ -5901,7 +5901,7 @@ fun searchErrorLogs(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api092"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/error-logs/{num}
@@ -5959,7 +5959,7 @@ fun getErrorLog(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorLogErrorCode.ERROR_LOG_INVALID_NUM`, `ErrorLogErrorCode.ERROR_LOG_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api093"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/monitoring/auto
@@ -6038,7 +6038,7 @@ fun searchAuto(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EseroMonitoringErrorCode.ESERO_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api094"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/monitoring/auto/download
@@ -6101,7 +6101,7 @@ fun downloadAuto(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EseroMonitoringErrorCode.ESERO_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api095"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/monitoring/detail
@@ -6173,7 +6173,7 @@ fun searchDetail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EseroMonitoringErrorCode.ESERO_DETAIL_KEY_REQUIRED`, `EseroMonitoringErrorCode.ESERO_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api096"></a>
 ## GET /api/v1/sb-service/hometax-dti-installed/monitoring/manual
@@ -6252,7 +6252,7 @@ fun searchManual(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `EseroMonitoringErrorCode.ESERO_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api097"></a>
 ## GET /api/v1/service-status/deposits/bulk-account
@@ -6326,7 +6326,7 @@ fun searchBulkAccountDepositList(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api098"></a>
 ## GET /api/v1/service-status/deposits/bulk-account/companies/search
@@ -6394,7 +6394,7 @@ fun searchCompanies(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `StatusErrorCode.HEAD_OFFICE_DEPOSIT_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api099"></a>
 ## GET /api/v1/service-status/deposits/bulk-account/company-by-regno
@@ -6434,7 +6434,7 @@ fun getCompanyByRegno(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api100"></a>
 ## GET /api/v1/service-status/deposits/bulk-account/download
@@ -6493,7 +6493,7 @@ fun downloadBulkAccountDepositList(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api101"></a>
 ## GET /api/v1/service-status/deposits/bulk-account/{id}
@@ -6570,7 +6570,7 @@ fun getDetail(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api102"></a>
 ## GET /api/v1/service-status/deposits/daily
@@ -6652,7 +6652,7 @@ fun searchDailyDepositList(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api103"></a>
 ## GET /api/v1/service-status/deposits/daily/download
@@ -6713,7 +6713,7 @@ fun downloadDailyDepositList(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api104"></a>
 ## GET /api/v1/service-status/deposits/deposit
@@ -6780,7 +6780,7 @@ fun searchDepositBalanceList(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api105"></a>
 ## GET /api/v1/service-status/deposits/non-bankbook/cancellations
@@ -6853,7 +6853,7 @@ fun searchCancelList(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api106"></a>
 ## GET /api/v1/service-status/deposits/refunds
@@ -6923,7 +6923,7 @@ fun searchRefundList(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api107"></a>
 ## GET /api/v1/service-status/deposits/refunds/download
@@ -6980,7 +6980,7 @@ fun downloadRefundList(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api108"></a>
 ## GET /api/v1/service-status/deposits/refunds/{refundNo}
@@ -7073,7 +7073,7 @@ fun getRefundDetail(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `RefundErrorCode.REFUND_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api109"></a>
 ## GET /api/v1/service-status/deposits/status
@@ -7152,7 +7152,7 @@ fun searchPaymentStatusInfo(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `DepositCheckListErrorCode.BUSINESS_NUMBER_REQUIRED`, `DepositCheckListErrorCode.CHARGE_MONTH_RANGE_INVALID`, `DepositCheckListErrorCode.CHARGE_MONTH_REQUIRED`, `DepositCheckListErrorCode.COMPANY_INFO_REQUIRED`, `DepositCheckListErrorCode.COMPANY_NAME_REQUIRED`, `DepositCheckListErrorCode.DEPOSIT_DATE_RANGE_INVALID`, `DepositCheckListErrorCode.DEPOSIT_DATE_REQUIRED`, `DepositCheckListErrorCode.PAYMENT_METHOD_REQUIRED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api110"></a>
 ## GET /api/v1/service-status/deposits/status/download
@@ -7214,7 +7214,7 @@ fun downloadPaymentStatus(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `DepositCheckListErrorCode.BUSINESS_NUMBER_REQUIRED`, `DepositCheckListErrorCode.CHARGE_MONTH_RANGE_INVALID`, `DepositCheckListErrorCode.CHARGE_MONTH_REQUIRED`, `DepositCheckListErrorCode.COMPANY_INFO_REQUIRED`, `DepositCheckListErrorCode.COMPANY_NAME_REQUIRED`, `DepositCheckListErrorCode.DEPOSIT_DATE_RANGE_INVALID`, `DepositCheckListErrorCode.DEPOSIT_DATE_REQUIRED`, `DepositCheckListErrorCode.PAYMENT_METHOD_REQUIRED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api111"></a>
 ## GET /api/v1/service-status/deposits/status/{id}
@@ -7293,7 +7293,7 @@ fun getPaymentStatusDetail(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api112"></a>
 ## GET /api/v1/service-status/prepayment/download
@@ -7345,7 +7345,7 @@ fun downloadDepositManagement(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api113"></a>
 ## GET /api/v1/service-status/prepayment/lookup
@@ -7427,7 +7427,7 @@ fun lookupByBusinessNumber(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.COMPANY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api114"></a>
 ## GET /api/v1/service-status/prepayment/target-company
@@ -7468,7 +7468,7 @@ fun findTargetCompany(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.COMPANY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api115"></a>
 ## GET /api/v1/service-status/prepayment/{businessNumber}
@@ -7556,7 +7556,7 @@ fun getDepositDetail(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api116"></a>
 ## GET /api/v1/service-status/prepayment/{businessNumber}/charge-amount
@@ -7597,7 +7597,7 @@ fun getChargeAmount(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api117"></a>
 ## GET /api/v1/service-status/refunds/available-amount
@@ -7661,7 +7661,7 @@ fun searchRefundAvailableAmount(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api118"></a>
 ## GET /api/v1/service-status/refunds/registration/business-info
@@ -7701,7 +7701,7 @@ fun getBusinessInfo(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `RefundErrorCode.REFUND_COMPANY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api119"></a>
 ## GET /api/v1/service-status/sales-purchase/usage
@@ -7774,7 +7774,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.SALES_PURCHASES_USAGE_INVALID_REQUEST`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api120"></a>
 ## GET /api/v1/service-status/sales-purchase/usage/download
@@ -7834,7 +7834,7 @@ fun download(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.SALES_PURCHASES_USAGE_INVALID_REQUEST`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api121"></a>
 ## GET /api/v1/service-status/unpaid-exceptions
@@ -7900,7 +7900,7 @@ fun searchList(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api122"></a>
 ## GET /api/v1/service-status/unpaid-exceptions/companies/search
@@ -7934,7 +7934,7 @@ fun searchCompanies(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api123"></a>
 ## GET /api/v1/service-status/unpaid-exceptions/{comNo}
@@ -7980,7 +7980,7 @@ fun getDetail(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `UnpaidExceptionErrorCode.UNPAID_EXCEPTION_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api124"></a>
 ## GET /api/v1/service-status/usage/monthly
@@ -8050,7 +8050,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.MONTHLY_USAGE_INVALID_MONTH_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api125"></a>
 ## GET /api/v1/service-status/usage/tax-invoice/daily
@@ -8113,7 +8113,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.DAILY_TAX_INVOICE_USAGE_INVALID_YEAR_MONTH`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api126"></a>
 ## GET /api/v1/service-status/usage/tax-invoice/monthly
@@ -8175,7 +8175,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.MONTHLY_TAX_INVOICE_USAGE_INVALID_MONTH_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api127"></a>
 ## GET /api/v1/service-status/usage/tax-invoice/monthly/download
@@ -8226,7 +8226,7 @@ fun download(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.MONTHLY_TAX_INVOICE_USAGE_INVALID_MONTH_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api128"></a>
 ## GET /api/v1/smartbill-status/businesses
@@ -8287,7 +8287,7 @@ fun searchList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api129"></a>
 ## GET /api/v1/smartbill-status/businesses/download
@@ -8344,7 +8344,7 @@ fun downloadList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api130"></a>
 ## GET /api/v1/smartbill-status/members
@@ -8405,7 +8405,7 @@ fun searchList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api131"></a>
 ## GET /api/v1/smartbill-status/members/download
@@ -8462,7 +8462,7 @@ fun downloadList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api132"></a>
 ## GET /api/v1/smartbill-status/withdrawal/businesses
@@ -8528,7 +8528,7 @@ fun searchList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api133"></a>
 ## GET /api/v1/smartbill-status/withdrawal/businesses/download
@@ -8587,7 +8587,7 @@ fun downloadList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api134"></a>
 ## GET /api/v1/smartbill-status/withdrawal/members
@@ -8651,7 +8651,7 @@ fun searchList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api135"></a>
 ## GET /api/v1/smartbill-status/withdrawal/members/download
@@ -8710,7 +8710,7 @@ fun downloadList(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SmartbillStatusErrorCode.INVALID_DATE_RANGE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api136"></a>
 ## GET /api/v1/statistics/daily-general-tax-invoice-usage
@@ -8770,7 +8770,7 @@ fun search(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.DAILY_GENERAL_TAX_INVOICE_USAGE_INVALID_YEAR_MONTH`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api137"></a>
 ## GET /api/v1/status/payment/os-iv-deposit/bulk/charge-months
@@ -8807,7 +8807,7 @@ fun getBulkChargeMonths(): ResponseEntity<ApiResponse<OsIvChargeMonthsResponse>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api138"></a>
 ## GET /api/v1/status/payment/os-iv-deposit/bulk/charges-by-month
@@ -8863,7 +8863,7 @@ fun getBulkChargesByMonth(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api139"></a>
 ## GET /api/v1/support/coupon-histories
@@ -8937,7 +8937,7 @@ fun searchHistories(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminCouponErrorCode.ADMIN_COUPON_INVALID_BUSINESS_REG_NO`, `AdminCouponErrorCode.ADMIN_COUPON_INVALID_KIND`, `AdminCouponErrorCode.ADMIN_COUPON_INVALID_QUARTER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api140"></a>
 ## GET /api/v1/support/coupons
@@ -9005,7 +9005,7 @@ fun searchCoupons(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminCouponErrorCode.ADMIN_COUPON_INVALID_SEARCH_TYPE`, `AdminCouponErrorCode.ADMIN_COUPON_SEARCH_KEYWORD_REQUIRED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api141"></a>
 ## GET /api/v1/support/coupons/{couponNo}
@@ -9055,7 +9055,7 @@ fun fetchCoupon(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminCouponErrorCode.ADMIN_COUPON_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api142"></a>
 ## GET /api/v1/support/faqs
@@ -9125,7 +9125,7 @@ fun searchFaqs(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminFaqErrorCode.ADMIN_FAQ_INVALID_FAQ_TYPE`, `AdminFaqErrorCode.ADMIN_FAQ_INVALID_SEARCH_TYPE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api143"></a>
 ## GET /api/v1/support/faqs/{id}
@@ -9175,7 +9175,7 @@ fun fetchFaq(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminFaqErrorCode.ADMIN_FAQ_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api144"></a>
 ## GET /api/v1/support/notices
@@ -9245,7 +9245,7 @@ fun searchNotices(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminNoticeErrorCode.ADMIN_NOTICE_INVALID_DIV`, `AdminNoticeErrorCode.ADMIN_NOTICE_INVALID_SEARCH_TYPE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api145"></a>
 ## GET /api/v1/support/notices/{id}
@@ -9299,7 +9299,7 @@ fun fetchNotice(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminNoticeErrorCode.ADMIN_NOTICE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api146"></a>
 ## GET /api/v1/support/pds
@@ -9366,7 +9366,7 @@ fun searchPds(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_INVALID_SEARCH_TYPE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api147"></a>
 ## GET /api/v1/support/pds/{id}
@@ -9421,7 +9421,7 @@ fun fetchPds(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api148"></a>
 ## GET /api/v1/support/pds/{id}/file
@@ -9470,7 +9470,7 @@ fun downloadFile(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_FILE_NOT_FOUND`, `AdminPdsErrorCode.ADMIN_PDS_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api149"></a>
 ## GET /api/v1/support/qnas
@@ -9546,7 +9546,7 @@ fun searchQnas(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_INVALID_QNA_TYPE`, `AdminQnaErrorCode.ADMIN_QNA_INVALID_SEARCH_TYPE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api150"></a>
 ## GET /api/v1/support/qnas/{id}
@@ -9613,7 +9613,7 @@ fun fetchQna(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api151"></a>
 ## GET /api/v1/support/spf-boards/{type}
@@ -9691,7 +9691,7 @@ fun searchBoards(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_SCH_CODE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api152"></a>
 ## GET /api/v1/support/spf-boards/{type}/{id}
@@ -9756,7 +9756,7 @@ fun fetchBoard(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_NOT_FOUND`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api153"></a>
 ## GET /api/v1/support/spf-boards/{type}/{id}/file
@@ -9811,7 +9811,7 @@ fun downloadFile(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_FILE_NOT_FOUND`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_NOT_FOUND`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api154"></a>
 ## GET /api/v1/support/spf-boards/{type}/{id}/replies
@@ -9866,7 +9866,7 @@ fun listReplies(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api155"></a>
 ## GET /api/v1/tax-invoices/download
@@ -9948,7 +9948,7 @@ fun downloadList(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api156"></a>
 ## GET /api/v1/tax-invoices/linked-statements/{id}
@@ -10017,7 +10017,7 @@ fun getLinkedTransactionStatement(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api157"></a>
 ## GET /api/v1/tax-invoices/reference/{referenceNumber}/detail
@@ -10095,7 +10095,7 @@ fun getDetailByReference(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api158"></a>
 ## GET /api/v1/tax-invoices/search
@@ -10205,7 +10205,7 @@ fun searchTaxInvoiceInfo(dto: TaxInvoiceSearchRequest): ResponseEntity<ApiRespon
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api159"></a>
 ## GET /api/v1/tax-invoices/standalone-statements/{id}
@@ -10275,7 +10275,7 @@ fun getStandaloneTransactionStatement(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api160"></a>
 ## GET /api/v1/tax-invoices/{id}/attachments/{fileIndex}/download
@@ -10319,7 +10319,7 @@ fun download(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `TaxInvoiceAttachmentErrorCode.INVALID_PATH`, `TaxInvoiceAttachmentErrorCode.NOT_FOUND`, `TaxInvoiceAttachmentErrorCode.STORAGE_UNAVAILABLE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api161"></a>
 ## GET /api/v1/tax-invoices/{id}/detail
@@ -10399,7 +10399,7 @@ fun getTaxInvoiceDetail(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api162"></a>
 ## GET /api/v1/tax-invoices/{id}/dti
@@ -10435,7 +10435,7 @@ fun downloadDti(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api163"></a>
 ## GET /api/v1/tax-invoices/{id}/manager-mapping
@@ -10472,7 +10472,7 @@ fun getManagerMapping(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api164"></a>
 ## GET /api/v1/tax-invoices/{id}/xml
@@ -10508,7 +10508,7 @@ fun downloadXml(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api165"></a>
 ## GET /api/v1/tax-operations/error-codes
@@ -10575,7 +10575,7 @@ fun list(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorCodeManagementErrorCode.ERROR_CODE_PROCESS_INVALID`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api166"></a>
 ## GET /api/v1/tax-operations/error-codes/by-code/{errorCode}
@@ -10621,7 +10621,7 @@ fun getByCode(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorCodeManagementErrorCode.ERROR_CODE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api167"></a>
 ## GET /api/v1/tax-operations/error-codes/export
@@ -10664,7 +10664,7 @@ fun export(@ModelAttribute @ParameterObject request: ErrorCodeListSearchRequest)
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorCodeManagementErrorCode.ERROR_CODE_PROCESS_INVALID`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api168"></a>
 ## GET /api/v1/tax-operations/error-codes/processes
@@ -10697,7 +10697,7 @@ fun processes(): ResponseEntity<ApiResponse<List<ErrorCodeProcessOptionResponse>
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api169"></a>
 ## GET /api/v1/tax-operations/error-reports/attachments/{*relativePath}
@@ -10734,7 +10734,7 @@ fun download(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_FILE_NAME_INVALID`, `ErrorReceiptErrorCode.ERROR_RECEIPT_FILE_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api170"></a>
 ## GET /api/v1/tax-operations/error-reports/current-user
@@ -10771,7 +10771,7 @@ fun currentUser(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api171"></a>
 ## GET /api/v1/tax-operations/error-reports/customers/search
@@ -10809,7 +10809,7 @@ fun searchCustomers(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CommonErrorCode.VALIDATION_ERROR`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api172"></a>
 ## GET /api/v1/tax-operations/error-reports/detail/{id}
@@ -10936,7 +10936,7 @@ fun detail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api173"></a>
 ## GET /api/v1/tax-operations/error-reports/download
@@ -11000,7 +11000,7 @@ fun download(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_INVALID_SEARCH_CONDITION`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api174"></a>
 ## GET /api/v1/tax-operations/error-reports/dti-mismatch-alarm
@@ -11032,7 +11032,7 @@ fun list(): ResponseEntity<ApiResponse<List<DtiMismatchAlarmItemResponse>>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api175"></a>
 ## GET /api/v1/tax-operations/error-reports/hub-companies/search
@@ -11067,7 +11067,7 @@ fun searchHubCompanies(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api176"></a>
 ## GET /api/v1/tax-operations/error-reports/list
@@ -11165,7 +11165,7 @@ fun list(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_INVALID_SEARCH_CONDITION`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api177"></a>
 ## GET /api/v1/tax-operations/error-reports/next-error-number
@@ -11201,7 +11201,7 @@ fun nextErrorNumber(): ResponseEntity<ApiResponse<NextErrorNumberResponse>>
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api178"></a>
 ## GET /api/v1/tax-operations/error-reports/teams
@@ -11233,7 +11233,7 @@ fun teams(): ResponseEntity<ApiResponse<List<TeamOptionResponse>>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api179"></a>
 ## GET /api/v1/tax-operations/error-reports/unresolved
@@ -11266,7 +11266,7 @@ fun list(): ResponseEntity<ApiResponse<List<ErrorReceiptListItemResponse>>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api180"></a>
 ## GET /api/v1/tax-operations/error-reports/unresolved/download
@@ -11314,7 +11314,7 @@ fun download(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api181"></a>
 ## GET /api/v1/tax-operations/error-reports/users
@@ -11347,7 +11347,7 @@ fun users(): ResponseEntity<ApiResponse<List<UserOptionResponse>>>
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api182"></a>
 ## GET /api/v1/tax-operations/error-reports/{id}
@@ -11462,7 +11462,7 @@ fun get(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api183"></a>
 ## GET /api/v1/tax-operations/source-management
@@ -11536,7 +11536,7 @@ fun list(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api184"></a>
 ## GET /api/v1/tax-operations/source-management/dept-options
@@ -11570,7 +11570,7 @@ fun deptOptions(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api185"></a>
 ## GET /api/v1/tax-operations/source-management/sawon-options
@@ -11604,7 +11604,7 @@ fun sawonOptions(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api186"></a>
 ## GET /api/v1/tax-operations/source-management/{id}
@@ -11663,7 +11663,7 @@ fun detail(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `SourceManagementErrorCode.SOURCE_MNG_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api187"></a>
 ## PATCH /api/v1/glosign-enterprise/companies/{orgSeq}/users/{usrSeq}/admin
@@ -11705,7 +11705,7 @@ fun changeCompanyAdmin(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api188"></a>
 ## PATCH /api/v1/glosign-enterprise/lock-reset/{ctrSeq}
@@ -11743,7 +11743,7 @@ fun resetLockFail(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api189"></a>
 ## PATCH /api/v1/support/coupons/{couponNo}/state
@@ -11795,7 +11795,7 @@ fun updateState(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminCouponErrorCode.ADMIN_COUPON_INVALID_STATE`, `AdminCouponErrorCode.ADMIN_COUPON_INVALID_STATE_TRANSITION`, `AdminCouponErrorCode.ADMIN_COUPON_NOT_FOUND`, `AdminCouponErrorCode.ADMIN_COUPON_STATE_UPDATE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api190"></a>
 ## PATCH /api/v1/tax-operations/source-management/{id}
@@ -11877,7 +11877,7 @@ fun update(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `SourceManagementErrorCode.SOURCE_MNG_DELETE_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_DEPLOY_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_NOT_FOUND`, `SourceManagementErrorCode.SOURCE_MNG_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api191"></a>
 ## POST /api/v1/bonabank/companies/{id}/sensitive-values/reveal
@@ -11939,7 +11939,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankCompanyErrorCode.BONA_COM_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api192"></a>
 ## POST /api/v1/bonabank/members/{id}/sensitive-values/reveal
@@ -12000,7 +12000,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankMemberErrorCode.BONA_MEM_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api193"></a>
 ## POST /api/v1/bonabank/members/{id}/withdraw
@@ -12051,7 +12051,7 @@ fun withdrawMember(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `BonabankMemberErrorCode.BONA_MEM_DORMANT_NOT_EDITABLE`, `BonabankMemberErrorCode.BONA_MEM_HAS_DEPENDENT_MEMBERS`, `BonabankMemberErrorCode.BONA_MEM_HAS_UNPAID_INVOICE`, `BonabankMemberErrorCode.BONA_MEM_NOT_FOUND`, `BonabankMemberErrorCode.BONA_MEM_WITHDRAW_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api194"></a>
 ## POST /api/v1/bonabank/notices
@@ -12093,7 +12093,7 @@ fun createNotice(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `BonabankNoticeErrorCode.BONA_NOTICE_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api195"></a>
 ## POST /api/v1/bond-service/drc-company-links
@@ -12145,7 +12145,7 @@ fun save(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api196"></a>
 ## POST /api/v1/bond-service/drc-hub-errors
@@ -12197,7 +12197,7 @@ fun save(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_HUB_ERROR_MSG_REQUIRED`, `CreditorBalanceCertificateErrorCode.DRC_HUB_ERROR_PORT_INVALID`, `CreditorBalanceCertificateErrorCode.DRC_HUB_ERROR_TIME_INVALID`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api197"></a>
 ## POST /api/v1/bond-service/drc-rights/{comNo}/sensitive-values/reveal
@@ -12260,7 +12260,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api198"></a>
 ## POST /api/v1/bond-service/receivable-balance-transfers/{drcNo}/resend
@@ -12321,7 +12321,7 @@ fun resend(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CreditorBalanceCertificateErrorCode.DRC_RESEND_FAILED`, `CreditorBalanceCertificateErrorCode.DRC_RESEND_INVALID_STATUS`, `CreditorBalanceCertificateErrorCode.DRC_RESEND_LOG_NOT_FOUND`, `CreditorBalanceCertificateErrorCode.DRC_RESEND_NOT_IMPLEMENTED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api199"></a>
 ## POST /api/v1/company-management/company-info/{comNo}/accounts/{accountId}/sensitive-values/reveal
@@ -12382,7 +12382,7 @@ fun revealCompanyAccountSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`, `CommonErrorCode.INVALID_PARAMETER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api200"></a>
 ## POST /api/v1/company-management/company-info/{comNo}/administrators/{memNo}/sensitive-values/reveal
@@ -12443,7 +12443,7 @@ fun revealAdministratorSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.INVALID_PARAMETER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api201"></a>
 ## POST /api/v1/company-management/company-info/{comNo}/auto-payment/sensitive-values/reveal
@@ -12505,7 +12505,7 @@ fun revealAutoPaymentSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api202"></a>
 ## POST /api/v1/company-management/company-info/{comNo}/members/{memNo}/sensitive-values/reveal
@@ -12566,7 +12566,7 @@ fun revealCompanyMemberSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`, `CommonErrorCode.INVALID_PARAMETER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api203"></a>
 ## POST /api/v1/company-management/company-info/{comNo}/sensitive-values/reveal
@@ -12626,7 +12626,7 @@ fun revealCompanySensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`, `CommonErrorCode.INVALID_PARAMETER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api204"></a>
 ## POST /api/v1/company-management/company-info/{companyId}/members/change-administrator
@@ -12685,7 +12685,7 @@ fun changeAdministrator(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api205"></a>
 ## POST /api/v1/company-management/company-info/{companyId}/members/withdraw
@@ -12737,7 +12737,7 @@ fun withdrawMembers(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api206"></a>
 ## POST /api/v1/company-management/company-info/{companyId}/prepay-history/{prepayNo}/sensitive-values/reveal
@@ -12797,7 +12797,7 @@ fun revealPrepayHistorySensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api207"></a>
 ## POST /api/v1/company-management/company-info/{companyId}/sso
@@ -12855,7 +12855,7 @@ fun registerSso(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api208"></a>
 ## POST /api/v1/company-management/company-info/{companyId}/unpaid-release
@@ -12897,7 +12897,7 @@ fun releaseUnpaidStatus(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CustomerErrorCode.UNPAID_RELEASE_FAILED`, `CustomerErrorCode.UNPAID_RELEASE_REASON_REQUIRED`, `CustomerErrorCode.UNPAID_RELEASE_REASON_TOO_LONG`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api209"></a>
 ## POST /api/v1/company-management/company-info/{companyId}/webhook
@@ -12948,7 +12948,7 @@ fun registerWebhook(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api210"></a>
 ## POST /api/v1/download-reason
@@ -12993,7 +12993,7 @@ fun registerDownloadReason(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api211"></a>
 ## POST /api/v1/etax/legacy-tax-invoices/{id}/manager-mapping
@@ -13034,7 +13034,7 @@ fun remapManager(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.COMMON_ERROR`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api212"></a>
 ## POST /api/v1/glosign-enterprise/companies/download
@@ -13094,7 +13094,7 @@ fun downloadCompanies(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api213"></a>
 ## POST /api/v1/glosign-enterprise/companies/{orgSeq}/sensitive-values/reveal
@@ -13154,7 +13154,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api214"></a>
 ## POST /api/v1/glosign-enterprise/companies/{orgSeq}/users/withdraw
@@ -13202,7 +13202,7 @@ fun withdrawMembers(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api215"></a>
 ## POST /api/v1/glosign-enterprise/companies/{orgSeq}/users/{usrSeq}/sensitive-values/reveal
@@ -13264,7 +13264,7 @@ fun revealCompanyUserSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api216"></a>
 ## POST /api/v1/glosign-enterprise/lock-reset/{ctrSeq}/sensitive-values/reveal
@@ -13324,7 +13324,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api217"></a>
 ## POST /api/v1/glosign-enterprise/members/download
@@ -13388,7 +13388,7 @@ fun downloadMembers(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api218"></a>
 ## POST /api/v1/glosign-enterprise/members/{usrSeq}/sensitive-values/reveal
@@ -13451,7 +13451,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api219"></a>
 ## POST /api/v1/glosign-enterprise/password-reset
@@ -13507,7 +13507,7 @@ fun resetPassword(
 - 감사/작업 로그 관련 호출 존재: 사유·작업자·대상 추적 범위 확인
 - 코드에서 참조하는 오류: `GlosignEnterpriseErrorCode.PW_RESET_EXTERNAL_ERROR`, `GlosignEnterpriseErrorCode.PW_RESET_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api220"></a>
 ## POST /api/v1/mail/send
@@ -13611,7 +13611,7 @@ fun send(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `BonabankTaxInvoiceErrorCode.BONA_DTI_BULK_EMAIL_EMPTY`, `BonabankTaxInvoiceErrorCode.BONA_DTI_INVALID_EMAIL`, `CommonErrorCode.COMMON_ERROR`, `CommonErrorCode.ENTITY_NOT_FOUND`, `CommonErrorCode.INVALID_PARAMETER`, `CommonErrorCode.INVALID_STATE`, `PaymentErrorCode.EB14_NO_FAIL_EMAIL_TARGETS`, `PaymentErrorCode.EB22_MAIL_SERVICE_DISABLED`, `PaymentErrorCode.EB22_NOT_FOUND`, `ServiceNoticeMailErrorCode.MAIL_SAVE_FAILED`, `ServiceNoticeMailErrorCode.NO_RECIPIENTS`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api221"></a>
 ## POST /api/v1/members/{memNo}/sensitive-values/reveal
@@ -13670,7 +13670,7 @@ fun revealMemberSensitiveValue(
 - 감사/작업 로그 관련 호출 존재: 사유·작업자·대상 추적 범위 확인
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api222"></a>
 ## POST /api/v1/registration-inquiry/companies/{businessNumber}/sensitive-values/reveal
@@ -13730,7 +13730,7 @@ fun revealCompanySensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api223"></a>
 ## POST /api/v1/registration-inquiry/upload
@@ -13789,7 +13789,7 @@ fun uploadFile(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `RegistrationInquiryErrorCode.FILE_METADATA_SAVE_FAILED`, `RegistrationInquiryErrorCode.INVALID_FILE_FORMAT`, `RegistrationInquiryErrorCode.INVALID_TEMPLATE_FORMAT`, `RegistrationInquiryErrorCode.NO_VALID_ROWS`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api224"></a>
 ## POST /api/v1/sb-service/hometax-dti-installed/auth-keys
@@ -13840,7 +13840,7 @@ fun insertAuthKey(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AuthKeyErrorCode.AUTH_KEY_BNS_REQUIRED`, `AuthKeyErrorCode.AUTH_KEY_DUPLICATE`, `AuthKeyErrorCode.AUTH_KEY_INVALID_FILTER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api225"></a>
 ## POST /api/v1/sb-service/hometax-dti-installed/certificate-registration/{sbKey}/sensitive-values/reveal
@@ -13903,7 +13903,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api226"></a>
 ## POST /api/v1/service-status/deposits/bulk-account/{id}/process
@@ -13955,7 +13955,7 @@ fun processDeposit(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `StatusErrorCode.BULK_DEPOSIT_BALANCE_EXCEEDED`, `StatusErrorCode.BULK_DEPOSIT_NOT_FOUND`, `StatusErrorCode.BULK_DEPOSIT_PROCESS_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api227"></a>
 ## POST /api/v1/service-status/deposits/bulk-account/{id}/sensitive-values/reveal
@@ -14015,7 +14015,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `StatusErrorCode.BULK_DEPOSIT_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api228"></a>
 ## POST /api/v1/service-status/deposits/non-bankbook/cancellations/{cancelIdx}/sensitive-values/reveal
@@ -14075,7 +14075,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api229"></a>
 ## POST /api/v1/service-status/deposits/refunds/{refundNo}/state-change
@@ -14133,7 +14133,7 @@ fun changeRefundState(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `RefundErrorCode.REFUND_NOT_FOUND`, `RefundErrorCode.REFUND_STATE_CHANGE_FAILED`, `RefundErrorCode.REFUND_STATE_NOT_CHANGEABLE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api230"></a>
 ## POST /api/v1/service-status/deposits/status/{id}/cancel
@@ -14179,7 +14179,7 @@ fun cancelPaymentDeposit(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_INSERT_FAILED`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_LATER_PAYMENT_EXISTS`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_NOT_CANCELLABLE`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_NOT_EXECUTED`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_PERIOD_EXPIRED`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_PROCESSING_ERROR`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_USAGE_EXISTS`, `DepositCheckDetailErrorCode.CANCEL_INFO_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api231"></a>
 ## POST /api/v1/service-status/deposits/status/{id}/process-prepaid
@@ -14236,7 +14236,7 @@ fun processDepositPrepaid(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.BALANCE_PROCESS_AMOUNT_EXCEEDED`, `DepositCheckDetailErrorCode.BALANCE_PROCESS_PERIOD_EXPIRED`, `DepositCheckDetailErrorCode.BALANCE_PROCESS_SAVE_ERROR`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api232"></a>
 ## POST /api/v1/service-status/deposits/status/{id}/sensitive-values/reveal
@@ -14295,7 +14295,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.ENTITY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api233"></a>
 ## POST /api/v1/service-status/prepayment/cancel
@@ -14339,7 +14339,7 @@ fun cancelDeposit(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_INSERT_FAILED`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_LATER_PAYMENT_EXISTS`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_PERIOD_EXPIRED`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_PROCESSING_ERROR`, `DepositCheckDetailErrorCode.CANCEL_DEPOSIT_USAGE_EXISTS`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api234"></a>
 ## POST /api/v1/service-status/prepayment/process
@@ -14394,7 +14394,7 @@ fun processDeposit(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.BALANCE_PROCESS_AMOUNT_EXCEEDED`, `DepositCheckDetailErrorCode.BALANCE_PROCESS_SAVE_ERROR`, `DepositCheckDetailErrorCode.COMPANY_NOT_FOUND`, `DepositCheckDetailErrorCode.PROCESS_AMOUNT_REQUIRED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api235"></a>
 ## POST /api/v1/service-status/prepayment/{businessNumber}/process
@@ -14444,7 +14444,7 @@ fun processDepositPayment(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `DepositCheckDetailErrorCode.BALANCE_PROCESS_AMOUNT_EXCEEDED`, `DepositCheckDetailErrorCode.BALANCE_PROCESS_SAVE_ERROR`, `DepositCheckDetailErrorCode.CHARGE_AMOUNT_EXCEEDED`, `DepositCheckDetailErrorCode.CHARGE_AMOUNT_NOT_FOUND`, `DepositCheckDetailErrorCode.CHARGE_MONTH_REQUIRED`, `DepositCheckDetailErrorCode.PROCESS_AMOUNT_REQUIRED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api236"></a>
 ## POST /api/v1/service-status/refunds/registration/save
@@ -14499,7 +14499,7 @@ fun saveRefundRegistration(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `RefundErrorCode.REFUND_ALREADY_EXISTS`, `RefundErrorCode.REFUND_AMOUNT_EXCEEDED`, `RefundErrorCode.REFUND_COMPANY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api237"></a>
 ## POST /api/v1/service-status/unpaid-exceptions
@@ -14544,7 +14544,7 @@ fun save(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `UnpaidExceptionErrorCode.UNPAID_EXCEPTION_ALREADY_EXISTS`, `UnpaidExceptionErrorCode.UNPAID_EXCEPTION_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api238"></a>
 ## POST /api/v1/status/payment/os-iv-deposit/bulk/{idx}/process
@@ -14612,7 +14612,7 @@ fun processBulk(
 - 외부 HTTP/SOAP/데몬 연계: 외부 응답·시간 초과·중복 처리 여부 확인
 - 코드에서 참조하는 오류: `StatusErrorCode.OS_IV_DEPOSIT_ALREADY_PAID`, `StatusErrorCode.OS_IV_DEPOSIT_BALANCE_EXCEEDED`, `StatusErrorCode.OS_IV_DEPOSIT_NOT_FOUND`, `StatusErrorCode.OS_IV_DEPOSIT_PROCESS_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api239"></a>
 ## POST /api/v1/support/faqs
@@ -14658,7 +14658,7 @@ fun createFaq(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminFaqErrorCode.ADMIN_FAQ_INVALID_FAQ_TYPE`, `AdminFaqErrorCode.ADMIN_FAQ_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api240"></a>
 ## POST /api/v1/support/notices
@@ -14709,7 +14709,7 @@ fun createNotice(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminNoticeErrorCode.ADMIN_NOTICE_INVALID_DIV`, `AdminNoticeErrorCode.ADMIN_NOTICE_INVALID_POPUP_PERIOD`, `AdminNoticeErrorCode.ADMIN_NOTICE_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api241"></a>
 ## POST /api/v1/support/pds
@@ -14769,7 +14769,7 @@ fun createPds(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_FILE_UPLOAD_FAILED`, `AdminPdsErrorCode.ADMIN_PDS_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api242"></a>
 ## POST /api/v1/support/pds/{id}/sensitive-values/reveal
@@ -14833,7 +14833,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api243"></a>
 ## POST /api/v1/support/qnas
@@ -14879,7 +14879,7 @@ fun createQna(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_INVALID_QNA_TYPE`, `AdminQnaErrorCode.ADMIN_QNA_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api244"></a>
 ## POST /api/v1/support/qnas/{id}/replies
@@ -14929,7 +14929,7 @@ fun replyQna(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_INVALID_QNA_TYPE`, `AdminQnaErrorCode.ADMIN_QNA_REPLY_DEPTH_EXCEEDED`, `AdminQnaErrorCode.ADMIN_QNA_REPLY_PARENT_NOT_FOUND`, `AdminQnaErrorCode.ADMIN_QNA_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api245"></a>
 ## POST /api/v1/support/qnas/{id}/sensitive-values/reveal
@@ -14990,7 +14990,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api246"></a>
 ## POST /api/v1/support/spf-boards/{type}
@@ -15055,7 +15055,7 @@ fun createBoard(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_FILE_UPLOAD_FAILED`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api247"></a>
 ## POST /api/v1/support/spf-boards/{type}/{id}/replies
@@ -15103,7 +15103,7 @@ fun saveReply(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_REPLY_CONTENT_REQUIRED`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api248"></a>
 ## POST /api/v1/tax-invoices/{id}/manager-mapping
@@ -15143,7 +15143,7 @@ fun remapManager(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `CommonErrorCode.COMMON_ERROR`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api249"></a>
 ## POST /api/v1/tax-operations/error-codes
@@ -15208,7 +15208,7 @@ fun create(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `ErrorCodeManagementErrorCode.ERROR_CODE_DUPLICATE`, `ErrorCodeManagementErrorCode.ERROR_CODE_NOT_FOUND`, `ErrorCodeManagementErrorCode.ERROR_CODE_PROCESS_INVALID`, `ErrorCodeManagementErrorCode.ERROR_CODE_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api250"></a>
 ## POST /api/v1/tax-operations/error-reports
@@ -15270,7 +15270,7 @@ fun create(
 
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api251"></a>
 ## POST /api/v1/tax-operations/error-reports/attachments
@@ -15315,7 +15315,7 @@ fun upload(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_FILE_NAME_INVALID`, `ErrorReceiptErrorCode.ERROR_RECEIPT_FILE_SIZE_EXCEEDED`, `ErrorReceiptErrorCode.ERROR_RECEIPT_FILE_UPLOAD_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api252"></a>
 ## POST /api/v1/tax-operations/error-reports/{id}/sensitive-values/reveal
@@ -15375,7 +15375,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api253"></a>
 ## POST /api/v1/tax-operations/error-reports/{id}/status
@@ -15454,7 +15454,7 @@ fun saveStatus(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_NOT_FOUND`, `ErrorReceiptErrorCode.ERROR_RECEIPT_STATUS_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api254"></a>
 ## POST /api/v1/tax-operations/source-management
@@ -15512,7 +15512,7 @@ fun create(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `SourceManagementErrorCode.SOURCE_MNG_DELETE_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_DEPLOY_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api255"></a>
 ## POST /api/v1/tax-operations/source-management/{id}/sensitive-values/reveal
@@ -15572,7 +15572,7 @@ fun revealSensitiveValue(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `SourceManagementErrorCode.SOURCE_MNG_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api256"></a>
 ## PUT /api/v1/bonabank/companies/{id}/settings
@@ -15617,7 +15617,7 @@ fun updateSetting(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankCompanyErrorCode.BONA_COM_INVALID_FILTER_VALUE`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api257"></a>
 ## PUT /api/v1/bonabank/members/{id}/profile
@@ -15676,7 +15676,7 @@ fun updateProfile(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `BonabankMemberErrorCode.BONA_MEM_DORMANT_NOT_EDITABLE`, `BonabankMemberErrorCode.BONA_MEM_NOT_FOUND`, `CommonErrorCode.VALIDATION_ERROR`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api258"></a>
 ## PUT /api/v1/bonabank/members/{id}/role-corporate-admin
@@ -15728,7 +15728,7 @@ fun changeToCorporateAdmin(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `BonabankMemberErrorCode.BONA_MEM_ALREADY_CORPORATE_ADMIN`, `BonabankMemberErrorCode.BONA_MEM_DORMANT_NOT_EDITABLE`, `BonabankMemberErrorCode.BONA_MEM_NOT_FOUND`, `BonabankMemberErrorCode.BONA_MEM_ROLE_CHANGE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api259"></a>
 ## PUT /api/v1/bonabank/notices/{id}
@@ -15774,7 +15774,7 @@ fun updateNotice(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `BonabankNoticeErrorCode.BONA_NOTICE_NOT_FOUND`, `BonabankNoticeErrorCode.BONA_NOTICE_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api260"></a>
 ## PUT /api/v1/company-management/company-info/{companyId}/e-contract-settings
@@ -15869,7 +15869,7 @@ fun updateEContractSettings(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api261"></a>
 ## PUT /api/v1/company-management/company-info/{companyId}/integration-service-settings
@@ -15966,7 +15966,7 @@ fun updateIntegrationServiceSettings(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api262"></a>
 ## PUT /api/v1/company-management/company-info/{companyId}/nts-transmission-settings
@@ -16066,7 +16066,7 @@ fun updateNtsTransmissionSettings(
 
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api263"></a>
 ## PUT /api/v1/company-management/company-info/{companyId}/other-management-settings
@@ -16166,7 +16166,7 @@ fun updateOtherManagementSettings(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CommonErrorCode.INVALID_PARAMETER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api264"></a>
 ## PUT /api/v1/company-management/company-info/{companyId}/tax-invoice-settings
@@ -16266,7 +16266,7 @@ fun updateTaxInvoiceSettings(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `CommonErrorCode.INVALID_PARAMETER`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api265"></a>
 ## PUT /api/v1/company-management/company-info/{companyKey}/member-permissions
@@ -16316,7 +16316,7 @@ fun updateMemberPermissions(
 
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api266"></a>
 ## PUT /api/v1/sb-service/hometax-dti-installed/auth-keys/{sbKey}
@@ -16373,7 +16373,7 @@ fun updateAuthKey(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `AuthKeyErrorCode.AUTH_KEY_BNS_REQUIRED`, `AuthKeyErrorCode.AUTH_KEY_INVALID_FILTER`, `AuthKeyErrorCode.AUTH_KEY_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api267"></a>
 ## PUT /api/v1/service-status/deposits/refunds/{refundNo}
@@ -16426,7 +16426,7 @@ fun updateRefundInfo(
 - 위 코드와 DB 계약의 입력 검증·예외·변경 결과 판정을 확인한다.
 - 코드에서 참조하는 오류: `RefundErrorCode.REFUND_AMOUNT_EXCEEDED`, `RefundErrorCode.REFUND_STATE_NOT_EDITABLE`, `RefundErrorCode.REFUND_UPDATE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api268"></a>
 ## PUT /api/v1/service-status/unpaid-exceptions/{comNo}
@@ -16471,7 +16471,7 @@ fun update(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `UnpaidExceptionErrorCode.UNPAID_EXCEPTION_UPDATE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api269"></a>
 ## PUT /api/v1/support/faqs/{id}
@@ -16521,7 +16521,7 @@ fun updateFaq(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminFaqErrorCode.ADMIN_FAQ_INVALID_FAQ_TYPE`, `AdminFaqErrorCode.ADMIN_FAQ_NOT_FOUND`, `AdminFaqErrorCode.ADMIN_FAQ_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api270"></a>
 ## PUT /api/v1/support/notices/{id}
@@ -16576,7 +16576,7 @@ fun updateNotice(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminNoticeErrorCode.ADMIN_NOTICE_INVALID_DIV`, `AdminNoticeErrorCode.ADMIN_NOTICE_INVALID_POPUP_PERIOD`, `AdminNoticeErrorCode.ADMIN_NOTICE_NOT_FOUND`, `AdminNoticeErrorCode.ADMIN_NOTICE_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api271"></a>
 ## PUT /api/v1/support/pds/{id}
@@ -16648,7 +16648,7 @@ fun updatePds(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminPdsErrorCode.ADMIN_PDS_FILE_UPLOAD_FAILED`, `AdminPdsErrorCode.ADMIN_PDS_INVALID_SEARCH_TYPE`, `AdminPdsErrorCode.ADMIN_PDS_NOT_FOUND`, `AdminPdsErrorCode.ADMIN_PDS_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api272"></a>
 ## PUT /api/v1/support/qnas/{id}
@@ -16698,7 +16698,7 @@ fun updateQna(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `AdminQnaErrorCode.ADMIN_QNA_EDIT_FORBIDDEN`, `AdminQnaErrorCode.ADMIN_QNA_INVALID_QNA_TYPE`, `AdminQnaErrorCode.ADMIN_QNA_NOT_FOUND`, `AdminQnaErrorCode.ADMIN_QNA_SAVE_FAILED`, `AdminQnaErrorCode.ADMIN_QNA_TYPE_CHANGE_FORBIDDEN`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api273"></a>
 ## PUT /api/v1/support/spf-boards/{type}/{id}
@@ -16776,7 +16776,7 @@ fun updateBoard(
 - 파일 저장소 연계: 보관 경로 설정 키·원래 파일명·파일 존재·다운로드 권한 확인
 - 코드에서 참조하는 오류: `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_FILE_UPLOAD_FAILED`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_FORBIDDEN_NOT_AUTHOR`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_FILE_ACTION`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_INVALID_TYPE`, `AdminSpfBoardErrorCode.ADMIN_SPF_BOARD_NOT_FOUND`, `SettingsErrorCode.PERMISSION_DENIED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api274"></a>
 ## PUT /api/v1/tax-operations/error-codes/by-code/{errorCode}
@@ -16844,7 +16844,7 @@ fun update(
 - 트랜잭션 경계 존재: 해당 Service 어노테이션과 예외 전파 확인
 - 코드에서 참조하는 오류: `ErrorCodeManagementErrorCode.ERROR_CODE_NOT_FOUND`, `ErrorCodeManagementErrorCode.ERROR_CODE_PROCESS_INVALID`, `ErrorCodeManagementErrorCode.ERROR_CODE_UPDATE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api275"></a>
 ## PUT /api/v1/tax-operations/error-reports/{id}
@@ -16897,7 +16897,7 @@ fun update(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `ErrorReceiptErrorCode.ERROR_RECEIPT_NOT_FOUND`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
 
 <a id="api276"></a>
 ## PUT /api/v1/tax-operations/source-management/{id}/deploy
@@ -16945,4 +16945,36 @@ fun deploy(
 - 마스킹/원문 처리 코드 존재: UNMASK·추가 사유·감사 로그 및 반환 범위 확인
 - 코드에서 참조하는 오류: `SourceManagementErrorCode.SOURCE_MNG_DELETE_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_DEPLOY_FAILED`, `SourceManagementErrorCode.SOURCE_MNG_NOT_FOUND`, `SourceManagementErrorCode.SOURCE_MNG_SAVE_FAILED`.
 
-검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 요청·권한 계정·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+검증: 코드 확인 / 개발 DB 정의는 연결 문서 참조, 2026-11-09. 실제 조회 요청은 [브라우저 검증 범위](browser-verification.md)와 구분한다. 역할별 권한·변경·파일/외부 연계 결과는 미확인. 후속 확인: 업무·기술 담당.
+
+<a id="api277"></a>
+## GET /api/v1/tax-invoices/{id}/seal
+
+세금계산서 미리보기용 인감 이미지 조회. 권한은 `/tax-invoice/tax-invoice` / `VIEW`.
+
+| 항목 | 계약 |
+|---|---|
+| 입력 | 경로 `id: Long`, 필수 쿼리 `wday: LocalDate` (ISO YYYY-MM-DD) |
+| 성공 응답 | 파일 바이너리; jpg/jpeg/png/gif; inline Content-Disposition, no-store/private, nosniff |
+| 데이터 원천 | 현행/과거 Mapper의 getDetailHeader로 ID·작성일이 맞는 헤더를 찾고 COM_SEAL 파일명을 사용한다. 클라이언트가 파일명을 전달하지 않는다. |
+| 파일 저장소 | `storage.comseal` 아래 기존 파일. 파일명 경로 조작·제어문자·미허용 확장자를 거부하고 실제 파일의 존재·읽기 가능 여부를 확인한다. 정확한 파일명이 없으면 대소문자를 무시하고 재탐색한다. 인감 조회 서비스 자체는 업무 데이터·파일을 변경하지 않는다. 공통 요청 감사 기록은 별도다. |
+| 오류 | 문서 헤더 없음은 TAX_INVOICE_NOT_FOUND, 파일명·루트·이미지 없음/읽기 불가는 COMPANY_SEAL_NOT_FOUND(404), 부적합 파일명/확장자는 COMPANY_SEAL_INVALID. 404만으로 어느 원인인지 확정하지 않는다. |
+| 검증 | 코드 확인 2026-11-09. 현행 상세 조회의 인감 요청 404를 관찰했으며 원인은 미확정. 과거 인감 요청의 정상 대상은 미재현. |
+
+근거: [TaxInvoiceSealController](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/api/service/taxinvoice/TaxInvoiceSealController.kt), [TaxInvoicePreviewService](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/service/taxinvoice/service/TaxInvoicePreviewService.kt), [CompanySealImageService](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/customer/company/service/CompanySealImageService.kt). 인감 이미지 요청의 실패와 본문 상세 API의 성공을 구분한다.
+
+<a id="api278"></a>
+## GET /api/v1/etax/legacy-tax-invoices/{id}/seal
+
+세금계산서 미리보기용 인감 이미지 조회. 권한은 `/tax-invoice/legacy-tax-invoice` / `VIEW`.
+
+| 항목 | 계약 |
+|---|---|
+| 입력 | 경로 `id: Long`, 필수 쿼리 `wday: LocalDate` (ISO YYYY-MM-DD) |
+| 성공 응답 | 파일 바이너리; jpg/jpeg/png/gif; inline Content-Disposition, no-store/private, nosniff |
+| 데이터 원천 | 현행/과거 Mapper의 getDetailHeader로 ID·작성일이 맞는 헤더를 찾고 COM_SEAL 파일명을 사용한다. 클라이언트가 파일명을 전달하지 않는다. |
+| 파일 저장소 | `storage.comseal` 아래 기존 파일. 파일명 경로 조작·제어문자·미허용 확장자를 거부하고 실제 파일의 존재·읽기 가능 여부를 확인한다. 정확한 파일명이 없으면 대소문자를 무시하고 재탐색한다. 인감 조회 서비스 자체는 업무 데이터·파일을 변경하지 않는다. 공통 요청 감사 기록은 별도다. |
+| 오류 | 문서 헤더 없음은 TAX_INVOICE_NOT_FOUND, 파일명·루트·이미지 없음/읽기 불가는 COMPANY_SEAL_NOT_FOUND(404), 부적합 파일명/확장자는 COMPANY_SEAL_INVALID. 404만으로 어느 원인인지 확정하지 않는다. |
+| 검증 | 코드 확인 2026-11-09. 현행 상세 조회의 인감 요청 404를 관찰했으며 원인은 미확정. 과거 인감 요청의 정상 대상은 미재현. |
+
+근거: [TaxInvoiceSealController](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/api/service/taxinvoice/TaxInvoiceSealController.kt), [TaxInvoicePreviewService](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/service/taxinvoice/service/TaxInvoicePreviewService.kt), [CompanySealImageService](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/customer/company/service/CompanySealImageService.kt). 인감 이미지 요청의 실패와 본문 상세 API의 성공을 구분한다.

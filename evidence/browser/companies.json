@@ -1,0 +1,1586 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/company-management/company-info",
+      "phase": "company-name-search",
+      "observedAt": "2026-11-09T06:21:05.388Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "No",
+        "사업자번호",
+        "회사명",
+        "가입일",
+        "가입상태",
+        "사용가능여부",
+        "요금제",
+        "자동이체",
+        "전자계약 추가용량",
+        "전자세금계산서",
+        "전자계약"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/company-management/company-info/:id",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:21:05.453Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "No",
+        "사업자번호",
+        "회사명",
+        "가입일",
+        "가입상태",
+        "사용가능여부",
+        "요금제",
+        "자동이체",
+        "전자계약 추가용량",
+        "전자세금계산서",
+        "전자계약"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/companies",
+      "phase": "company-name-search",
+      "observedAt": "2026-11-09T06:21:06.076Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "No",
+        "회사명",
+        "사업자번호",
+        "블록체인 주소",
+        "가입일",
+        "포인트"
+      ],
+      "displayRows": 5,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/glosign-enterprise/companies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/companies/:orgSeq",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:21:06.119Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "No",
+        "회사명",
+        "사업자번호",
+        "블록체인 주소",
+        "가입일",
+        "포인트"
+      ],
+      "displayRows": 5,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/glosign-enterprise/companies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/company",
+      "phase": "company-name-search",
+      "observedAt": "2026-11-09T06:21:07.705Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-10-09"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-09"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "번호",
+        "사업자번호",
+        "회사명",
+        "가입일",
+        "가입상태",
+        "사용가능여부"
+      ],
+      "displayRows": 2,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/companies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/company/:id",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:21:07.735Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "번호",
+        "사업자번호",
+        "회사명",
+        "가입일",
+        "가입상태",
+        "사용가능여부"
+      ],
+      "displayRows": 2,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/companies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/member",
+      "phase": "company-name-search",
+      "observedAt": "2026-11-09T06:21:08.561Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회원 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "번호",
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "이메일",
+        "종류",
+        "상태",
+        "사업자번호",
+        "회사명"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/members",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/member/:id",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:21:08.622Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회원 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "번호",
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "이메일",
+        "종류",
+        "상태",
+        "사업자번호",
+        "회사명"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/members",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bond-service/drc-right",
+      "phase": "company-name-search",
+      "observedAt": "2026-11-09T06:21:09.693Z",
+      "routeMatched": true,
+      "headings": [
+        "채권잔액 확인 서비스담당자 권한 조회"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "회사명",
+        "사업자번호",
+        "대표자",
+        "주소"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-rights",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bond-service/drc-right/:comNo",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:21:09.737Z",
+      "routeMatched": true,
+      "headings": [
+        "채권잔액 확인 서비스담당자 권한 조회"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "회사명",
+        "사업자번호",
+        "대표자",
+        "주소"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-rights",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bond-service/drc-company-link",
+      "phase": "company-name-search",
+      "observedAt": "2026-11-09T06:21:10.363Z",
+      "routeMatched": true,
+      "headings": [
+        "채권잔액 확인 서비스연동업체 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "연동업체 등록",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "사업자번호",
+        "회사명",
+        "시스템",
+        "연동기간",
+        "라우팅설정(URL:Port)",
+        "사용여부"
+      ],
+      "displayRows": 3,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-company-links",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bond-service/drc-company-link/:comNo",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:21:10.405Z",
+      "routeMatched": true,
+      "headings": [
+        "채권잔액 확인 서비스연동업체 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "연동업체 등록",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "회사명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [
+        "사업자번호",
+        "회사명",
+        "시스템",
+        "연동기간",
+        "라우팅설정(URL:Port)",
+        "사용여부"
+      ],
+      "displayRows": 3,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-company-links",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/company-management/company-info/:companyKey/member-permissions",
+      "phase": "company-related-navigation",
+      "observedAt": "2026-11-09T06:21:11.355Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "접기",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": true
+        },
+        {
+          "name": "등록",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": true
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "접기",
+          "disabled": false
+        },
+        {
+          "name": "자동이체 이력 조회",
+          "disabled": false
+        },
+        {
+          "name": "회사 관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "전체 회원 조회",
+          "disabled": false
+        },
+        {
+          "name": "회원 권한 조회",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "전자세금계산서 발행 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "사업자 단위 과세 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "",
+        "요금제",
+        "종류",
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "핸드폰",
+        "이메일"
+      ],
+      "displayRows": 8,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [
+        "tab"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/company-management/company-info/:id/change-history",
+      "phase": "company-related-navigation",
+      "observedAt": "2026-11-09T06:21:11.672Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "접기",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": true
+        },
+        {
+          "name": "등록",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": true
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "접기",
+          "disabled": false
+        },
+        {
+          "name": "자동이체 이력 조회",
+          "disabled": false
+        },
+        {
+          "name": "회사 관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "전체 회원 조회",
+          "disabled": false
+        },
+        {
+          "name": "회원 권한 조회",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "전자세금계산서 발행 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "사업자 단위 과세 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "",
+        "요금제",
+        "종류",
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "핸드폰",
+        "이메일"
+      ],
+      "displayRows": 8,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/company/:companyId/members",
+      "phase": "company-related-navigation",
+      "observedAt": "2026-11-09T06:21:12.170Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "전체 회원 조회",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "종류",
+        "실명",
+        "아이디",
+        "연락처",
+        "핸드폰",
+        "이메일"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "등록된 관리자가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/company/:id/change-history",
+      "phase": "company-related-navigation",
+      "observedAt": "2026-11-09T06:21:15.755Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "전체 회원 조회",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "종류",
+        "실명",
+        "아이디",
+        "연락처",
+        "핸드폰",
+        "이메일"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "등록된 관리자가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    }
+  ]
+}

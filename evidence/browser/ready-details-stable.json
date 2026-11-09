@@ -1,0 +1,3584 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/customer-support/faq/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:50:48.039Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리FAQ"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/faqs/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/company-management/registration-inquiry/:uploadId",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:50:50.655Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리스마트빌 가입조회"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "업로드 일자",
+        "파일명",
+        "총업체수",
+        "가입 업체수",
+        "미가입 업체수",
+        "가입율",
+        "거래업체명",
+        "사업자번호",
+        "이메일",
+        "가입여부"
+      ],
+      "displayRows": 4,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/registration-inquiry/uploads/{uploadId}/companies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/hometax-dti/auth-key/:sbKey",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:50:53.273Z",
+      "routeMatched": true,
+      "headings": [
+        "홈택스 DTI 수집인증키 관리"
+      ],
+      "buttons": [
+        {
+          "name": "복사하기",
+          "disabled": false
+        },
+        {
+          "name": "선택",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "선택",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "이메일 파싱 사용 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "이메일 파싱 사용 종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "담당자명",
+        "이메일",
+        "연락처",
+        "사업자명",
+        "사업자 번호",
+        "인증서 만료일자"
+      ],
+      "displayRows": 6,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/sb-service/hometax-dti-installed/auth-keys/hub-vendors",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/sb-service/hometax-dti-installed/auth-keys/{sbKey}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bonabank/notices/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:50:55.889Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크공지사항 관리"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/notices/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/error-management/error-code-management/:errorCode",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:50:58.504Z",
+      "routeMatched": true,
+      "headings": [
+        "오류 관리오류 코드 관리"
+      ],
+      "buttons": [
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-operations/error-codes/processes",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-operations/error-codes/by-code/{errorCode}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/payment/deposit/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:01.918Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리예치금 관리"
+      ],
+      "buttons": [
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        },
+        {
+          "name": "입금 처리",
+          "disabled": false
+        },
+        {
+          "name": "소멸 처리",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "등록일시",
+        "구분",
+        "담당자",
+        "충전액",
+        "차감액",
+        "사용가능금액",
+        "ORDER-ID"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [
+        "prepayNo",
+        "comNo"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/prepayment/{businessNumber}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/notice/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:08.118Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리공지사항"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/notices/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/qna/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:10.734Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리1:1 문의"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "답글",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": true
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 2,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/qnas/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/pds/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:13.351Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리자료실"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/pds/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/web-resources/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:15.979Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)WEB 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:18.596Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)WEB 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/sap-resources/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:21.214Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)SAP 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:23.830Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)SAP 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:26.446Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:29.063Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:31.678Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)연동업체 소스 관리"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}/replies",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/company-management/company-info/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:34.294Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "접기",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": true
+        },
+        {
+          "name": "등록",
+          "disabled": false
+        },
+        {
+          "name": "등록",
+          "disabled": true
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "펼치기",
+          "disabled": false
+        },
+        {
+          "name": "접기",
+          "disabled": false
+        },
+        {
+          "name": "자동이체 이력 조회",
+          "disabled": false
+        },
+        {
+          "name": "회사 관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "전체 회원 조회",
+          "disabled": false
+        },
+        {
+          "name": "회원 권한 조회",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "전자세금계산서 발행 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "사업자 단위 과세 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "",
+        "요금제",
+        "종류",
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "핸드폰",
+        "이메일"
+      ],
+      "displayRows": 8,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/glosign-enterprise/companies/:orgSeq",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:36.911Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "탈퇴 처리",
+          "disabled": false
+        },
+        {
+          "name": "관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "회원명",
+        "이메일",
+        "가입일",
+        "회원 구분"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/glosign-enterprise/companies/{orgSeq}/summary",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/glosign-enterprise/companies/{orgSeq}/users",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bonabank/company/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:39.524Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "전체 회원 조회",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "종류",
+        "실명",
+        "아이디",
+        "연락처",
+        "핸드폰",
+        "이메일"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "등록된 관리자가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/companies/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bonabank/member/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:45.724Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회원 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회원정보 변경내역",
+          "disabled": false
+        },
+        {
+          "name": "기업관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": true
+        },
+        {
+          "name": "탈퇴처리",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "실명",
+          "placeholder": "실명을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 35,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "생년월일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "label": "이메일",
+          "placeholder": "이메일을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/members/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bond-service/drc-right/:comNo",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:48.347Z",
+      "routeMatched": true,
+      "headings": [
+        "채권잔액 확인 서비스담당자 권한 조회"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "실명/닉네임/아이디를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "실명",
+        "닉네임",
+        "아이디",
+        "이메일",
+        "채권잔액 확인서 사용 권한"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-rights/{comNo}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bond-service/drc-company-link/:comNo",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:50.961Z",
+      "routeMatched": true,
+      "headings": [
+        "채권잔액 확인 서비스연동업체 관리"
+      ],
+      "buttons": [
+        {
+          "name": "선택",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "연동 시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "선택된 허브업체 없음",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-company-links/hub-companies",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bond-service/drc-company-links/{comNo}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/company-management/company-info/:companyKey/member-permissions",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:53.577Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "권한 변경",
+          "disabled": false
+        },
+        {
+          "name": "변경",
+          "disabled": false
+        },
+        {
+          "name": "이전",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "실명/닉네임/아이디를 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "실명",
+        "닉네임",
+        "아이디",
+        "이메일",
+        "부서",
+        "가입일",
+        "권한 보기 권한 변경"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [
+        "tab"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info/{companyKey}/member-permissions",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/company-management/company-info/:id/change-history",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:56.191Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "이전",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "변경일시",
+        "변경 내역"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info/{companyId}/change-history",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bonabank/company/:companyId/members",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:51:58.808Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사 관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "이전",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "실명/닉네임/아이디를 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "이메일",
+        "이관",
+        "가입일",
+        "탈퇴일",
+        "휴면여부",
+        "탈퇴처리"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 결과가 존재하지 않습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info/{companyId}/members",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": [
+        "검색 결과가 존재하지 않습니다."
+      ]
+    },
+    {
+      "route": "/bonabank/company/:id/change-history",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:01.425Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "이전",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "변경일시",
+        "변경 내역"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info/{companyId}/change-history",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/faq/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:04.041Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리FAQ"
+      ],
+      "buttons": [
+        {
+          "name": "WYSIWYG 보기",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": true
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "<p>HTML 내용을 입력하세요</p>",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/faqs/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bonabank/notices/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:06.658Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크공지사항 관리"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 200,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/notices/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/notice/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:09.275Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리공지사항"
+      ],
+      "buttons": [
+        {
+          "name": "WYSIWYG 보기",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "취소",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": true
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "<p>HTML 내용을 입력하세요</p>",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/notices/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/qna/:id/reply",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:11.891Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리1:1 문의"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "분류",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/qnas/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/pds/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:14.509Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리자료실"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "WYSIWYG 보기",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "<p>HTML 내용을 입력하세요</p>",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/pds/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/web-resources/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:20.710Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)WEB 자료실수정"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:23.327Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)WEB 문의 가이드수정"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/sap-resources/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:25.942Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)SAP 자료실수정"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:28.558Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)SAP 문의 가이드수정"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:31.176Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 자료실수정"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:33.794Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 문의 가이드수정"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id/edit",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:36.413Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)연동업체 소스 관리수정"
+      ],
+      "buttons": [
+        {
+          "name": "기존 파일 삭제",
+          "disabled": false
+        },
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": true
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": true
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/payment/daily-deposit-inquiry/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:40.431Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리일별 예치금 조회"
+      ],
+      "buttons": [
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "등록일시",
+        "구분",
+        "담당자",
+        "충전액",
+        "차감액",
+        "사용가능금액",
+        "ORDER-ID"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [
+        "prepayNo",
+        "comNo"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/prepayment/{businessNumber}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/company-management/company-info/:companyId/members",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:43.050Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "회사 관리자 변경",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "실명/닉네임/아이디를 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "실명",
+        "닉네임",
+        "아이디",
+        "연락처",
+        "이메일",
+        "이관",
+        "가입일",
+        "탈퇴일",
+        "휴면여부",
+        "탈퇴처리"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/company-management/company-info/{companyId}/members",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/payment/refund-management/:refundNo",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:45.666Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리환불 관리"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "충전일자",
+        "충전금액",
+        "잔액",
+        "차감율",
+        "수수료",
+        "환불가능금액",
+        "일자",
+        "상태",
+        "내용",
+        "담당자"
+      ],
+      "displayRows": 9,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/deposits/refunds/{refundNo}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/tax-invoice/tax-invoice/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:49.686Z",
+      "routeMatched": true,
+      "headings": [
+        "전자세금계산서세금계산서 조회"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "월",
+        "일",
+        "품 목",
+        "규 격",
+        "수 량",
+        "단 가",
+        "공 급 가 액",
+        "세 액",
+        "비고",
+        "메일 구분",
+        "수신 이메일",
+        "발송상태",
+        "발송시간",
+        "리턴메세지",
+        "Index",
+        "경로",
+        "파일크기 (byte)",
+        "상태",
+        "업로드 시간",
+        "수정시간"
+      ],
+      "displayRows": 18,
+      "alerts": [],
+      "emptyMessages": [
+        "연동정보 없음 / ETAXBILL 발행",
+        "등록된 첨부파일이 없습니다.",
+        "이메일 발송 내역이 없습니다.",
+        "첨부파일 없음"
+      ],
+      "queryKeys": [
+        "wday"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/detail",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/manager-mapping",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 404
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/tax-invoice/tax-invoice/statement/:id",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:56.282Z",
+      "routeMatched": true,
+      "headings": [
+        "전자세금계산서세금계산서 조회"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "월",
+        "일",
+        "품 목",
+        "규 격",
+        "수 량",
+        "단 가",
+        "공 급 가 액",
+        "세 액",
+        "비고"
+      ],
+      "displayRows": 12,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/detail",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/bonabank/tax-invoice/:dtiIdx",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:52:59.500Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크세금계산서 조회"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "월",
+        "일",
+        "품 목",
+        "규 격",
+        "수 량",
+        "단 가",
+        "공 급 가 액",
+        "세 액",
+        "비고",
+        "메일 구분",
+        "수신 이메일",
+        "발송상태",
+        "발송시간",
+        "리턴메세지",
+        "Index",
+        "경로",
+        "파일크기 (byte)",
+        "상태",
+        "업로드 시간",
+        "수정시간"
+      ],
+      "displayRows": 18,
+      "alerts": [],
+      "emptyMessages": [
+        "이메일 발송 내역이 없습니다.",
+        "첨부파일 없음"
+      ],
+      "queryKeys": [
+        "wday"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/bonabank/tax-invoices/{dtiIdx}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/detail",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    },
+    {
+      "route": "/customer-support/qna",
+      "phase": "settled-detail-revisit",
+      "observedAt": "2026-11-09T06:53:02.124Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리1:1 문의"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "구분",
+        "분류",
+        "제목",
+        "작성자",
+        "작성일",
+        "조회수"
+      ],
+      "displayRows": 20,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/qnas",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "screenMessages": []
+    }
+  ]
+}

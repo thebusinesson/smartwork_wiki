@@ -1,0 +1,619 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/customer-support/faq/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:17.307Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리FAQ"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/bonabank/notices/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:17.589Z",
+      "routeMatched": true,
+      "headings": [
+        "보나뱅크공지사항 관리"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/notice/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:17.892Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리공지사항"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/qna/:id",
+      "phase": "edit-or-reply-gate",
+      "observedAt": "2026-11-09T06:21:18.163Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리1:1 문의"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "답글",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": true
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 2,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/qnas/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "unavailableAction": "수정"
+    },
+    {
+      "route": "/customer-support/qna/:id/reply",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:18.456Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리1:1 문의"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "답글",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": true
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 2,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/pds/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:18.740Z",
+      "routeMatched": true,
+      "headings": [
+        "고객 게시판 관리자료실"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/web-resources/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:19.041Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)WEB 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:19.322Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)WEB 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/sap-resources/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:19.606Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)SAP 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:19.890Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)SAP 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:20.174Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:20.457Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id/edit",
+      "phase": "edit-or-reply-navigation",
+      "observedAt": "2026-11-09T06:21:20.741Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)연동업체 소스 관리"
+      ],
+      "buttons": [
+        {
+          "name": "댓글 등록",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": false
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "댓글을 입력하세요",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 1000,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [],
+      "pendingRequests": 0
+    }
+  ]
+}

@@ -1,0 +1,825 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/customer-support/nsap-resources",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:15.957Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목+내용을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성자",
+        "작성일",
+        "파일",
+        "조회수"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:19:15.993Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 자료실"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": false
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목+내용을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성자",
+        "작성일",
+        "파일",
+        "조회수"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-resources/new",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:16.266Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 자료실등록"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:16.539Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목+내용을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성자",
+        "작성일",
+        "파일",
+        "조회수"
+      ],
+      "displayRows": 4,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:19:16.576Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 문의 가이드"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목+내용을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성자",
+        "작성일",
+        "파일",
+        "조회수"
+      ],
+      "displayRows": 4,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/new",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:16.847Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)NSAP 문의 가이드등록"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/vendor-source-management",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:17.116Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)연동업체 소스 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목+내용을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성자",
+        "작성일",
+        "파일",
+        "조회수"
+      ],
+      "displayRows": 4,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:19:17.159Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)연동업체 소스 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "작성",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "제목+내용을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "제목",
+        "작성자",
+        "작성일",
+        "파일",
+        "조회수"
+      ],
+      "displayRows": 4,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/spf-boards/{type}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/customer-support/vendor-source-management/new",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:17.428Z",
+      "routeMatched": true,
+      "headings": [
+        "서비스 플랫폼 관리(자료실)연동업체 소스 관리등록"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "HTML로 작성",
+          "disabled": false
+        },
+        {
+          "name": "저장",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "입력",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 50,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    }
+  ]
+}

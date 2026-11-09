@@ -1,0 +1,160 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/tax-invoice/tax-invoice/:id",
+      "phase": "detail-error-diagnostic",
+      "observedAt": "2026-11-09T06:57:26.635Z",
+      "routeMatched": true,
+      "headings": [
+        "전자세금계산서세금계산서 조회"
+      ],
+      "buttons": [
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [
+        "월",
+        "일",
+        "품 목",
+        "규 격",
+        "수 량",
+        "단 가",
+        "공 급 가 액",
+        "세 액",
+        "비고",
+        "메일 구분",
+        "수신 이메일",
+        "발송상태",
+        "발송시간",
+        "리턴메세지",
+        "Index",
+        "경로",
+        "파일크기 (byte)",
+        "상태",
+        "업로드 시간",
+        "수정시간"
+      ],
+      "displayRows": 18,
+      "alerts": [],
+      "emptyMessages": [
+        "연동정보 없음 / ETAXBILL 발행",
+        "등록된 첨부파일이 없습니다.",
+        "이메일 발송 내역이 없습니다.",
+        "첨부파일 없음"
+      ],
+      "queryKeys": [
+        "wday"
+      ],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/detail",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/manager-mapping",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 404
+        }
+      ],
+      "pendingRequests": 0,
+      "diagnosticNetwork": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/settings/notices/{value}",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{value}/detail",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{value}/detail",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{value}/manager-mapping",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{value}/seal",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "route": "/customer-support/qna/:id/edit",
+      "phase": "direct-edit-guard",
+      "observedAt": "2026-11-09T06:57:29.249Z",
+      "routeMatched": false,
+      "headings": [
+        "고객 게시판 관리1:1 문의"
+      ],
+      "buttons": [
+        {
+          "name": "HTML로 전환",
+          "disabled": false
+        },
+        {
+          "name": "답글",
+          "disabled": false
+        },
+        {
+          "name": "수정",
+          "disabled": true
+        },
+        {
+          "name": "삭제",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [],
+      "headers": [],
+      "displayRows": 2,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/support/qnas/{id}",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0,
+      "redirectedTo": "/customer-support/qna/:id"
+    }
+  ]
+}

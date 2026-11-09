@@ -1,0 +1,805 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/company-management/company-info",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:38.343Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "사업자번호",
+        "회사명",
+        "가입일",
+        "가입상태",
+        "사용가능여부",
+        "요금제",
+        "자동이체",
+        "전자계약 추가용량",
+        "전자세금계산서",
+        "전자계약"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 조건을 입력해 주세요."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/company-management/registration-inquiry",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:38.616Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리스마트빌 가입조회"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "업로드",
+          "disabled": true
+        },
+        {
+          "name": "샘플 다운로드",
+          "disabled": false
+        },
+        {
+          "name": "검색 필터 열기",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "업로드 일자",
+        "파일명",
+        "업체수",
+        "스마트빌 가입 확인"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/registration-inquiry/uploads",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/company-management/registration-inquiry/:uploadId",
+      "phase": "row-navigation",
+      "observedAt": "2026-11-09T06:18:38.645Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 회원·회사정보 관리스마트빌 가입조회"
+      ],
+      "buttons": [
+        {
+          "name": "파일 선택",
+          "disabled": false
+        },
+        {
+          "name": "업로드",
+          "disabled": true
+        },
+        {
+          "name": "샘플 다운로드",
+          "disabled": false
+        },
+        {
+          "name": "검색 필터 열기",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "label": "",
+          "placeholder": "파일을 선택하세요",
+          "disabled": false,
+          "readOnly": true,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "업로드 일자",
+        "파일명",
+        "업체수",
+        "스마트빌 가입 확인"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/registration-inquiry/uploads",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/smartbill-status/status",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:38.915Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 이용 현황가입 현황"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작월",
+          "placeholder": "YYYY-MM",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료월",
+          "placeholder": "YYYY-MM",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        }
+      ],
+      "headers": [
+        "가입일자",
+        "관리자수",
+        "담당자수",
+        "총 가입자수"
+      ],
+      "displayRows": 1,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/smartbill-status/members",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/smartbill-status/withdrawal-status",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:39.403Z",
+      "routeMatched": true,
+      "headings": [
+        "스마트빌 이용 현황탈퇴 현황"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작월",
+          "placeholder": "YYYY-MM",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료월",
+          "placeholder": "YYYY-MM",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        }
+      ],
+      "headers": [
+        "탈퇴월",
+        "총 탈퇴자 수"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "데이터가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/smartbill-status/withdrawal/members",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/members",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:39.672Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈회원 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "회사명",
+        "사업자번호",
+        "회원명",
+        "아이디",
+        "연락처",
+        "이메일",
+        "블록체인 주소",
+        "가입일",
+        "탈퇴일",
+        "검색허용"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 버튼을 눌러 데이터를 조회해 주세요."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/companies",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:39.940Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈회사 정보"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "No",
+        "회사명",
+        "사업자번호",
+        "블록체인 주소",
+        "가입일",
+        "포인트"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 버튼을 눌러 데이터를 조회해 주세요."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/status",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:40.210Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈비밀번호 초기화"
+      ],
+      "buttons": [
+        {
+          "name": "회사 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "개인 블록체인 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "회원 비밀번호 초기화",
+          "disabled": false
+        },
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "비밀번호 초기화",
+          "disabled": true
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "새 비밀번호를 입력해 주세요. (영문+숫자 6~12자)",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 12,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/glosign-enterprise/personal-password-reset",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:18:40.478Z",
+      "routeMatched": true,
+      "headings": [
+        "글로싸인 엔터프라이즈열람인증 초기화"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "수신자를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "이름 또는 이메일을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 100,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/glosign-enterprise/lock-reset",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    }
+  ]
+}

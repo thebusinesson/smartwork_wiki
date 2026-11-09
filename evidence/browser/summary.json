@@ -1,0 +1,2468 @@
+{
+  "sourceCommit": "dc216b313",
+  "checkedDate": "2026-11-09",
+  "totalRoutes": 134,
+  "observedRoutes": 122,
+  "readyRoutes": 122,
+  "routes": [
+    {
+      "route": "/company-management/company-info",
+      "document": "manuals/company-management/company-info.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-name-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/company-management/company-info/:companyId/members",
+      "document": "manuals/company-management/company-info__by-companyId__members.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/company-management/company-info/:companyKey/member-permissions",
+      "document": "manuals/company-management/company-info__by-companyKey__member-permissions.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-related-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/company-management/company-info/:id",
+      "document": "manuals/company-management/company-info__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "row-navigation",
+        "settled-detail-revisit",
+        "members-entry-check"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/remaining-stable.json"
+      ]
+    },
+    {
+      "route": "/company-management/company-info/:id/change-history",
+      "document": "manuals/company-management/company-info__by-id__change-history.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-related-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/company-management/registration-inquiry",
+      "document": "manuals/company-management/registration-inquiry.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "filter-open",
+        "filter-close",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/company-management/registration-inquiry/:uploadId",
+      "document": "manuals/company-management/registration-inquiry__by-uploadId.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-00.json"
+      ]
+    },
+    {
+      "route": "/smartbill-status/status",
+      "document": "manuals/smartbill-status/status.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/smartbill-status/withdrawal-status",
+      "document": "manuals/smartbill-status/withdrawal-status.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/glosign-enterprise/members",
+      "document": "manuals/glosign-enterprise/members.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/glosign-enterprise/companies",
+      "document": "manuals/glosign-enterprise/companies.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-name-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/glosign-enterprise/companies/:orgSeq",
+      "document": "manuals/glosign-enterprise/companies__by-orgSeq.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "row-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/glosign-enterprise/status",
+      "document": "manuals/glosign-enterprise/status.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "tab-switch",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/glosign-enterprise/personal-password-reset",
+      "document": "manuals/glosign-enterprise/personal-password-reset.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-00.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/tax-invoice/tax-invoice",
+      "document": "manuals/tax-invoice/tax-invoice.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/tax-invoice/tax-invoice/:id",
+      "document": "manuals/tax-invoice/tax-invoice__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "detail-error-diagnostic",
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/tax-invoices/{id}/seal",
+          "status": 404
+        }
+      ],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/diagnostics-stable.json",
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ],
+      "errorAttribution": "diagnostics-stable.json: 상세 본문 200, 별도 인감 이미지 404; 원인 미확정"
+    },
+    {
+      "route": "/tax-invoice/tax-invoice/statement/:id",
+      "document": "manuals/tax-invoice/tax-invoice__statement__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "same-observed-invoice-id-independent-statement-route"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/tax-invoice/legacy-tax-invoice",
+      "document": "manuals/tax-invoice/legacy-tax-invoice.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/tax-invoice/legacy-tax-invoice/:id",
+      "document": "manuals/tax-invoice/legacy-tax-invoice__by-id.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "검증 검색 조건에서 과거 문서 행을 확보하지 못함. 임의 ID로 조회하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/tax-invoice/legacy-tax-invoice/statement/:id",
+      "document": "manuals/tax-invoice/legacy-tax-invoice__statement__by-id.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "과거 문서 ID 미확보 및 일반 목록 진입과 독립 statement 경로 차이. 정상 대상·사용 여부 확인 필요.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/bond-service/bond-balance-inquiry",
+      "document": "manuals/bond-service/bond-balance-inquiry.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/bond-balance-inquiry/:drcNo",
+      "document": "manuals/bond-service/bond-balance-inquiry__by-drcNo.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/bond-service/drc-right",
+      "document": "manuals/bond-service/drc-right.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-name-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/drc-right/:comNo",
+      "document": "manuals/bond-service/drc-right__by-comNo.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "row-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/drc-company-link",
+      "document": "manuals/bond-service/drc-company-link.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-name-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/drc-company-link/:comNo",
+      "document": "manuals/bond-service/drc-company-link__by-comNo.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "row-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/drc-company-link/new",
+      "document": "manuals/bond-service/drc-company-link__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-00.json",
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/integration-log",
+      "document": "manuals/bond-service/integration-log.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/integration-partner-error",
+      "document": "manuals/bond-service/integration-partner-error.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-01.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/integration-partner-error/detail",
+      "document": "manuals/bond-service/integration-partner-error__detail.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/receivable-balance-transfer",
+      "document": "manuals/bond-service/receivable-balance-transfer.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/bond-service/receivable-balance-transfer/:conversationId",
+      "document": "manuals/bond-service/receivable-balance-transfer__by-conversationId.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/hometax-dti/monitoring",
+      "document": "manuals/hometax-dti/monitoring.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/auth-key",
+      "document": "manuals/hometax-dti/auth-key.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "registration-dialog-open",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/auth-key/:sbKey",
+      "document": "manuals/hometax-dti/auth-key__by-sbKey.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-02.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/error-logs",
+      "document": "manuals/hometax-dti/error-logs.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/certificate-status",
+      "document": "manuals/hometax-dti/certificate-status.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/certificate-expiry",
+      "document": "manuals/hometax-dti/certificate-expiry.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/login-failures",
+      "document": "manuals/hometax-dti/login-failures.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-02.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/hometax-dti/email-parsing",
+      "document": "manuals/hometax-dti/email-parsing.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/company",
+      "document": "manuals/bonabank/company.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-name-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/company/:companyId/members",
+      "document": "manuals/bonabank/company__by-companyId__members.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-related-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [
+        "검색 결과가 존재하지 않습니다."
+      ],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/company/:id",
+      "document": "manuals/bonabank/company__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "row-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/company/:id/change-history",
+      "document": "manuals/bonabank/company__by-id__change-history.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-related-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/member",
+      "document": "manuals/bonabank/member.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "company-name-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/member/:id",
+      "document": "manuals/bonabank/member__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "row-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/companies.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/tax-invoice",
+      "document": "manuals/bonabank/tax-invoice.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/tax-invoice/:dtiIdx",
+      "document": "manuals/bonabank/tax-invoice__by-dtiIdx.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "same-observed-invoice-alternate-entry",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/tax-invoice-statistics",
+      "document": "manuals/bonabank/tax-invoice-statistics.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "tab-switch",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/nts-failures",
+      "document": "manuals/bonabank/nts-failures.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/notices",
+      "document": "manuals/bonabank/notices.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-synthetic-empty-result",
+        "synthetic-no-match-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/extra-stable.json",
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/notices/:id",
+      "document": "manuals/bonabank/notices__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-03.json"
+      ]
+    },
+    {
+      "route": "/bonabank/notices/:id/edit",
+      "document": "manuals/bonabank/notices__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/bonabank/notices/new",
+      "document": "manuals/bonabank/notices__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-00.json",
+        "evidence/browser/settled-03.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/error-management/error-reports",
+      "document": "manuals/error-management/error-reports.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-search-table-target",
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/extra-stable.json",
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/error-management/error-reports/:id",
+      "document": "manuals/error-management/error-reports__by-id.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/error-management/error-reports/:id/process",
+      "document": "manuals/error-management/error-reports__by-id__process.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/error-management/error-reports/new",
+      "document": "manuals/error-management/error-reports__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-00.json",
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/error-management/error-code-management",
+      "document": "manuals/error-management/error-code-management.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/error-management/error-code-management/:errorCode",
+      "document": "manuals/error-management/error-code-management__by-errorCode.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-04.json"
+      ]
+    },
+    {
+      "route": "/error-management/error-code-management/new",
+      "document": "manuals/error-management/error-code-management__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-00.json",
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/source-management/source-management",
+      "document": "manuals/source-management/source-management.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-search-table-target",
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/extra-stable.json",
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/source-management/source-management/:id",
+      "document": "manuals/source-management/source-management__by-id.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/source-management/source-management/:id/edit",
+      "document": "manuals/source-management/source-management__by-id__edit.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/source-management/source-management/new",
+      "document": "manuals/source-management/source-management__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-00.json",
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/status",
+      "document": "manuals/payment/status.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/status/:id",
+      "document": "manuals/payment/status__by-id.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "목록·기간·회사명 조건에서 상세 진입 가능한 테스트 행을 확보하지 못함. 임의 ID 사용·데이터 생성은 하지 않음.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/payment/deposit",
+      "document": "manuals/payment/deposit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-04.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/deposit/:id",
+      "document": "manuals/payment/deposit__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-04.json"
+      ]
+    },
+    {
+      "route": "/payment/daily-deposit-inquiry",
+      "document": "manuals/payment/daily-deposit-inquiry.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/daily-deposit-inquiry/:id",
+      "document": "manuals/payment/daily-deposit-inquiry__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "same-entity-alternate-entry"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/remaining-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/bulk-account-deposit",
+      "document": "manuals/payment/bulk-account-deposit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "business-number-search",
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/bulk-account-deposit/:id",
+      "document": "manuals/payment/bulk-account-deposit__by-id.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "필수 업체 식별 조건으로 유효한 테스트 행을 확보하지 못함.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/payment/bank-transfer-cancel",
+      "document": "manuals/payment/bank-transfer-cancel.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/refund-management",
+      "document": "manuals/payment/refund-management.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "historical-date-search",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/refund-management/:refundNo",
+      "document": "manuals/payment/refund-management__by-refundNo.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/remaining-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/refund-management/inquiry",
+      "document": "manuals/payment/refund-management__inquiry.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/payment/refund-management/new",
+      "document": "manuals/payment/refund-management__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-company-lookup",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-00.json",
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/service-overview/unpaid-exception-manager",
+      "document": "manuals/service-overview/unpaid-exception-manager.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/monthly-usage",
+      "document": "manuals/statistics/monthly-usage.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-05.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/monthly-usage/daily-electronic-contract",
+      "document": "manuals/statistics/monthly-usage__daily-electronic-contract.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/monthly-usage/daily-tax-invoice",
+      "document": "manuals/statistics/monthly-usage__daily-tax-invoice.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/monthly-tax-invoice-usage",
+      "document": "manuals/statistics/monthly-tax-invoice-usage.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/monthly-tax-invoice-usage/daily",
+      "document": "manuals/statistics/monthly-tax-invoice-usage__daily.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/sales-purchases-usage",
+      "document": "manuals/statistics/sales-purchases-usage.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/statistics/daily-tax-invoice-aggregate",
+      "document": "manuals/statistics/daily-tax-invoice-aggregate.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/notice",
+      "document": "manuals/customer-support/notice.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/notice/:id",
+      "document": "manuals/customer-support/notice__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-06.json"
+      ]
+    },
+    {
+      "route": "/customer-support/notice/:id/edit",
+      "document": "manuals/customer-support/notice__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/notice/new",
+      "document": "manuals/customer-support/notice__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-01.json",
+        "evidence/browser/settled-06.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/faq",
+      "document": "manuals/customer-support/faq.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/faq/:id",
+      "document": "manuals/customer-support/faq__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-07.json"
+      ]
+    },
+    {
+      "route": "/customer-support/faq/:id/edit",
+      "document": "manuals/customer-support/faq__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/faq/new",
+      "document": "manuals/customer-support/faq__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-01.json",
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/qna",
+      "document": "manuals/customer-support/qna.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "direct-edit-entry-with-mutations-blocked",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/remaining-stable.json",
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/qna/:id",
+      "document": "manuals/customer-support/qna__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-gate",
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-07.json"
+      ]
+    },
+    {
+      "route": "/customer-support/qna/:id/edit",
+      "document": "manuals/customer-support/qna__by-id__edit.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "선택 게시물의 canEdit=false. 수정 버튼 비활성화와 URL 진입 시 상세 복귀를 확인했으나 편집 화면은 미재현.",
+      "phases": [
+        "direct-edit-guard"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/diagnostics-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/qna/:id/reply",
+      "document": "manuals/customer-support/qna__by-id__reply.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/qna/new",
+      "document": "manuals/customer-support/qna__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-01.json",
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/pds",
+      "document": "manuals/customer-support/pds.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/pds/:id",
+      "document": "manuals/customer-support/pds__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-07.json"
+      ]
+    },
+    {
+      "route": "/customer-support/pds/:id/edit",
+      "document": "manuals/customer-support/pds__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/pds/new",
+      "document": "manuals/customer-support/pds__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-01.json",
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/coupon",
+      "document": "manuals/customer-support/coupon.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "business-number-search",
+        "settled-initial",
+        "settled-static-recheck",
+        "test-company-search"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/final-flows-stable.json",
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json",
+        "evidence/browser/targeted-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/coupon/:couponNo",
+      "document": "manuals/customer-support/coupon__by-couponNo.md",
+      "status": "진입 미재현",
+      "ready": false,
+      "observed": false,
+      "reason": "필수 사업자번호 조건으로 유효한 테스트 쿠폰 행을 확보하지 못함.",
+      "phases": [],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": []
+    },
+    {
+      "route": "/customer-support/coupon-history",
+      "document": "manuals/customer-support/coupon-history.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-07.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-resources",
+      "document": "manuals/customer-support/web-resources.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-resources/:id",
+      "document": "manuals/customer-support/web-resources__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-08.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-resources/:id/edit",
+      "document": "manuals/customer-support/web-resources__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-resources/new",
+      "document": "manuals/customer-support/web-resources__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-01.json",
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide",
+      "document": "manuals/customer-support/web-inquiry-guide.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id",
+      "document": "manuals/customer-support/web-inquiry-guide__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-08.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id/edit",
+      "document": "manuals/customer-support/web-inquiry-guide__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/new",
+      "document": "manuals/customer-support/web-inquiry-guide__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-01.json",
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-resources",
+      "document": "manuals/customer-support/sap-resources.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-resources/:id",
+      "document": "manuals/customer-support/sap-resources__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-08.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-resources/:id/edit",
+      "document": "manuals/customer-support/sap-resources__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-resources/new",
+      "document": "manuals/customer-support/sap-resources__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-02.json",
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide",
+      "document": "manuals/customer-support/sap-inquiry-guide.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id",
+      "document": "manuals/customer-support/sap-inquiry-guide__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-08.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id/edit",
+      "document": "manuals/customer-support/sap-inquiry-guide__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/new",
+      "document": "manuals/customer-support/sap-inquiry-guide__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-02.json",
+        "evidence/browser/settled-08.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-resources",
+      "document": "manuals/customer-support/nsap-resources.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-09.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id",
+      "document": "manuals/customer-support/nsap-resources__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-09.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id/edit",
+      "document": "manuals/customer-support/nsap-resources__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-resources/new",
+      "document": "manuals/customer-support/nsap-resources__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-02.json",
+        "evidence/browser/settled-09.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide",
+      "document": "manuals/customer-support/nsap-inquiry-guide.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-09.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id",
+      "document": "manuals/customer-support/nsap-inquiry-guide__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-09.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id/edit",
+      "document": "manuals/customer-support/nsap-inquiry-guide__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/new",
+      "document": "manuals/customer-support/nsap-inquiry-guide__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-02.json",
+        "evidence/browser/settled-09.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/vendor-source-management",
+      "document": "manuals/customer-support/vendor-source-management.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/settled-09.json",
+        "evidence/browser/static-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id",
+      "document": "manuals/customer-support/vendor-source-management__by-id.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "settled-detail-revisit",
+        "row-navigation"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/ready-details-stable.json",
+        "evidence/browser/settled-09.json"
+      ]
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id/edit",
+      "document": "manuals/customer-support/vendor-source-management__by-id__edit.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "edit-or-reply-navigation",
+        "settled-detail-revisit"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/edits.json",
+        "evidence/browser/ready-details-stable.json"
+      ]
+    },
+    {
+      "route": "/customer-support/vendor-source-management/new",
+      "document": "manuals/customer-support/vendor-source-management__new.md",
+      "status": "화면 대조",
+      "ready": true,
+      "observed": true,
+      "reason": "",
+      "phases": [
+        "blank-input-validation",
+        "settled-initial",
+        "settled-static-recheck"
+      ],
+      "httpErrors": [],
+      "screenMessages": [],
+      "evidence": [
+        "evidence/browser/blank-02.json",
+        "evidence/browser/settled-09.json",
+        "evidence/browser/static-stable.json"
+      ]
+    }
+  ]
+}

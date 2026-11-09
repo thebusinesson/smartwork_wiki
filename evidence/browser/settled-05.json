@@ -1,0 +1,719 @@
+{
+  "environment": "local authentication enabled",
+  "sourceCommit": "dc216b313",
+  "records": [
+    {
+      "route": "/payment/daily-deposit-inquiry",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:01.212Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리일별 예치금 조회"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-02"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-09"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "발생일",
+        "회사명",
+        "사업자번호",
+        "이월액",
+        "충전액",
+        "사용액",
+        "사용가능 금액",
+        "구분",
+        "내역",
+        "입금자"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 결과가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/payment/bulk-account-deposit",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:01.483Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리벌크식계좌 입금 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-02"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-09"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "업체 조건을 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "입금일",
+        "회사명",
+        "사업자번호",
+        "은행",
+        "계좌번호",
+        "입금액",
+        "처리상태",
+        "처리금액",
+        "청구구분"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "데이터가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/deposits/bulk-account",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/payment/bank-transfer-cancel",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:01.753Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리무통장입금 취소내역 조회"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-10-01"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-30"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "취소일",
+        "Order_ID",
+        "회사명",
+        "사업자번호",
+        "요금제",
+        "취소금액",
+        "취소자",
+        "세금계산서 IDX"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "데이터가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/deposits/non-bankbook/cancellations",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/payment/refund-management",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:02.021Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리환불 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "환불 가능 금액 조회",
+          "disabled": false
+        },
+        {
+          "name": "환불 신규 등록",
+          "disabled": false
+        },
+        {
+          "name": "다운로드",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-02"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료일",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-09"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "환불신청번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "환불신청일",
+        "회사명",
+        "사업자번호",
+        "환불요청금액",
+        "서류접수일",
+        "상태",
+        "환불완료일"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 결과가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/deposits/refunds",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/payment/refund-management/inquiry",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:02.498Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리환불 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "초기화",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "YYYY-MM-DD",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 10,
+          "hasValue": true,
+          "defaultDate": "2026-11-09"
+        }
+      ],
+      "headers": [
+        "충전일자",
+        "충전금액",
+        "잔액",
+        "환불신청일",
+        "차감율",
+        "수수료",
+        "환불가능금액"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 결과가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/refunds/available-amount",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/payment/refund-management/new",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:02.766Z",
+      "routeMatched": true,
+      "headings": [
+        "입금관리환불 관리등록"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "목록",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/service-overview/unpaid-exception-manager",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:03.034Z",
+      "routeMatched": true,
+      "headings": [
+        "미납 예외업체 관리미납 예외업체 관리"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        },
+        {
+          "name": "미납 예외 신규 등록",
+          "disabled": false
+        },
+        {
+          "name": "처음",
+          "disabled": true
+        },
+        {
+          "name": "이전",
+          "disabled": true
+        },
+        {
+          "name": "다음",
+          "disabled": true
+        },
+        {
+          "name": "마지막",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작월",
+          "placeholder": "예외 기간을 선택하세요.",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료월",
+          "placeholder": "예외 기간을 선택하세요.",
+          "disabled": true,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": false
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "label": "",
+          "placeholder": "",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "",
+          "placeholder": "사업자번호를 입력하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "hasValue": false
+        }
+      ],
+      "headers": [
+        "회사명",
+        "사업자번호",
+        "기간"
+      ],
+      "displayRows": 10,
+      "alerts": [],
+      "emptyMessages": [],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/service-status/unpaid-exceptions",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    },
+    {
+      "route": "/statistics/monthly-usage",
+      "phase": "settled-initial",
+      "observedAt": "2026-11-09T06:19:03.301Z",
+      "routeMatched": true,
+      "headings": [
+        "통계 정보월별 이용 현황 (세금, 계약)"
+      ],
+      "buttons": [
+        {
+          "name": "검색",
+          "disabled": false
+        }
+      ],
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "시작월",
+          "placeholder": "이용월을 선택하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "label": "종료월",
+          "placeholder": "이용월을 선택하세요.",
+          "disabled": false,
+          "readOnly": false,
+          "required": false,
+          "maxLength": 7,
+          "hasValue": true,
+          "defaultDate": "2026-11"
+        }
+      ],
+      "headers": [
+        "월",
+        "누적가입자수",
+        "세금계산서",
+        "전자계약",
+        "합계",
+        "일반세금계산서",
+        "지로일반세금계산서",
+        "이용업체수",
+        "이용건수",
+        "발행건수",
+        "발행업체수",
+        "발행건수",
+        "발행업체수",
+        "발행건수"
+      ],
+      "displayRows": 0,
+      "alerts": [],
+      "emptyMessages": [
+        "검색 결과가 없습니다."
+      ],
+      "queryKeys": [],
+      "horizontalOverflow": false,
+      "loginVisible": false,
+      "network": [
+        {
+          "method": "GET",
+          "endpoint": "[미분류 조회 API]",
+          "status": 200
+        }
+      ],
+      "pendingRequests": 0
+    }
+  ]
+}

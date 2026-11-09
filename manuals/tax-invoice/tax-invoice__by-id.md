@@ -1,6 +1,6 @@
 # [SB 서비스관리] 세금계산서 조회 (상세) 관리자 매뉴얼
 
-작성 기준: `dc216b313` · 확인일 2026-11-09 · 조사 상태 **검토 대기**. 코드와 개발 DB 정의를 확인했으며 실제 화면·업무 실행은 미재현이다.
+작성 기준: `dc216b313` · 확인일 2026-11-09 · 조사 상태 **검토 대기**. 코드·개발 DB 정의 확인. 브라우저: **화면 대조**; 저장·발송 등 업무 실행 결과는 미검증이다.
 
 ## 1) 화면 기본 정보
 
@@ -53,6 +53,8 @@ WBS 근거: No. 43, 44, 45, 46, 47 (사용자가 제공한 텍스트 행 69, 70,
 
 ## 5) API·DB·연계
 
+**인감 이미지**: [조회 계약](../../references/api-contracts.md#api277)은 `id`와 `wday`를 받아 문서 헤더의 COM_SEAL과 `storage.comseal` 파일을 읽는다. 인감 조회 서비스 자체는 업무 데이터·파일을 변경하지 않으며 공통 요청 감사 기록은 별도다. 파일·문서 부재의 404와 상세 본문 조회 결과를 구분한다.
+
 | 작업 | API·권한 | 입력 → 결과 | 데이터 원천·변경 영향 |
 |---|---|---|---|
 | 세금계산서 상세 조회 | [GET /api/v1/tax-invoices/{id}/detail](../../references/api-contracts.md#api161); `/tax-invoice/tax-invoice` / `VIEW` | `경로·쿼리·본문 계약 참조` → `invoice, xmlDownloadAvailable, buyType, contactInfo, issuanceInfo, emailHistory, attachmentInfo, attachmentHistory, documentHistory, multiLinkInfo, linkedStatement, currentAttachme` | Mapper 프로시저의 정적 테이블 쓰기 미검출; 동적 SQL의 런타임 대상은 미확정 |
@@ -96,6 +98,8 @@ WBS 근거: No. 43, 44, 45, 46, 47 (사용자가 제공한 텍스트 행 69, 70,
 
 ## 6) 예외 상황과 운영 확인
 
+**브라우저 대조**: 상세 본문 API는 200, 별도 인감 이미지 조회는 404를 관찰했다. 본문 조회 실패와 인감 표시 실패를 구분한다. 인감 파일명·공유 저장소 마운트·파일 존재·읽기 권한과 문서 ID/작성일을 기술 담당자가 확인한다. 원인은 미확정이다.
+
 | 상황 | 확인할 항목 | 관리자 대응·문의에 필요한 정보 |
 |---|---|---|
 | 문서히스토리가 없습니다. | [문구·처리 코드](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/TaxInvoiceDetailPage.tsx#L604); 현재 조건·대상·권한 확인 | 검색·조회 오류면 조건을 확인 후 재조회. 변경·발송 결과가 불명확하면 처리 여부와 이력을 확인한 뒤 재시도 여부를 판단한다. |
@@ -105,13 +109,17 @@ WBS 근거: No. 43, 44, 45, 46, 47 (사용자가 제공한 텍스트 행 69, 70,
 
 ## 7) 검증·출처
 
+**브라우저 검증(2026-11-09)**: 화면 대조. [경로별 결과와 제한](../../references/browser-verification.md#page016). 역할별 권한 거부·저장 성공·파일 반출·외부 연계 완료는 이 결과로 보장하지 않는다.
+
 | 검증 항목 | 근거·환경 | 상태·확인일 |
 |---|---|---|
 | 대상 선정 | 사용자가 WBS 탭 내용으로 제공한 텍스트의 No. 43, 44, 45, 46, 47; [선정 태스크](../../inventory/wbs-tasks.csv) | 제공 텍스트 확인 2026-11-09. 원본 Excel의 탭/병합 셀을 독립 재열람한 것은 아님. |
 | 메뉴·라우트·화면 | [menuConfig.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/menuConfig.ts); [TaxInvoiceRoutes.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx); [TaxInvoiceDetailPage.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/TaxInvoiceDetailPage.tsx) | 코드 확인 2026-11-09, 기준 dc216b313 |
-| 기능·권한·API | 이 문서의 API 계약 링크 및 연결 Hook/API·Controller·DTO·Service·Repository·Mapper | 코드 확인 2026-11-09. 요청 실행·권한 계정별 재현은 미확인. |
+| 기능·권한·API | 이 문서의 API 계약 링크 및 연결 Hook/API·Controller·DTO·Service·Repository·Mapper | 코드 확인 2026-11-09. 조회 요청·화면 대조 범위는 아래 브라우저 근거 참조. 권한 계정별 허용·거부 및 변경 요청 실행은 미확인. |
 | DB 정의 | [개발 DB 계약](../../references/database-contracts.md), 이 문서의 연결 객체 | 개발 DB 정의 확인 2026-11-09. 동적 SQL·CLR 내부·정의 미공개 참조의 미확정 범위는 객체별 기록; 후속 확인 DB 담당. |
-| 브라우저 화면·배포 환경 | 실제 검증 계정의 정상·빈 결과·권한 부족·입력 오류 및 현재 배포본 | 미확인: 브라우저 실행 검증을 수행하지 않음. 배포 전 업무 담당·QA·기술 담당 확인. |
-| 업무 프로시저·쓰기·외부 결과 | 격리된 검증 환경·테스트 데이터의 실행 결과 | 미확인: 공유 개발 DB의 업무 프로시저·쓰기·발송을 실행하지 않음. 격리 환경에서 기술 담당 확인. |
+| 브라우저 화면·배포 환경 | 로컬 인증 계정·Playwright CLI; [화면별 검증표](../../references/browser-verification.md#page016) | 화면 대조, 2026-11-09. 배포본·타 역할·업무 변경 결과는 미확인. |
+| 업무 프로시저·쓰기·외부 결과 | 격리된 검증 환경·테스트 데이터의 실행 결과 | 미확인: 명시적인 저장·삭제·발송·초기화 요청은 실행하지 않음. 브라우저 GET의 업무 조회 프로시저·조회수·감사 기록은 별도 영향으로 구분. 격리 환경에서 기술 담당 확인. |
 
 코드 확인과 DB 정의 확인은 실행 성공·업무 승인·다른 환경 적용을 보장하지 않는다. 업무·기술 담당 검토 후 조사 목록의 상태를 완료로 변경한다.
+
+브라우저 직접 근거: [row-navigation](../../evidence/browser/targeted-stable.json). 경로·고정 버튼명·입력 속성·표 머리글·API 상태를 보관했고 실제 데이터 값·식별자·인증정보는 제외했다.
