@@ -20,6 +20,8 @@
 
 설명 근거: [BonabankNtsFailureListPage.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/bonabank/BonabankNtsFailureListPage.tsx), 이 문서 4·5·7번의 항목·API·업무 규칙. [상위 업무 영역](../../references/domain-overview.md#bonabank)은 공통 배경이며 현재 화면의 데이터·동작은 위 설명을 따른다. 설명 수정일 **2026-11-10**; 새 업무 실행 검증을 수행한 것은 아니다.
 
+**WBS 명칭 대조**: 보나뱅크 하위 WBS No.146·147의 원문은 `국세청 전송 조회`이고 현재 메뉴·구현은 `국세청 신고 실패 조회`다. 현재 페이지는 실패 내역을 다루며 전체 전송 건을 모두 조회하는 페이지라고 확대 설명하지 않는다. 원문 의도와의 업무상 대응 확정은 보나뱅크 담당 확인 대상이다.
+
 ### 화면 정보
 
 | 항목 | 작성 내용 |

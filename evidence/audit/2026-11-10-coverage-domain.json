@@ -1,0 +1,2827 @@
+{
+  "verificationDate": "2026-11-10",
+  "sourceCommit": "dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc",
+  "wikiBaseCommit": "e8f8e2b",
+  "scope": "사용자 제공 WBS 탭 원문에서 유지윤 담당 태스크에 대응하는 메뉴와 독립 경로",
+  "rawWbsTextSha256": "907a8a13484dab10bdd062cdccec221ac7330b9bc91f98774de6a2d984c6f147",
+  "counts": {
+    "ownerRowsInProvidedText": 105,
+    "tasks": 105,
+    "menuScopes": 56,
+    "registeredTargetRoutes": 134,
+    "pageManuals": 134,
+    "missingManuals": 0,
+    "staleRouteManuals": 0,
+    "routeComponentMatches": 134,
+    "explicitBoardTypeMatches": 28,
+    "correctedPageDocuments": 18,
+    "configuredMenuEntriesIncludingChildEntry": 57
+  },
+  "missingRoutes": [],
+  "staleRoutes": [],
+  "openItems": [
+    {
+      "id": "F8",
+      "kind": "implementation gap",
+      "detail": "오류 접수 메일요청 UI 입력은 현재 등록 POST/DTO로 전달되지 않음. 문서에는 전달·발송을 보장하지 않는다고 명시.",
+      "owner": "오류 관리 FE/API 담당"
+    },
+    {
+      "id": "F9",
+      "kind": "business naming mapping",
+      "detail": "보나뱅크 WBS No.146·147 국세청 전송 조회 ↔ 현재 국세청 신고 실패 조회의 업무 대응 확정 필요.",
+      "owner": "보나뱅크 업무 담당"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/company-management/company-info",
+      "manual": "manuals/company-management/company-info.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 59,
+      "component": "CompanyInfoPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/CompanyInfoPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회사 정보",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/company-management/company-info/:companyId/members",
+      "manual": "manuals/company-management/company-info__by-companyId__members.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 62,
+      "component": "CompanyMembersPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/CompanyMembersPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회사 정보",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": "F2 회사 회원의 관리자 변경·탈퇴 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/company-management/company-info/:companyKey/member-permissions",
+      "manual": "manuals/company-management/company-info__by-companyKey__member-permissions.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 63,
+      "component": "MemberPermissionsPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/MemberPermissionsPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회사 정보",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/company-management/company-info/:id",
+      "manual": "manuals/company-management/company-info__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 60,
+      "component": "CompanyInfoDetailPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/CompanyInfoDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회사 정보",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/company-management/company-info/:id/change-history",
+      "manual": "manuals/company-management/company-info__by-id__change-history.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 61,
+      "component": "CompanyChangeHistoryPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/CompanyChangeHistoryPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 회사 정보",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/company-management/registration-inquiry",
+      "manual": "manuals/company-management/registration-inquiry.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 64,
+      "component": "RegistrationInquiryListPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/RegistrationInquiryListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 스마트빌 가입조회",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "25"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/company-management/registration-inquiry/:uploadId",
+      "manual": "manuals/company-management/registration-inquiry__by-uploadId.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 65,
+      "component": "RegistrationInquiryDetailPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/RegistrationInquiryDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 회원·회사정보 관리 > 스마트빌 가입조회",
+      "businessDomain": "스마트빌 회사·회원 관리",
+      "wbsNos": [
+        "25"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/smartbill-status/status",
+      "manual": "manuals/smartbill-status/status.md",
+      "routeSource": "frontend/src/app/routes/domains/SmartbillStatusRoutes.tsx",
+      "routeLine": 7,
+      "component": "SmartbillStatusPage",
+      "componentSource": "frontend/src/feature/customer/smartbillstatus/SmartbillStatusPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 이용 현황 > 가입 현황",
+      "businessDomain": "스마트빌 가입·탈퇴 현황",
+      "wbsNos": [
+        "33",
+        "35"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/smartbill-status/withdrawal-status",
+      "manual": "manuals/smartbill-status/withdrawal-status.md",
+      "routeSource": "frontend/src/app/routes/domains/SmartbillStatusRoutes.tsx",
+      "routeLine": 8,
+      "component": "AccountWithdrawalListPage",
+      "componentSource": "frontend/src/feature/customer/smartbillstatus/AccountWithdrawalListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 스마트빌 이용 현황 > 탈퇴 현황",
+      "businessDomain": "스마트빌 가입·탈퇴 현황",
+      "wbsNos": [
+        "34",
+        "36"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/glosign-enterprise/members",
+      "manual": "manuals/glosign-enterprise/members.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 35,
+      "component": "GlosignEnterpriseMemberListPage",
+      "componentSource": "frontend/src/feature/customer/glosign/GlosignEnterpriseMemberListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 글로싸인 엔터프라이즈 > 회원 정보",
+      "businessDomain": "글로싸인 엔터프라이즈 고객·인증 관리",
+      "wbsNos": [
+        "37"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/glosign-enterprise/companies",
+      "manual": "manuals/glosign-enterprise/companies.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 34,
+      "component": "GlosignEnterpriseCompanyListPage",
+      "componentSource": "frontend/src/feature/customer/glosign/GlosignEnterpriseCompanyListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 글로싸인 엔터프라이즈 > 회사 정보",
+      "businessDomain": "글로싸인 엔터프라이즈 고객·인증 관리",
+      "wbsNos": [
+        "38",
+        "39"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/glosign-enterprise/companies/:orgSeq",
+      "manual": "manuals/glosign-enterprise/companies__by-orgSeq.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 37,
+      "component": "AllMemberInformation",
+      "componentSource": "frontend/src/feature/customer/glosign/AllMemberInformation.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 글로싸인 엔터프라이즈 > 회사 정보",
+      "businessDomain": "글로싸인 엔터프라이즈 고객·인증 관리",
+      "wbsNos": [
+        "38",
+        "39"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": "F3 글로싸인 소속 회원의 관리자 변경·탈퇴 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/glosign-enterprise/status",
+      "manual": "manuals/glosign-enterprise/status.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 38,
+      "component": "BlockchainPasswordResetPage",
+      "componentSource": "frontend/src/feature/customer/glosign/BlockchainPasswordResetPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 글로싸인 엔터프라이즈 > 비밀번호 초기화",
+      "businessDomain": "글로싸인 엔터프라이즈 고객·인증 관리",
+      "wbsNos": [
+        "40",
+        "41"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/glosign-enterprise/personal-password-reset",
+      "manual": "manuals/glosign-enterprise/personal-password-reset.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerRoutes.tsx",
+      "routeLine": 36,
+      "component": "ViewAuthenticationResetPage",
+      "componentSource": "frontend/src/feature/customer/glosign/ViewAuthenticationResetPage.tsx",
+      "routeProps": {},
+      "menu": "SB 고객관리 > 글로싸인 엔터프라이즈 > 열람인증 초기화",
+      "businessDomain": "글로싸인 엔터프라이즈 고객·인증 관리",
+      "wbsNos": [
+        "42"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/tax-invoice/tax-invoice",
+      "manual": "manuals/tax-invoice/tax-invoice.md",
+      "routeSource": "frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx",
+      "routeLine": 44,
+      "component": "TaxInvoiceListPage",
+      "componentSource": "frontend/src/feature/service/taxinvoice/TaxInvoiceListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 전자세금계산서 > 세금계산서 조회",
+      "businessDomain": "전자세금계산서·거래명세서 운영",
+      "wbsNos": [
+        "43",
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": "F5 목록의 일괄 메일 발송 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/tax-invoice/tax-invoice/:id",
+      "manual": "manuals/tax-invoice/tax-invoice__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx",
+      "routeLine": 54,
+      "component": "TaxInvoiceDetailPage",
+      "componentSource": "frontend/src/feature/service/taxinvoice/TaxInvoiceDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 전자세금계산서 > 세금계산서 조회",
+      "businessDomain": "전자세금계산서·거래명세서 운영",
+      "wbsNos": [
+        "43",
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/tax-invoice/tax-invoice/statement/:id",
+      "manual": "manuals/tax-invoice/tax-invoice__statement__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx",
+      "routeLine": 55,
+      "component": "StatementDetailPage",
+      "componentSource": "frontend/src/feature/service/taxinvoice/StatementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 전자세금계산서 > 세금계산서 조회",
+      "businessDomain": "전자세금계산서·거래명세서 운영",
+      "wbsNos": [
+        "43",
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/tax-invoice/legacy-tax-invoice",
+      "manual": "manuals/tax-invoice/legacy-tax-invoice.md",
+      "routeSource": "frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx",
+      "routeLine": 45,
+      "component": "LegacyTaxInvoiceListPage",
+      "componentSource": "frontend/src/feature/service/taxinvoice/LegacyTaxInvoiceListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 전자세금계산서 > 과거 세금계산서 조회",
+      "businessDomain": "전자세금계산서·거래명세서 운영",
+      "wbsNos": [
+        "48"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": "F5 목록의 일괄 메일 발송 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/tax-invoice/legacy-tax-invoice/:id",
+      "manual": "manuals/tax-invoice/legacy-tax-invoice__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx",
+      "routeLine": 56,
+      "component": "LegacyTaxInvoiceDetailPage",
+      "componentSource": "frontend/src/feature/service/taxinvoice/LegacyTaxInvoiceDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 전자세금계산서 > 과거 세금계산서 조회",
+      "businessDomain": "전자세금계산서·거래명세서 운영",
+      "wbsNos": [
+        "48"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/tax-invoice/legacy-tax-invoice/statement/:id",
+      "manual": "manuals/tax-invoice/legacy-tax-invoice__statement__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx",
+      "routeLine": 57,
+      "component": "LegacyStatementDetailPage",
+      "componentSource": "frontend/src/feature/service/taxinvoice/LegacyStatementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 전자세금계산서 > 과거 세금계산서 조회",
+      "businessDomain": "전자세금계산서·거래명세서 운영",
+      "wbsNos": [
+        "48"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/bond-balance-inquiry",
+      "manual": "manuals/bond-service/bond-balance-inquiry.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 17,
+      "component": "BondBalanceInquiryPage",
+      "componentSource": "frontend/src/feature/service/bondservice/BondBalanceInquiryPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 채권잔액 확인서 조회",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "109"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/bond-balance-inquiry/:drcNo",
+      "manual": "manuals/bond-service/bond-balance-inquiry__by-drcNo.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 26,
+      "component": "BondBalanceInquiryDetail",
+      "componentSource": "frontend/src/feature/service/bondservice/BondBalanceInquiryDetail.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 채권잔액 확인서 조회",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "109"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/drc-right",
+      "manual": "manuals/bond-service/drc-right.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 18,
+      "component": "DrcRightListPage",
+      "componentSource": "frontend/src/feature/service/bondservice/DrcRightListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 담당자 권한 조회",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "110"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/drc-right/:comNo",
+      "manual": "manuals/bond-service/drc-right__by-comNo.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 27,
+      "component": "DrcRightDetailPage",
+      "componentSource": "frontend/src/feature/service/bondservice/DrcRightDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 담당자 권한 조회",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "110"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/drc-company-link",
+      "manual": "manuals/bond-service/drc-company-link.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 19,
+      "component": "DrcCompanyLinkListPage",
+      "componentSource": "frontend/src/feature/service/bondservice/DrcCompanyLinkListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 연동업체 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "111",
+        "112",
+        "113"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/drc-company-link/:comNo",
+      "manual": "manuals/bond-service/drc-company-link__by-comNo.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 28,
+      "component": "DrcCompanyLinkWritePage",
+      "componentSource": "frontend/src/feature/service/bondservice/DrcCompanyLinkWritePage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 연동업체 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "111",
+        "112",
+        "113"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/drc-company-link/new",
+      "manual": "manuals/bond-service/drc-company-link__new.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 20,
+      "component": "DrcCompanyLinkWritePage",
+      "componentSource": "frontend/src/feature/service/bondservice/DrcCompanyLinkWritePage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 연동업체 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "111",
+        "112",
+        "113"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/integration-log",
+      "manual": "manuals/bond-service/integration-log.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 21,
+      "component": "DrcLogListPage",
+      "componentSource": "frontend/src/feature/service/bondservice/DrcLogListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 연동 로그 조회",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "114",
+        "115"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/integration-partner-error",
+      "manual": "manuals/bond-service/integration-partner-error.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 22,
+      "component": "IntegrationPartnerErrorPage",
+      "componentSource": "frontend/src/feature/service/bondservice/IntegrationPartnerErrorPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 연동업체 장애 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "116"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/integration-partner-error/detail",
+      "manual": "manuals/bond-service/integration-partner-error__detail.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 23,
+      "component": "IntegrationPartnerErrorRegist",
+      "componentSource": "frontend/src/feature/service/bondservice/IntegrationPartnerErrorRegist.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 연동업체 장애 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "116"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/receivable-balance-transfer",
+      "manual": "manuals/bond-service/receivable-balance-transfer.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 24,
+      "component": "ReceivableBalanceTransferPage",
+      "componentSource": "frontend/src/feature/service/bondservice/ReceivableBalanceTransferPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 채권잔액 전송 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "117",
+        "118"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bond-service/receivable-balance-transfer/:conversationId",
+      "manual": "manuals/bond-service/receivable-balance-transfer__by-conversationId.md",
+      "routeSource": "frontend/src/app/routes/domains/BondServiceRoutes.tsx",
+      "routeLine": 29,
+      "component": "ReceivableBalanceTransferDetail",
+      "componentSource": "frontend/src/feature/service/bondservice/ReceivableBalanceTransferDetail.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 채권잔액 확인 서비스 > 채권잔액 전송 관리",
+      "businessDomain": "채권잔액 확인 서비스",
+      "wbsNos": [
+        "117",
+        "118"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/monitoring",
+      "manual": "manuals/hometax-dti/monitoring.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 15,
+      "component": "EseroMonitoringPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/EseroMonitoringPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 모니터링",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "123"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/auth-key",
+      "manual": "manuals/hometax-dti/auth-key.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 16,
+      "component": "AuthKeyManagementPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/AuthKeyManagementPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 인증키 관리",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "124",
+        "125"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/auth-key/:sbKey",
+      "manual": "manuals/hometax-dti/auth-key__by-sbKey.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 17,
+      "component": "AuthKeyDetailPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/AuthKeyDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 인증키 관리",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "124",
+        "125"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/error-logs",
+      "manual": "manuals/hometax-dti/error-logs.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 18,
+      "component": "HometaxErrorLogsPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/HometaxErrorLogsPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 오류 로그 조회",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "126",
+        "127"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/certificate-status",
+      "manual": "manuals/hometax-dti/certificate-status.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 20,
+      "component": "CertificateRegistrationStatusPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/CertificateRegistrationStatusPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 인증서 등록 현황 조회",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "128"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/certificate-expiry",
+      "manual": "manuals/hometax-dti/certificate-expiry.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 19,
+      "component": "CertificateExpiryPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/CertificateExpiryPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 인증서 만료일 관리",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "129"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/login-failures",
+      "manual": "manuals/hometax-dti/login-failures.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 21,
+      "component": "CertificateLoginFailuresPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/CertificateLoginFailuresPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 인증서 로그인 실패 조회",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "130"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/hometax-dti/email-parsing",
+      "manual": "manuals/hometax-dti/email-parsing.md",
+      "routeSource": "frontend/src/app/routes/domains/HometaxDtiRoutes.tsx",
+      "routeLine": 22,
+      "component": "EmailParsingMonitoringPage",
+      "componentSource": "frontend/src/feature/service/hometaxdti/EmailParsingMonitoringPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 홈택스 DTI 수집 > 이메일파싱 모니터링",
+      "businessDomain": "설치형 홈택스 세금계산서 수집",
+      "wbsNos": [
+        "131"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/company",
+      "manual": "manuals/bonabank/company.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 27,
+      "component": "BonabankCompanyListPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankCompanyListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 회사 정보",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "138",
+        "139"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/company/:companyId/members",
+      "manual": "manuals/bonabank/company__by-companyId__members.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 30,
+      "component": "CompanyMembersPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/CompanyMembersPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 회사 정보",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "138",
+        "139"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": "F2 회사 회원의 관리자 변경·탈퇴 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/company/:id",
+      "manual": "manuals/bonabank/company__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 28,
+      "component": "BonabankCompanyDetailPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankCompanyDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 회사 정보",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "138",
+        "139"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/company/:id/change-history",
+      "manual": "manuals/bonabank/company__by-id__change-history.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 29,
+      "component": "CompanyChangeHistoryPage",
+      "componentSource": "frontend/src/feature/customer/company/pages/CompanyChangeHistoryPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 회사 정보",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "138",
+        "139"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": "F7 보나뱅크 이력의 공통 API·권한 경로 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/member",
+      "manual": "manuals/bonabank/member.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 31,
+      "component": "BonabankMemberListPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankMemberListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 회원 정보",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "140",
+        "141"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/member/:id",
+      "manual": "manuals/bonabank/member__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 32,
+      "component": "BonabankMemberDetailPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankMemberDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 회원 정보",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "140",
+        "141"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": "F4 회원 프로필 외 기업관리자 변경·탈퇴 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/tax-invoice",
+      "manual": "manuals/bonabank/tax-invoice.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 33,
+      "component": "BonabankTaxInvoiceListPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankTaxInvoiceListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 세금계산서 조회",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "142",
+        "143"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": "F5 목록의 일괄 메일 발송 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/tax-invoice/:dtiIdx",
+      "manual": "manuals/bonabank/tax-invoice__by-dtiIdx.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 34,
+      "component": "BonabankTaxInvoiceDetailPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankTaxInvoiceDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 세금계산서 조회",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "142",
+        "143"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/tax-invoice-statistics",
+      "manual": "manuals/bonabank/tax-invoice-statistics.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 35,
+      "component": "BonabankTaxInvoiceStatisticsPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankTaxInvoiceStatisticsPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 세금계산서 통계",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "144",
+        "145"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/nts-failures",
+      "manual": "manuals/bonabank/nts-failures.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 36,
+      "component": "BonabankNtsFailureListPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankNtsFailureListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 국세청 신고 실패 조회",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "146",
+        "147"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": "F9 WBS 원문 명칭과 현재 실패 조회 범위 구분",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/notices",
+      "manual": "manuals/bonabank/notices.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 37,
+      "component": "BonabankNoticeListPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankNoticeListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 공지사항 관리",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "148",
+        "149"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/notices/:id",
+      "manual": "manuals/bonabank/notices__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 39,
+      "component": "BonabankNoticeDetailPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankNoticeDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 공지사항 관리",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "148",
+        "149"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/notices/:id/edit",
+      "manual": "manuals/bonabank/notices__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 40,
+      "component": "BonabankNoticeEditPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankNoticeEditPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 공지사항 관리",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "148",
+        "149"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/bonabank/notices/new",
+      "manual": "manuals/bonabank/notices__new.md",
+      "routeSource": "frontend/src/app/routes/domains/BonabankRoutes.tsx",
+      "routeLine": 38,
+      "component": "BonabankNoticeFormPage",
+      "componentSource": "frontend/src/feature/service/bonabank/BonabankNoticeFormPage.tsx",
+      "routeProps": {},
+      "menu": "SB 서비스관리 > 보나뱅크 > 공지사항 관리",
+      "businessDomain": "보나뱅크 서비스 운영",
+      "wbsNos": [
+        "148",
+        "149"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-reports",
+      "manual": "manuals/error-management/error-reports.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 51,
+      "component": "ErrorListPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorListPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 전체 오류 조회/처리",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "150",
+        "151",
+        "152",
+        "153",
+        "154"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-reports/:id",
+      "manual": "manuals/error-management/error-reports__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 53,
+      "component": "ErrorDetailPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 전체 오류 조회/처리",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "150",
+        "151",
+        "152",
+        "153",
+        "154"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-reports/:id/process",
+      "manual": "manuals/error-management/error-reports__by-id__process.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 54,
+      "component": "ErrorProcessRegisterPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorProcessRegisterPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 전체 오류 조회/처리",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "150",
+        "151",
+        "152",
+        "153",
+        "154"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-reports/new",
+      "manual": "manuals/error-management/error-reports__new.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 52,
+      "component": "ErrorReportRegisterPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorReportRegisterPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 오류 접수/등록",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "150",
+        "151",
+        "152",
+        "153",
+        "154"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": "F8 UI 메일요청과 실제 등록 계약의 차이 명시",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-code-management",
+      "manual": "manuals/error-management/error-code-management.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 55,
+      "component": "ErrorCodeManagementPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorCodeManagementPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 오류 코드 관리",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "155",
+        "156"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-code-management/:errorCode",
+      "manual": "manuals/error-management/error-code-management__by-errorCode.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 56,
+      "component": "ErrorCodeDetailPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorCodeDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 오류 코드 관리",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "155",
+        "156"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/error-management/error-code-management/new",
+      "manual": "manuals/error-management/error-code-management__new.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 57,
+      "component": "ErrorCodeRegisterPage",
+      "componentSource": "frontend/src/feature/operations/error/ErrorCodeRegisterPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 오류 관리 > 오류 코드 관리",
+      "businessDomain": "서비스 오류 접수·처리",
+      "wbsNos": [
+        "155",
+        "156"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/source-management/source-management",
+      "manual": "manuals/source-management/source-management.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 87,
+      "component": "SourceManagementPage",
+      "componentSource": "frontend/src/feature/operations/source/SourceManagementPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 운영반영 관리 > 소스 관리",
+      "businessDomain": "운영반영 계획·소스 관리",
+      "wbsNos": [
+        "157",
+        "158"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/source-management/source-management/:id",
+      "manual": "manuals/source-management/source-management__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 89,
+      "component": "SourceManagementDetailPage",
+      "componentSource": "frontend/src/feature/operations/source/SourceManagementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 운영반영 관리 > 소스 관리",
+      "businessDomain": "운영반영 계획·소스 관리",
+      "wbsNos": [
+        "157",
+        "158"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/source-management/source-management/:id/edit",
+      "manual": "manuals/source-management/source-management__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 90,
+      "component": "SourceManagementEditPage",
+      "componentSource": "frontend/src/feature/operations/source/SourceManagementEditPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 운영반영 관리 > 소스 관리",
+      "businessDomain": "운영반영 계획·소스 관리",
+      "wbsNos": [
+        "157",
+        "158"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/source-management/source-management/new",
+      "manual": "manuals/source-management/source-management__new.md",
+      "routeSource": "frontend/src/app/routes/domains/OperationsRoutes.tsx",
+      "routeLine": 88,
+      "component": "SourceManagementRegisterPage",
+      "componentSource": "frontend/src/feature/operations/source/SourceManagementRegisterPage.tsx",
+      "routeProps": {},
+      "menu": "SB 운영관리 > 운영반영 관리 > 소스 관리",
+      "businessDomain": "운영반영 계획·소스 관리",
+      "wbsNos": [
+        "157",
+        "158"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/status",
+      "manual": "manuals/payment/status.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 55,
+      "component": "PaymentStatusPage",
+      "componentSource": "frontend/src/feature/status/payment/PaymentStatusPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 입금 현황 조회",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "184"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/status/:id",
+      "manual": "manuals/payment/status__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 56,
+      "component": "PaymentStatusDetailPage",
+      "componentSource": "frontend/src/feature/status/payment/PaymentStatusDetailPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 입금 현황 조회",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "184"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/deposit",
+      "manual": "manuals/payment/deposit.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 57,
+      "component": "DepositManagementListPage",
+      "componentSource": "frontend/src/feature/status/payment/DepositManagementListPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 예치금 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "185"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/deposit/:id",
+      "manual": "manuals/payment/deposit__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 58,
+      "component": "DepositManagementDetailPage",
+      "componentSource": "frontend/src/feature/status/payment/DepositManagementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 예치금 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "185"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/daily-deposit-inquiry",
+      "manual": "manuals/payment/daily-deposit-inquiry.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 59,
+      "component": "DailyDepositInquiryPage",
+      "componentSource": "frontend/src/feature/status/payment/DailyDepositInquiryPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 일별 예치금 조회",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "186"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/daily-deposit-inquiry/:id",
+      "manual": "manuals/payment/daily-deposit-inquiry__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 60,
+      "component": "DepositManagementDetailPage",
+      "componentSource": "frontend/src/feature/status/payment/DepositManagementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 일별 예치금 조회",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "186"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/bulk-account-deposit",
+      "manual": "manuals/payment/bulk-account-deposit.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 61,
+      "component": "BulkAccountDepositManagementListPage",
+      "componentSource": "frontend/src/feature/status/payment/BulkAccountDepositManagementListPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 벌크식계좌 입금 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "187",
+        "188",
+        "189"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/bulk-account-deposit/:id",
+      "manual": "manuals/payment/bulk-account-deposit__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 62,
+      "component": "BulkAccountDepositManagementDetailPage",
+      "componentSource": "frontend/src/feature/status/payment/BulkAccountDepositManagementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 벌크식계좌 입금 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "187",
+        "188",
+        "189"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/bank-transfer-cancel",
+      "manual": "manuals/payment/bank-transfer-cancel.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 97,
+      "component": "BankTransferCancelPage",
+      "componentSource": "frontend/src/feature/status/payment/BankTransferCancelPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 무통장입금 취소내역 조회",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "212"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/refund-management",
+      "manual": "manuals/payment/refund-management.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 98,
+      "component": "RefundManagementPage",
+      "componentSource": "frontend/src/feature/status/payment/RefundManagementPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 환불 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "213",
+        "214",
+        "215"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/refund-management/:refundNo",
+      "manual": "manuals/payment/refund-management__by-refundNo.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 101,
+      "component": "RefundManagementDetailPage",
+      "componentSource": "frontend/src/feature/status/payment/RefundManagementDetailPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 환불 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "213",
+        "214",
+        "215"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/refund-management/inquiry",
+      "manual": "manuals/payment/refund-management__inquiry.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 100,
+      "component": "RefundAmountInquiryPage",
+      "componentSource": "frontend/src/feature/status/payment/RefundAmountInquiryPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 환불 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "213",
+        "214",
+        "215"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/payment/refund-management/new",
+      "manual": "manuals/payment/refund-management__new.md",
+      "routeSource": "frontend/src/app/routes/domains/PaymentRoutes.tsx",
+      "routeLine": 99,
+      "component": "RefundRegistrationPage",
+      "componentSource": "frontend/src/feature/status/payment/RefundRegistrationPage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 입금관리 > 환불 관리",
+      "businessDomain": "입금·예치금·환불 관리",
+      "wbsNos": [
+        "213",
+        "214",
+        "215"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/service-overview/unpaid-exception-manager",
+      "manual": "manuals/service-overview/unpaid-exception-manager.md",
+      "routeSource": "frontend/src/app/routes/domains/ServiceOverviewRoutes.tsx",
+      "routeLine": 6,
+      "component": "UnpaidExceptionManager",
+      "componentSource": "frontend/src/feature/status/serviceoverview/UnpaidExceptionManager.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 미납 예외업체 관리 > 미납 예외업체 관리",
+      "businessDomain": "미납 업체의 이용 제한 예외",
+      "wbsNos": [
+        "219",
+        "220"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/monthly-usage",
+      "manual": "manuals/statistics/monthly-usage.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 30,
+      "component": "MonthlyUsagePage",
+      "componentSource": "frontend/src/feature/status/statistics/MonthlyUsagePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 월별 이용 현황 (세금, 계약)",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "223"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/monthly-usage/daily-electronic-contract",
+      "manual": "manuals/statistics/monthly-usage__daily-electronic-contract.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 32,
+      "component": "DailyElectronicContractUsagePage",
+      "componentSource": "frontend/src/feature/status/statistics/DailyElectronicContractUsagePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 월별 이용 현황 (세금, 계약)",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "223"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/monthly-usage/daily-tax-invoice",
+      "manual": "manuals/statistics/monthly-usage__daily-tax-invoice.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 31,
+      "component": "DailyTaxInvoiceUsagePage",
+      "componentSource": "frontend/src/feature/status/statistics/DailyTaxInvoiceUsagePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 월별 이용 현황 (세금, 계약)",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "223"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/monthly-tax-invoice-usage",
+      "manual": "manuals/statistics/monthly-tax-invoice-usage.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 35,
+      "component": "MonthlyTaxInvoiceUsagePage",
+      "componentSource": "frontend/src/feature/status/statistics/MonthlyTaxInvoiceUsagePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 월별 세금계산서 이용 현황 (일반)",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "224"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/monthly-tax-invoice-usage/daily",
+      "manual": "manuals/statistics/monthly-tax-invoice-usage__daily.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 36,
+      "component": "DailyGeneralTaxInvoiceUsagePage",
+      "componentSource": "frontend/src/feature/status/statistics/DailyGeneralTaxInvoiceUsagePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 월별 세금계산서 이용 현황 (일반)",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "224"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/sales-purchases-usage",
+      "manual": "manuals/statistics/sales-purchases-usage.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 37,
+      "component": "SalesPurchasesUsagePage",
+      "componentSource": "frontend/src/feature/status/statistics/SalesPurchasesUsagePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 매출/매입 이용 현황",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "225"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/statistics/daily-tax-invoice-aggregate",
+      "manual": "manuals/statistics/daily-tax-invoice-aggregate.md",
+      "routeSource": "frontend/src/app/routes/domains/StatisticsRoutes.tsx",
+      "routeLine": 38,
+      "component": "DailyTaxInvoiceAggregatePage",
+      "componentSource": "frontend/src/feature/status/statistics/DailyTaxInvoiceAggregatePage.tsx",
+      "routeProps": {},
+      "menu": "서비스 현황 > 통계 정보 > 세금계산서 일별 데이터 집계",
+      "businessDomain": "서비스 이용 통계",
+      "wbsNos": [
+        "226"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/notice",
+      "manual": "manuals/customer-support/notice.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 77,
+      "component": "AdminNoticeListPage",
+      "componentSource": "frontend/src/feature/support/board/notice/AdminNoticeListPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 공지사항",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "334",
+        "335"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/notice/:id",
+      "manual": "manuals/customer-support/notice__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 79,
+      "component": "AdminNoticeDetailPage",
+      "componentSource": "frontend/src/feature/support/board/notice/AdminNoticeDetailPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 공지사항",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "334",
+        "335"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/notice/:id/edit",
+      "manual": "manuals/customer-support/notice__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 80,
+      "component": "AdminNoticeEditPage",
+      "componentSource": "frontend/src/feature/support/board/notice/AdminNoticeEditPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 공지사항",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "334",
+        "335"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/notice/new",
+      "manual": "manuals/customer-support/notice__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 78,
+      "component": "AdminNoticeFormPage",
+      "componentSource": "frontend/src/feature/support/board/notice/AdminNoticeFormPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 공지사항",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "334",
+        "335"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/faq",
+      "manual": "manuals/customer-support/faq.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 82,
+      "component": "AdminFaqListPage",
+      "componentSource": "frontend/src/feature/support/board/faq/AdminFaqListPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > FAQ",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "336",
+        "337"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/faq/:id",
+      "manual": "manuals/customer-support/faq__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 84,
+      "component": "AdminFaqDetailPage",
+      "componentSource": "frontend/src/feature/support/board/faq/AdminFaqDetailPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > FAQ",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "336",
+        "337"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/faq/:id/edit",
+      "manual": "manuals/customer-support/faq__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 85,
+      "component": "AdminFaqEditPage",
+      "componentSource": "frontend/src/feature/support/board/faq/AdminFaqEditPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > FAQ",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "336",
+        "337"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/faq/new",
+      "manual": "manuals/customer-support/faq__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 83,
+      "component": "AdminFaqFormPage",
+      "componentSource": "frontend/src/feature/support/board/faq/AdminFaqFormPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > FAQ",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "336",
+        "337"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/qna",
+      "manual": "manuals/customer-support/qna.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 88,
+      "component": "AdminQnaListPage",
+      "componentSource": "frontend/src/feature/support/board/qna/AdminQnaListPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 1:1 문의",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "338",
+        "339"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/qna/:id",
+      "manual": "manuals/customer-support/qna__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 90,
+      "component": "AdminQnaDetailPage",
+      "componentSource": "frontend/src/feature/support/board/qna/AdminQnaDetailPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 1:1 문의",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "338",
+        "339"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/qna/:id/edit",
+      "manual": "manuals/customer-support/qna__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 91,
+      "component": "AdminQnaEditPage",
+      "componentSource": "frontend/src/feature/support/board/qna/AdminQnaEditPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 1:1 문의",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "338",
+        "339"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/qna/:id/reply",
+      "manual": "manuals/customer-support/qna__by-id__reply.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 92,
+      "component": "AdminQnaReplyPage",
+      "componentSource": "frontend/src/feature/support/board/qna/AdminQnaReplyPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 1:1 문의",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "338",
+        "339"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/qna/new",
+      "manual": "manuals/customer-support/qna__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 89,
+      "component": "AdminQnaFormPage",
+      "componentSource": "frontend/src/feature/support/board/qna/AdminQnaFormPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 1:1 문의",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "338",
+        "339"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/pds",
+      "manual": "manuals/customer-support/pds.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 95,
+      "component": "AdminPdsListPage",
+      "componentSource": "frontend/src/feature/support/board/pds/AdminPdsListPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 자료실",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "340",
+        "341"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/pds/:id",
+      "manual": "manuals/customer-support/pds__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 97,
+      "component": "AdminPdsDetailPage",
+      "componentSource": "frontend/src/feature/support/board/pds/AdminPdsDetailPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 자료실",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "340",
+        "341"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/pds/:id/edit",
+      "manual": "manuals/customer-support/pds__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 98,
+      "component": "AdminPdsEditPage",
+      "componentSource": "frontend/src/feature/support/board/pds/AdminPdsEditPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 자료실",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "340",
+        "341"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/pds/new",
+      "manual": "manuals/customer-support/pds__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 96,
+      "component": "AdminPdsFormPage",
+      "componentSource": "frontend/src/feature/support/board/pds/AdminPdsFormPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 고객 게시판 관리 > 자료실",
+      "businessDomain": "고객 게시판·문의 응대",
+      "wbsNos": [
+        "340",
+        "341"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/coupon",
+      "manual": "manuals/customer-support/coupon.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 165,
+      "component": "AdminCouponListPage",
+      "componentSource": "frontend/src/feature/support/coupon/AdminCouponListPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 멤버십 쿠폰관리 > 쿠폰 조회",
+      "businessDomain": "멤버십 쿠폰 운영",
+      "wbsNos": [
+        "342"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/coupon/:couponNo",
+      "manual": "manuals/customer-support/coupon__by-couponNo.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 166,
+      "component": "AdminCouponDetailPage",
+      "componentSource": "frontend/src/feature/support/coupon/AdminCouponDetailPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 멤버십 쿠폰관리 > 쿠폰 조회",
+      "businessDomain": "멤버십 쿠폰 운영",
+      "wbsNos": [
+        "342"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": null,
+      "correction": "F1 쿠폰 상태 변경 누락",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/coupon-history",
+      "manual": "manuals/customer-support/coupon-history.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 167,
+      "component": "CouponHistoryPage",
+      "componentSource": "frontend/src/feature/support/customersupport/CouponHistoryPage.tsx",
+      "routeProps": {},
+      "menu": "고객지원 > 멤버십 쿠폰관리 > 쿠폰 이력 조회",
+      "businessDomain": "멤버십 쿠폰 운영",
+      "wbsNos": [
+        "343"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": null,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-resources",
+      "manual": "manuals/customer-support/web-resources.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 129,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "C",
+        "type": "C"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "344",
+        "345"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-resources/:id",
+      "manual": "manuals/customer-support/web-resources__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 131,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "C",
+        "type": "C"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "344",
+        "345"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-resources/:id/edit",
+      "manual": "manuals/customer-support/web-resources__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 132,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "C",
+        "type": "C"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "344",
+        "345"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-resources/new",
+      "manual": "manuals/customer-support/web-resources__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 130,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "C",
+        "type": "C"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "344",
+        "345"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide",
+      "manual": "manuals/customer-support/web-inquiry-guide.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 144,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "F",
+        "type": "F"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "346",
+        "347"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id",
+      "manual": "manuals/customer-support/web-inquiry-guide__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 146,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "F",
+        "type": "F"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "346",
+        "347"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/:id/edit",
+      "manual": "manuals/customer-support/web-inquiry-guide__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 147,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "F",
+        "type": "F"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "346",
+        "347"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/web-inquiry-guide/new",
+      "manual": "manuals/customer-support/web-inquiry-guide__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 145,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "F",
+        "type": "F"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > WEB 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "346",
+        "347"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-resources",
+      "manual": "manuals/customer-support/sap-resources.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 134,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "D",
+        "type": "D"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "348",
+        "349"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-resources/:id",
+      "manual": "manuals/customer-support/sap-resources__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 136,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "D",
+        "type": "D"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "348",
+        "349"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-resources/:id/edit",
+      "manual": "manuals/customer-support/sap-resources__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 137,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "D",
+        "type": "D"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "348",
+        "349"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-resources/new",
+      "manual": "manuals/customer-support/sap-resources__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 135,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "D",
+        "type": "D"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "348",
+        "349"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide",
+      "manual": "manuals/customer-support/sap-inquiry-guide.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 149,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "G",
+        "type": "G"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "350",
+        "351"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id",
+      "manual": "manuals/customer-support/sap-inquiry-guide__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 151,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "G",
+        "type": "G"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "350",
+        "351"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/:id/edit",
+      "manual": "manuals/customer-support/sap-inquiry-guide__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 152,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "G",
+        "type": "G"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "350",
+        "351"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/sap-inquiry-guide/new",
+      "manual": "manuals/customer-support/sap-inquiry-guide__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 150,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "G",
+        "type": "G"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > SAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "350",
+        "351"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-resources",
+      "manual": "manuals/customer-support/nsap-resources.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 139,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "E",
+        "type": "E"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "352",
+        "353"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id",
+      "manual": "manuals/customer-support/nsap-resources__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 141,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "E",
+        "type": "E"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "352",
+        "353"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-resources/:id/edit",
+      "manual": "manuals/customer-support/nsap-resources__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 142,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "E",
+        "type": "E"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "352",
+        "353"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-resources/new",
+      "manual": "manuals/customer-support/nsap-resources__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 140,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "E",
+        "type": "E"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 자료실",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "352",
+        "353"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide",
+      "manual": "manuals/customer-support/nsap-inquiry-guide.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 154,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "N",
+        "type": "N"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "354",
+        "355"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id",
+      "manual": "manuals/customer-support/nsap-inquiry-guide__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 156,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "N",
+        "type": "N"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "354",
+        "355"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/:id/edit",
+      "manual": "manuals/customer-support/nsap-inquiry-guide__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 157,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "N",
+        "type": "N"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "354",
+        "355"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/nsap-inquiry-guide/new",
+      "manual": "manuals/customer-support/nsap-inquiry-guide__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 155,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "N",
+        "type": "N"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > NSAP 문의 가이드",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "354",
+        "355"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/vendor-source-management",
+      "manual": "manuals/customer-support/vendor-source-management.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 159,
+      "component": "AdminSpfBoardListPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardListPage.tsx",
+      "routeProps": {
+        "key": "H",
+        "type": "H"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > 연동업체 소스 관리",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "356",
+        "357"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": true,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id",
+      "manual": "manuals/customer-support/vendor-source-management__by-id.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 161,
+      "component": "AdminSpfBoardDetailPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx",
+      "routeProps": {
+        "key": "H",
+        "type": "H"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > 연동업체 소스 관리",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "356",
+        "357"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": "F6 상세의 게시글 삭제·댓글 등록/본인 댓글 삭제 설명 보완",
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/vendor-source-management/:id/edit",
+      "manual": "manuals/customer-support/vendor-source-management__by-id__edit.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 162,
+      "component": "AdminSpfBoardEditPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardEditPage.tsx",
+      "routeProps": {
+        "key": "H",
+        "type": "H"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > 연동업체 소스 관리",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "356",
+        "357"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    },
+    {
+      "route": "/customer-support/vendor-source-management/new",
+      "manual": "manuals/customer-support/vendor-source-management__new.md",
+      "routeSource": "frontend/src/app/routes/domains/CustomerSupportRoutes.tsx",
+      "routeLine": 160,
+      "component": "AdminSpfBoardFormPage",
+      "componentSource": "frontend/src/feature/support/board/spfBoard/AdminSpfBoardFormPage.tsx",
+      "routeProps": {
+        "key": "H",
+        "type": "H"
+      },
+      "menu": "고객지원 > 서비스 플랫폼 관리(자료실) > 연동업체 소스 관리",
+      "businessDomain": "연동 플랫폼 자료·문의 가이드",
+      "wbsNos": [
+        "356",
+        "357"
+      ],
+      "routeAndComponentVerified": true,
+      "menuLabelVerified": null,
+      "boardTypeVerified": true,
+      "correction": null,
+      "reviewLevel": "code review; no new browser/DB execution"
+    }
+  ]
+}
