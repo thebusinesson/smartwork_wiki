@@ -18,6 +18,7 @@
 - [공통 작성 기준](MANUAL_GUIDE.md)
 - [페이지별 복사용 양식](templates/page-manual.md)
 
+- [페이지별 업무 설명·화면 소스 대조](references/page-domain-review.md)
 - [Playwright 브라우저 검증 결과·경로별 증적](references/browser-verification.md)
 
 ## 기술 근거
