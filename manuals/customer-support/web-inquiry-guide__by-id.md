@@ -39,6 +39,7 @@ WBS 근거: No. 346, 347 (사용자가 제공한 텍스트 행 478, 479). API �
 | 수정 | `/customer-support/web-inquiry-guide`; 화면 게이트 PROCESS. 실제 서버 액션은 API별 표 참조. | 작업 대상과 현재 상태·변경 내용을 확인한다. |
 | 삭제 | `/customer-support/web-inquiry-guide`; 화면 게이트 DELETE. 실제 서버 액션은 API별 표 참조. | 작업 대상과 현재 상태·변경 내용을 확인한다. |
 | 목록 | `/customer-support/web-inquiry-guide`; 화면 조건에 따라 표시·활성화된다. 아래 API별 서버 권한을 확인한다. | 작업 대상과 현재 상태·변경 내용을 확인한다. |
+| 수정 화면 이동 | `/customer-support/web-inquiry-guide`의 `PROCESS`와 작성자 본인 확인 | 현재 게시글 |
 
 서버가 최종 권한을 검사한다. 버튼 모양(kind)으로 권한을 추정하지 않는다. 특히 등록·수정이 PROCESS를 사용하는 API와 EXECUTE·UNMASK·EXCEL_DOWNLOAD는 서로 구분한다.
 
@@ -56,6 +57,8 @@ WBS 근거: No. 346, 347 (사용자가 제공한 텍스트 행 478, 479). API �
 **본문 표시·편집 모드**: 현재 내용과 모드에 따라 **HTML로 전환**, **HTML로 작성**, **WYSIWYG 보기** 등의 버튼이 표시된다. 상세의 표시 모드 전환과 등록·수정 폼의 편집 모드 전환을 구분한다. 기존 HTML을 수정하는 경우 현재 편집 모드와 저장할 본문을 확인한다.
 
 **첨부 조작**: 새 첨부는 **파일 선택**, 기존 첨부 제거는 표시된 **기존 파일 삭제**를 사용한다. 제거 선택과 새 파일 교체 상태를 확인한 뒤 저장한다. 다운로드 버튼에 표시되는 실제 고객 파일명은 예시나 검증 자료에 복사하지 않는다.
+
+상세에서 작성자 이름은 해당 사원 정보가 있을 때 표시된다. **수정**은 해당 메뉴의 처리 권한이 있는 작성자에게 표시되며 별도 편집 화면으로 이동한다. [현재 화면](https://github.com/thebusinesson/smartwork/blob/b923849c5d878772e0de2b67becff0ae511f03b3/frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx) · [작성자 검사](https://github.com/thebusinesson/smartwork/blob/b923849c5d878772e0de2b67becff0ae511f03b3/backend/src/main/kotlin/com/bizon/smartwork/core/support/board/spfBoard/service/AdminSpfBoardService.kt)
 
 ## 4) 입력·표시 데이터
 
@@ -85,16 +88,20 @@ WBS 근거: No. 346, 347 (사용자가 제공한 텍스트 행 478, 479). API �
 |---|---|---|---|
 | [smartwork.dbo.spf_board_attachment_meta](../../references/database-contracts.md#db275) | 직접 테이블/뷰 사용. 컬럼·Mapper 바인딩은 연결 계약 참조 | 쓰기: smartwork.dbo.spf_board_attachment_meta. 참조: smartwork.dbo.spf_board_attachment_meta | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [office.dbo.upNT_UpHitNotice](../../references/database-contracts.md#db057) | `@noti_id int IN` | 쓰기: office.dbo.notice. 참조: office.dbo.notice | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
-| [office.dbo.upNT_LstNotice](../../references/database-contracts.md#db052) | `@sch_Code char(1) IN, @sch_Text varchar(100) IN, @noti_id int IN, @strDiv char(1) IN` | 확정한 테이블 쓰기 없음. 참조: office.dbo.notice, office.dbo.sawon 동적 SQL 포함, 런타임 조합 대상 미확정. | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [office.dbo.upNT_DelNotice](../../references/database-contracts.md#db050) | `@note_id int IN` | 쓰기: office.dbo.notice, office.dbo.notice_reply. 참조: office.dbo.notice, office.dbo.notice_reply | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [office.dbo.upnt_LstNotiReply](../../references/database-contracts.md#db053) | `@noti_id int IN` | 확정한 테이블 쓰기 없음. 참조: office.dbo.notice_reply, office.dbo.sawon | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [office.dbo.upNT_SavNotiReply](../../references/database-contracts.md#db056) | `@noti_id int IN, @sw_no int IN, @content varchar(1000) IN` | 쓰기: office.dbo.notice_reply. 참조: office.dbo.notice_reply | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [office.dbo.upNT_DelNotiReply](../../references/database-contracts.md#db051) | `@reply_id int IN` | 쓰기: office.dbo.notice_reply. 참조: office.dbo.notice_reply | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | 파일: storage.support-file-pds | spf/{type}/{id}/attachment/{원본 파일명}; JSON payload + 선택 file | 기존 첨부 KEEP/REMOVE/REPLACE. 새 파일과 removeFile=true 동시 지정은 검증 오류. 원래 파일명·크기·저장 경로는 메타와 구분 | [StorageProperties.kt](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/shared/upload/config/StorageProperties.kt) |
+| `Office.dbo.NOTICE` | 두 환경의 메타데이터 확인 | 유형과 게시글 ID로 상세 조회 | [개발·Demo 정의](../../references/all-pages-audit-2026-11-12.md#db-078d762f5e67) |
+| `Office.dbo.SAWON` | 두 환경의 메타데이터 확인 | 작성자 이름을 조회하는 LEFT JOIN | [개발·Demo 정의](../../references/all-pages-audit-2026-11-12.md#db-3a9ea6e368df) |
 
 위 DB 계약 링크에는 실제 파라미터 타입·기본값·IN/OUT, Mapper 결과 컬럼, RETURN 바인딩, 참조 테이블·하위 프로시저·정의 필터/정렬을 기록했다. DTO·Service·Repository·Mapper의 상세 호출 경로는 각 API 계약에서 확인한다.
 
 **파일**: 업로드·다운로드의 소유 대상, 원래 파일명, 저장 경로 설정, 파일 존재 여부를 구분한다. 저장소 경로와 비밀값은 사용자 입력으로 대체하지 않는다. 파일·외부 연계 상세는 API의 연결 Service·설정 키 근거를 참조한다.
+| [office.dbo.upNT_LstNotice](../../references/database-contracts.md#db052) | `@sch_Code char(1) IN, @sch_Text varchar(100) IN, @noti_id int IN, @strDiv char(1) IN` | 확정한 테이블 쓰기 없음. 참조: office.dbo.notice, office.dbo.sawon 동적 SQL 포함, 런타임 조합 대상 미확정. | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
+
+상세 조회는 아래 현재 SQL을 사용한다. 삭제 전 대상 확인은 기존 목록 프로시저를 사용하는 별도 처리다. 단건 상세의 현재 저장소는 게시판 유형과 게시글 ID로 읽는 <code>Office.dbo.NOTICE</code>다. 작성자 이름은 <code>Office.dbo.SAWON</code>을 LEFT JOIN해 있으면 표시한다. [단건 조회 Mapper](https://github.com/thebusinesson/smartwork/blob/b923849c5d878772e0de2b67becff0ae511f03b3/backend/src/main/kotlin/com/bizon/smartwork/core/support/board/spfBoard/repository/AdminSpfBoardMapper.kt)
 
 ## 6) 예외 상황과 운영 확인
 
@@ -114,8 +121,10 @@ WBS 근거: No. 346, 347 (사용자가 제공한 텍스트 행 478, 479). API �
 | 메뉴·라우트·화면 | [menuConfig.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/menuConfig.ts); [CustomerSupportRoutes.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/domains/CustomerSupportRoutes.tsx); [AdminSpfBoardDetailPage.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/support/board/spfBoard/AdminSpfBoardDetailPage.tsx) | 코드 확인 2026-11-09, 기준 dc216b313 |
 | 기능·권한·API | 이 문서의 API 계약 링크 및 연결 Hook/API·Controller·DTO·Service·Repository·Mapper | 코드 확인 2026-11-09. 조회 요청·화면 대조 범위는 아래 브라우저 근거 참조. 권한 계정별 허용·거부 및 변경 요청 실행은 미확인. |
 | DB 정의 | [개발 DB 계약](../../references/database-contracts.md), 이 문서의 연결 객체 | 개발 DB 정의 확인 2026-11-09. 동적 SQL·CLR 내부·정의 미공개 참조의 미확정 범위는 객체별 기록; 후속 확인 DB 담당. |
+| Demo DB 대조 | [페이지별 Demo 대조](../../references/all-pages-demo.md#page-dba6c5de8030dcd3) | 2026-11-11 기준으로 Demo 메타데이터 7/7개 확인 · 2026-11-11 |
 | 브라우저 화면·배포 환경 | 로컬 인증 계정·Playwright CLI; [화면별 검증표](../../references/browser-verification.md#page112) | 화면 대조, 2026-11-09. 배포본·타 역할·업무 변경 결과는 미확인. |
 | 업무 프로시저·쓰기·외부 결과 | 격리된 검증 환경·테스트 데이터의 실행 결과 | 미확인: 명시적인 저장·삭제·발송·초기화 요청은 실행하지 않음. 브라우저 GET의 업무 조회 프로시저·조회수·감사 기록은 별도 영향으로 구분. 격리 환경에서 기술 담당 확인. |
+| 최신 변경 대조 | [11월 12일 전수 대조](../../references/all-pages-audit-2026-11-12.md) | 현재 코드 b923849c5 · 2026-11-12 |
 
 코드 확인과 DB 정의 확인은 실행 성공·업무 승인·다른 환경 적용을 보장하지 않는다. 업무·기술 담당 검토 후 조사 목록의 상태를 완료로 변경한다.
 

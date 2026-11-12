@@ -79,16 +79,10 @@ WBS 근거: No. 338, 339 (사용자가 제공한 텍스트 행 463, 464). API �
 | 작업 | API·권한 | 입력 → 결과 | 데이터 원천·변경 영향 |
 |---|---|---|---|
 | 1:1 문의 신규 등록 | [POST /api/v1/support/qnas](../../references/api-contracts.md#api243); `/customer-support/qna` / `PROCESS` | `qnaType, title, content` → `응답 DTO·파일/처리 결과 계약 참조` | 쓰기 대상 office.dbo.msg_queue, smartbill3.dbo.arreo_sms_sb, smartbill3.dbo.qna |
-| 1:1 문의 수정 | [PUT /api/v1/support/qnas/{id}](../../references/api-contracts.md#api272); `/customer-support/qna` / `PROCESS` | `qnaType, title, content` → `응답 DTO·파일/처리 결과 계약 참조` | 공통 구현의 기존 항목 작업; 신규 저장에서 실행하지 않음. 쓰기 대상 office.dbo.msg_queue, smartbill3.dbo.arreo_sms_sb, smartbill3.dbo.qna; 동적 SQL의 런타임 대상은 미확정 |
-| 1:1 문의 답글 등록 | [POST /api/v1/support/qnas/{id}/replies](../../references/api-contracts.md#api244); `/customer-support/qna` / `PROCESS` | `title, content` → `응답 DTO·파일/처리 결과 계약 참조` | 쓰기 대상 office.dbo.msg_queue, smartbill3.dbo.arreo_sms_sb, smartbill3.dbo.qna; 동적 SQL의 런타임 대상은 미확정 |
-| 1:1 문의 단건 상세 | [GET /api/v1/support/qnas/{id}](../../references/api-contracts.md#api150); `/customer-support/qna` / `VIEW` | `경로·쿼리·본문 계약 참조` → `canEdit, id, qnaType, title, content, createdDate, viewCount, writer, parentId, step, replyCount, memberCompany, businessRegNo, companyName, memberName, memberId` | 기존 항목 입력값 조회 공통 구현; 신규 진입에서는 대상 없음. 쓰기 대상 smartbill3.dbo.qna; 동적 SQL의 런타임 대상은 미확정 |
 
 | DB 객체 또는 저장소 | 입력·출력 계약 | 읽기·쓰기 대상 및 규칙 | 확인 근거 |
 |---|---|---|---|
 | [SB_COMMON.dbo.upSBAdm_Sav_Qna](../../references/database-contracts.md#db113) | `@DIV varchar(3) IN, @QNA_TYPE varchar(3) IN, @NUM int IN, @QNA_WRITER varchar(30) IN, @QNA_TITLE varchar(100) IN, @QNA_CONTENTS text IN, @MEM_NO int IN` | 쓰기: office.dbo.msg_queue, smartbill3.dbo.arreo_sms_sb, smartbill3.dbo.qna. 참조: office.dbo.msg_queue, smartbill3.dbo.arreo_sms_sb, smartbill3.dbo.member, smartbill3.dbo.qna | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
-| [SMARTBILL3.dbo.upAdmSB_Lst_EachQna](../../references/database-contracts.md#db225) | `@div varchar(12) IN, @cnt varchar(12) IN, @num varchar(12) IN` | 확정한 테이블 쓰기 없음. 참조: smartbill3.dbo.qna 동적 SQL 포함, 런타임 조합 대상 미확정. | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
-| [SMARTBILL3.dbo.upAdmSB_Cnt_QnaVisit](../../references/database-contracts.md#db214) | `@qnaNo no IN` | 쓰기: smartbill3.dbo.qna. 참조: smartbill3.dbo.qna | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
-| [SMARTBILL3.dbo.upAdmSB_LstMem](../../references/database-contracts.md#db229) | `@no varchar(10) IN, @GUBUN varchar(10) IN` | 확정한 테이블 쓰기 없음. 참조: sb_dti_log.dbo.dormant_member, sb_dti_log.dbo.member_login_his, sb_mobile.dbo.member, smartbill3.dbo.company, smartbill3.dbo.member, smartbill3.dbo.member_agreement | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 
 위 DB 계약 링크에는 실제 파라미터 타입·기본값·IN/OUT, Mapper 결과 컬럼, RETURN 바인딩, 참조 테이블·하위 프로시저·정의 필터/정렬을 기록했다. DTO·Service·Repository·Mapper의 상세 호출 경로는 각 API 계약에서 확인한다.
 
@@ -112,6 +106,7 @@ WBS 근거: No. 338, 339 (사용자가 제공한 텍스트 행 463, 464). API �
 | 메뉴·라우트·화면 | [menuConfig.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/menuConfig.ts); [CustomerSupportRoutes.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/domains/CustomerSupportRoutes.tsx); [AdminQnaFormPage.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/support/board/qna/AdminQnaFormPage.tsx) | 코드 확인 2026-11-09, 기준 dc216b313 |
 | 기능·권한·API | 이 문서의 API 계약 링크 및 연결 Hook/API·Controller·DTO·Service·Repository·Mapper | 코드 확인 2026-11-09. 조회 요청·화면 대조 범위는 아래 브라우저 근거 참조. 권한 계정별 허용·거부 및 변경 요청 실행은 미확인. |
 | DB 정의 | [개발 DB 계약](../../references/database-contracts.md), 이 문서의 연결 객체 | 개발 DB 정의 확인 2026-11-09. 동적 SQL·CLR 내부·정의 미공개 참조의 미확정 범위는 객체별 기록; 후속 확인 DB 담당. |
+| Demo DB 대조 | [페이지별 Demo 대조](../../references/all-pages-demo.md#page-4b40d3dda85dc28a) | Demo 메타데이터 1/1개 확인 · 2026-11-11 |
 | 브라우저 화면·배포 환경 | 로컬 인증 계정·Playwright CLI; [화면별 검증표](../../references/browser-verification.md#page099) | 화면 대조, 2026-11-09. 배포본·타 역할·업무 변경 결과는 미확인. |
 | 업무 프로시저·쓰기·외부 결과 | 격리된 검증 환경·테스트 데이터의 실행 결과 | 미확인: 명시적인 저장·삭제·발송·초기화 요청은 실행하지 않음. 브라우저 GET의 업무 조회 프로시저·조회수·감사 기록은 별도 영향으로 구분. 격리 환경에서 기술 담당 확인. |
 

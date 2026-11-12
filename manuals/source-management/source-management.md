@@ -50,6 +50,8 @@ WBS 근거: No. 157, 158 (사용자가 제공한 텍스트 행 197, 198). API �
 
 **이 화면에서 유의할 업무 규칙**: 기본 반영일 조건은 데모 반영일과 최근 7일 범위다. 개발항목·상태·주관팀으로 검색하고 신규 등록/수정 화면에서 담당자·반영일을 설정한다. 상세의 완료 처리와 삭제 사유 입력은 각각 상태 변경·삭제 작업이다.
 
+반영일의 종료일은 선택한 날짜까지 포함한다. 서버는 데모 반영일 또는 운영반영예정일 중 선택한 기준으로 결과를 다시 걸러 종료일 다음 날 자료를 제외한다. 목록 건수와 페이지는 같은 필터 결과로 계산한다. [종료일 필터와 페이지 계산](https://github.com/thebusinesson/smartwork/blob/b923849c5d878772e0de2b67becff0ae511f03b3/backend/src/main/kotlin/com/bizon/smartwork/core/operations/source/service/SourceManagementService.kt)
+
 ## 4) 입력·표시 데이터
 
 **검증 시 표시된 날짜 필터**: 시작일 `2026-03-01`, 종료일 `2026-11-09`. 검증 날짜·조건 복원에 따른 표시값이며 모든 실행의 고정 기본값을 뜻하지 않는다.
@@ -85,7 +87,6 @@ WBS 근거: No. 157, 158 (사용자가 제공한 텍스트 행 197, 198). API �
 
 | DB 객체 또는 저장소 | 입력·출력 계약 | 읽기·쓰기 대상 및 규칙 | 확인 근거 |
 |---|---|---|---|
-| [Office.dbo.UPGW_SRCLISTCOUNT](../../references/database-contracts.md#db043) | `@REG_TYPE varchar(1) IN, @REG_FROM_DATE varchar(10) IN, @REG_TO_DATE varchar(10) IN, @DEV_TYPE varchar(1) IN, @DEV_KEYWORD varchar(100) IN, @REG_STATUS varchar(5) IN, @DEPT_NO varchar(100) IN` | 확정한 테이블 쓰기 없음. 참조: office.dbo.dept, office.dbo.mng_src, office.dbo.sawon 동적 SQL 포함, 런타임 조합 대상 미확정. | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [Office.dbo.UPGW_SRCLIST](../../references/database-contracts.md#db042) | `@REG_TYPE varchar(1) IN, @REG_FROM_DATE varchar(10) IN, @REG_TO_DATE varchar(10) IN, @DEV_TYPE varchar(1) IN, @DEV_KEYWORD varchar(100) IN, @REG_STATUS varchar(5) IN, @DEPT_NO varchar(100) IN` | 확정한 테이블 쓰기 없음. 참조: office.dbo.dept, office.dbo.mng_src, office.dbo.sawon 동적 SQL 포함, 런타임 조합 대상 미확정. | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [Office.dbo.upGW_DeptInfo](../../references/database-contracts.md#db019) | IN 파라미터 없음 | 확정한 테이블 쓰기 없음. 참조: office.dbo.dept | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
 | [smartwork.dbo.usp_sw_log_access_event_insert](../../references/database-contracts.md#db294) | `@EVENT_TYPE varchar(30) IN, @STATUS varchar(20) IN, @USER_ID bigint IN, @MEMBER_ID nvarchar(50) IN, @USER_NAME nvarchar(100) IN, @DEPARTMENT_NAME nvarchar(100) IN, @PAGE_TITLE nvarchar(200) IN, @PATH nvarchar(500) IN, @MENU_PATH nvarchar(500) IN, @MENU_LABEL nvarchar(200) IN, @CATEGORY_NAME nvarchar(200) IN, @SUB_CATEGORY_NAME nvarchar(200) IN, @MENU_ORDER int IN, @IP_ADDRESS varchar(45) IN, @USER_AGENT nvarchar(1000) IN, @BROWSER varchar(100) IN, @OS varchar(100) IN, @REFERRER nvarchar(500) IN, @DETAIL nvarchar(1000) IN, @RESULT int OUT, @COUNTS_AS_VISIT bit IN` | 쓰기: smartwork.dbo.sw_log_access_event. 참조: smartwork.dbo.sw_log_access_event | 개발 DB 정의 확인 2026-11-09; 결과 컬럼·RETURN·하위 호출은 연결 계약 참조 |
@@ -94,6 +95,8 @@ WBS 근거: No. 157, 158 (사용자가 제공한 텍스트 행 197, 198). API �
 위 DB 계약 링크에는 실제 파라미터 타입·기본값·IN/OUT, Mapper 결과 컬럼, RETURN 바인딩, 참조 테이블·하위 프로시저·정의 필터/정렬을 기록했다. DTO·Service·Repository·Mapper의 상세 호출 경로는 각 API 계약에서 확인한다.
 
 **민감정보**: 기본 응답의 마스킹 값을 유지한다. 원문은 전용 reveal API와 UNMASK 등 추가 권한·사유·감사 로그를 확인한 뒤 조회한다. 화면·캡처·문의 문서에 원문을 남기지 않는다.
+
+목록은 <code>Office.dbo.upGW_SrcList</code> 결과를 서버에서 후처리한다. 현재 목록 요청은 별도 건수 프로시저를 호출하지 않는다. [현재 Mapper](https://github.com/thebusinesson/smartwork/blob/b923849c5d878772e0de2b67becff0ae511f03b3/backend/src/main/kotlin/com/bizon/smartwork/core/operations/source/repository/SourceManagementMapper.kt)
 
 ## 6) 예외 상황과 운영 확인
 
@@ -113,8 +116,10 @@ WBS 근거: No. 157, 158 (사용자가 제공한 텍스트 행 197, 198). API �
 | 메뉴·라우트·화면 | [menuConfig.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/menuConfig.ts); [OperationsRoutes.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/domains/OperationsRoutes.tsx); [SourceManagementPage.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/operations/source/SourceManagementPage.tsx) | 코드 확인 2026-11-09, 기준 dc216b313 |
 | 기능·권한·API | 이 문서의 API 계약 링크 및 연결 Hook/API·Controller·DTO·Service·Repository·Mapper | 코드 확인 2026-11-09. 조회 요청·화면 대조 범위는 아래 브라우저 근거 참조. 권한 계정별 허용·거부 및 변경 요청 실행은 미확인. |
 | DB 정의 | [개발 DB 계약](../../references/database-contracts.md), 이 문서의 연결 객체 | 개발 DB 정의 확인 2026-11-09. 동적 SQL·CLR 내부·정의 미공개 참조의 미확정 범위는 객체별 기록; 후속 확인 DB 담당. |
+| Demo DB 대조 | [페이지별 Demo 대조](../../references/all-pages-demo.md#page-6a665f9c94a1b85f) | 2026-11-11 기준으로 Demo 메타데이터 5/5개 확인 · 2026-11-11 |
 | 브라우저 화면·배포 환경 | 로컬 인증 계정·Playwright CLI; [화면별 검증표](../../references/browser-verification.md#page062) | 화면 대조, 2026-11-09. 배포본·타 역할·업무 변경 결과는 미확인. |
 | 업무 프로시저·쓰기·외부 결과 | 격리된 검증 환경·테스트 데이터의 실행 결과 | 미확인: 명시적인 저장·삭제·발송·초기화 요청은 실행하지 않음. 브라우저 GET의 업무 조회 프로시저·조회수·감사 기록은 별도 영향으로 구분. 격리 환경에서 기술 담당 확인. |
+| 최신 변경 대조 | [11월 12일 전수 대조](../../references/all-pages-audit-2026-11-12.md) | 현재 코드 b923849c5 · 2026-11-12 |
 
 코드 확인과 DB 정의 확인은 실행 성공·업무 승인·다른 환경 적용을 보장하지 않는다. 업무·기술 담당 검토 후 조사 목록의 상태를 완료로 변경한다.
 

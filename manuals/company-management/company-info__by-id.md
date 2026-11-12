@@ -61,6 +61,8 @@ WBS 근거: No. 17, 18, 19, 20, 21, 22, 23, 24 (사용자가 제공한 텍스트
 
 **이 화면에서 유의할 업무 규칙**: 진입 시 자동조회하지 않는다. 업체 조건 또는 가입일 기간 중 하나 이상을 입력하고 검색한다. 회사 상세에서는 SSO·WEB-HOOK·요금제 변경내역·자동이체 이력 팝업과 전체 회원·회원 권한·회사정보 변경내역 화면을 구분하여 사용한다.
 
+**자동이체 이력 조회**에서 **상태/서명값**은 상태 뒤에 신청 유형을 괄호로 표시하고, 서명값이 있으면 슬래시 뒤에 표시한다. 조회 오류와 이력 없음은 서로 다른 안내를 표시한다. [표시 코드](https://github.com/thebusinesson/smartwork/blob/b923849c5d878772e0de2b67becff0ae511f03b3/frontend/src/feature/customer/company/components/CmsHistoryDialog.tsx)
+
 ## 4) 입력·표시 데이터
 
 | 화면 항목 | 구분·필수 | 형식·기본값·제약 | 의미·API 필드·원천 |
@@ -114,6 +116,7 @@ WBS 근거: No. 17, 18, 19, 20, 21, 22, 23, 24 (사용자가 제공한 텍스트
 | 연락처 | 출력 | API 타입 String | `phone`; [화면 필드 근거](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/customer/company/components/CompanyAdministratorSection.tsx#L159) |
 | 핸드폰 | 출력 | API 타입 String | `mobile`; [화면 필드 근거](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/customer/company/components/CompanyAdministratorSection.tsx#L165) |
 | 이메일 | 출력 | API 타입 String | `email`; [화면 필드 근거](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/customer/company/components/CompanyAdministratorSection.tsx#L171) |
+| 상태/서명값 | 출력 | 값이 없는 신청 유형·서명값은 생략 | status, requestType, signatureValue |
 
 입력 검증 근거: [TaxInvoiceSettingsSection.rules.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/TaxInvoiceSettingsSection.rules.ts), [NtsTransmissionSettingsSection.schema.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/NtsTransmissionSettingsSection.schema.ts), [EContractSettingsSection.schema.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/EContractSettingsSection.schema.ts), [OtherManagementSettingsSection.schema.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/OtherManagementSettingsSection.schema.ts), [IntegrationServiceSettingsSection.schema.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/IntegrationServiceSettingsSection.schema.ts), [SsoRegistrationDialog.schema.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/SsoRegistrationDialog.schema.ts), [WebhookRegistrationDialog.rules.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/shared/utils/validation/forms/customer/company/components/WebhookRegistrationDialog.rules.ts). 프런트 검증과 서버 DTO 제약이 다르면 서버 검증이 최종 기준이다.
 
@@ -226,8 +229,10 @@ WBS 근거: No. 17, 18, 19, 20, 21, 22, 23, 24 (사용자가 제공한 텍스트
 | 메뉴·라우트·화면 | [menuConfig.ts](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/menuConfig.ts); [CustomerRoutes.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/domains/CustomerRoutes.tsx); [CompanyInfoDetailPage.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/customer/company/pages/CompanyInfoDetailPage.tsx) | 코드 확인 2026-11-09, 기준 dc216b313 |
 | 기능·권한·API | 이 문서의 API 계약 링크 및 연결 Hook/API·Controller·DTO·Service·Repository·Mapper | 코드 확인 2026-11-09. 조회 요청·화면 대조 범위는 아래 브라우저 근거 참조. 권한 계정별 허용·거부 및 변경 요청 실행은 미확인. |
 | DB 정의 | [개발 DB 계약](../../references/database-contracts.md), 이 문서의 연결 객체 | 개발 DB 정의 확인 2026-11-09. 동적 SQL·CLR 내부·정의 미공개 참조의 미확정 범위는 객체별 기록; 후속 확인 DB 담당. |
+| Demo DB 대조 | [페이지별 Demo 대조](../../references/all-pages-demo.md#page-9d758760eed8e33b) | 2026-11-11 기준으로 Demo 메타데이터 44/44개 확인 · Dev와 계약 차이 1개 · 2026-11-11 |
 | 브라우저 화면·배포 환경 | 로컬 인증 계정·Playwright CLI; [화면별 검증표](../../references/browser-verification.md#page004) | 화면 대조, 2026-11-09. 배포본·타 역할·업무 변경 결과는 미확인. |
 | 업무 프로시저·쓰기·외부 결과 | 격리된 검증 환경·테스트 데이터의 실행 결과 | 미확인: 명시적인 저장·삭제·발송·초기화 요청은 실행하지 않음. 브라우저 GET의 업무 조회 프로시저·조회수·감사 기록은 별도 영향으로 구분. 격리 환경에서 기술 담당 확인. |
+| 최신 변경 대조 | [11월 12일 전수 대조](../../references/all-pages-audit-2026-11-12.md) | 현재 코드 b923849c5 · 2026-11-12 |
 
 코드 확인과 DB 정의 확인은 실행 성공·업무 승인·다른 환경 적용을 보장하지 않는다. 업무·기술 담당 검토 후 조사 목록의 상태를 완료로 변경한다.
 

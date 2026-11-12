@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-11",
+  "environment": "로컬 SmartWork 브라우저",
+  "source": "dc216b313",
+  "pages": [
+    {
+      "path": "/",
+      "visible": [
+        "아이디",
+        "비밀번호"
+      ],
+      "status": "입력 화면 재현",
+      "authentication": "로그인 후 대시보드 이동 확인"
+    },
+    {
+      "path": "/dashboard",
+      "visible": [],
+      "status": "로그인 후 화면 진입 확인"
+    },
+    {
+      "path": "/smartbill-scm/scm",
+      "visible": [
+        "SCM 조회"
+      ],
+      "status": "진입 및 표시 확인"
+    },
+    {
+      "path": "/nts-transmission/scheduled-transmission-monitoring",
+      "visible": [
+        "예약전송 모니터링"
+      ],
+      "status": "진입 및 표시 확인"
+    },
+    {
+      "path": "/hometax-dti/wetax-payment-targets",
+      "visible": [
+        "납부대상 등록",
+        "업로드 이력"
+      ],
+      "status": "진입 및 표시 확인"
+    },
+    {
+      "path": "/openscrap/monitoring",
+      "visible": [
+        "스케줄러 자동실행",
+        "사용자 수동 실행"
+      ],
+      "status": "진입 및 표시 확인"
+    },
+    {
+      "path": "/ar-management/account-receivable-status-download",
+      "visible": [
+        "청구기간",
+        "입금기간",
+        "제각내역 등록"
+      ],
+      "status": "진입 및 표시 확인"
+    },
+    {
+      "path": "/billing-management/bulk-receipt-issue",
+      "visible": [
+        "일반 발행",
+        "실패 재처리"
+      ],
+      "status": "진입 및 표시 확인"
+    },
+    {
+      "path": "/tax-operations/status-mismatch",
+      "visible": [
+        "상태불일치 조회"
+      ],
+      "status": "진입 및 표시 확인"
+    }
+  ],
+  "scope": "검증 계정의 로컬 로그인과 실제 사이드바 메뉴 진입, 대표 항목 표시를 확인했다. 화면 조작·업무 데이터 변경·역할별 권한 검증과 구분한다."
+}

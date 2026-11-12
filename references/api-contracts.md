@@ -9698,10 +9698,12 @@ fun searchBoards(
 
 게시판 단건 상세
 
+2026-11-12 현재 단건 조회는 게시판 유형과 ID로 <code>Office.dbo.NOTICE</code>를 읽고, 작성자 이름은 <code>Office.dbo.SAWON</code>을 LEFT JOIN한다. 편집 초기값 조회는 <code>incrementHit=false</code>이며 조회수를 올리지 않는다. [최신 전수 대조](all-pages-audit-2026-11-12.md)
+
 - 서버 권한: `요청 유형에 대응하는 메뉴(개별 페이지 표 참조)` / `VIEW`. 정적 권한 경로가 없거나 타입에 따라 달라지면 Controller 본문의 프로그램 검사를 확인한다.
 - 진입점: [AdminSpfBoardController.fetchBoard](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/api/support/board/spfBoard/AdminSpfBoardController.kt#L106).
 - 프로그램 권한 검사: 게시판 type별 메뉴를 resolveMenuPath로 결정하여 hasMenuPermission 검사. C=WEB 자료실, D=SAP 자료실, E=NSAP 자료실, F=WEB 문의 가이드, G=SAP 문의 가이드, H=연동업체 소스 관리, N=NSAP 문의 가이드.
-- 직접 DB 호출: [smartwork.dbo.spf_board_attachment_meta](../references/database-contracts.md#db275), [office.dbo.upNT_UpHitNotice](../references/database-contracts.md#db057), [office.dbo.upNT_LstNotice](../references/database-contracts.md#db052).
+- 직접 DB 호출: [smartwork.dbo.spf_board_attachment_meta](../references/database-contracts.md#db275), [office.dbo.upNT_UpHitNotice](../references/database-contracts.md#db057).
 - 인라인 SQL/EXEC 매핑: [findOne](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/support/board/spfBoard/repository/SpfBoardAttachmentMetaMapper.kt#L59). 테이블 메타데이터는 직접 DB 호출 표의 연결 계약을 확인한다.
 - 읽기 중에도 포함될 수 있는 쓰기 대상: `office.dbo.notice`. HTTP 메서드만으로 부수 효과를 판단하지 않는다.
 
@@ -11469,9 +11471,11 @@ fun get(
 
 소스 관리 목록 조회
 
+2026-11-12 현재 목록은 종료일을 포함하도록 서버에서 결과를 재필터링하고, 같은 결과에서 전체 건수와 페이지를 계산한다. [최신 전수 대조](all-pages-audit-2026-11-12.md)
+
 - 서버 권한: `/source-management/source-management` / `VIEW`. 정적 권한 경로가 없거나 타입에 따라 달라지면 Controller 본문의 프로그램 검사를 확인한다.
 - 진입점: [SourceManagementController.list](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/api/operations/source/SourceManagementController.kt#L55).
-- 직접 DB 호출: [Office.dbo.UPGW_SRCLISTCOUNT](../references/database-contracts.md#db043), [Office.dbo.UPGW_SRCLIST](../references/database-contracts.md#db042).
+- 직접 DB 호출: [Office.dbo.UPGW_SRCLIST](../references/database-contracts.md#db042).
 
 ### 요청·응답 데이터
 
@@ -16705,10 +16709,12 @@ fun updateQna(
 
 게시판 수정
 
+2026-11-12 현재 메뉴의 <code>PROCESS</code> 권한이 있고 저장된 게시글 작성자와 동일한 사용자만 수정할 수 있다. 관리자의 역할만으로 수정할 수 없다. [최신 전수 대조](all-pages-audit-2026-11-12.md)
+
 - 서버 권한: `요청 유형에 대응하는 메뉴(개별 페이지 표 참조)` / `PROCESS`. 정적 권한 경로가 없거나 타입에 따라 달라지면 Controller 본문의 프로그램 검사를 확인한다.
 - 진입점: [AdminSpfBoardController.updateBoard](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/api/support/board/spfBoard/AdminSpfBoardController.kt#L148).
 - 프로그램 권한 검사: 게시판 type별 메뉴를 resolveMenuPath로 결정하여 hasMenuPermission 검사. C=WEB 자료실, D=SAP 자료실, E=NSAP 자료실, F=WEB 문의 가이드, G=SAP 문의 가이드, H=연동업체 소스 관리, N=NSAP 문의 가이드.
-- 직접 DB 호출: [smartwork.dbo.spf_board_attachment_meta](../references/database-contracts.md#db275), [office.dbo.upNT_ModNotice](../references/database-contracts.md#db054), [office.dbo.upNT_LstNotice](../references/database-contracts.md#db052).
+- 직접 DB 호출: [smartwork.dbo.spf_board_attachment_meta](../references/database-contracts.md#db275), [office.dbo.upNT_ModNotice](../references/database-contracts.md#db054).
 - 인라인 SQL/EXEC 매핑: [delete](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/support/board/spfBoard/repository/SpfBoardAttachmentMetaMapper.kt#L62), [upsert](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/support/board/spfBoard/repository/SpfBoardAttachmentMetaMapper.kt#L37). 테이블 메타데이터는 직접 DB 호출 표의 연결 계약을 확인한다.
 - 읽기 중에도 포함될 수 있는 쓰기 대상: `office.dbo.notice`, `smartwork.dbo.spf_board_attachment_meta`. HTTP 메서드만으로 부수 효과를 판단하지 않는다.
 
