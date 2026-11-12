@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-11",
+  "source": "dc216b313",
+  "environment": "로컬 SmartWork Playwright",
+  "scope": "권한이 있는 계정으로 목록과 등록 폼에 진입해 버튼·필드를 확인했다. 등록·저장·삭제는 실행하지 않았다.",
+  "pages": [
+    {
+      "path": "/settings/permissions/new",
+      "visible": [
+        "권한 그룹 생성 진입 버튼",
+        "등록"
+      ],
+      "status": "등록 화면 진입 및 표시 확인"
+    },
+    {
+      "path": "/bonabank/notices/new",
+      "visible": [
+        "작성 진입 버튼",
+        "제목",
+        "저장"
+      ],
+      "status": "등록 화면 진입 및 표시 확인"
+    },
+    {
+      "path": "/payment/manual-transactions/new",
+      "visible": [],
+      "status": "등록 경로 진입 확인"
+    }
+  ]
+}

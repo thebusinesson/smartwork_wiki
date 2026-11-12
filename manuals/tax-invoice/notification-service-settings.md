@@ -1,0 +1,94 @@
+# [수신 변경·알림·다운로드] 알림발송 서비스 설정 조회 관리자 매뉴얼
+
+## 1) 화면 기본 정보
+
+### 도메인 이해
+
+업체별 매출·역발행·위수탁 SMS 알림 설정 상태를 조회한다.
+
+| 구분 | 설명 |
+| --- | --- |
+| 업무 영역 | 수신 변경·알림·다운로드 |
+| 언제 사용하는가 | 알림발송 서비스 설정 조회 업무가 필요할 때 사용한다. |
+| 주요 대상·데이터 | 업체 조건, 전체, 사업자번호, 회사명, 매출(개별), 역발행(개별) |
+| 업무 흐름 | 알림발송 서비스 설정 조회 |
+| 이 페이지의 역할 | 조회 · 알림발송 서비스 설정 조회 |
+| 판단 결과·다음 업무 | 현재 화면에서 결과를 확인한다. |
+| 다른 화면과의 구분 | 같은 경로에서 열리는 조회·팝업은 이 문서에서 확인한다. |
+
+### 화면 정보
+
+| 항목 | 작성 내용 |
+| --- | --- |
+| 업무 도메인·목적 | 업체별 매출·역발행·위수탁 SMS 알림 설정 상태를 조회한다. |
+| 메뉴·화면 경로 | SB 서비스관리 > 전자세금계산서 > 알림발송 서비스 설정 조회 · `/tax-invoice/notification-service-settings` |
+| 화면 유형·담당 | 조회 · 업무·기술 담당은 해당 메뉴 운영 범위에서 확인 |
+| 관련 화면 | 현재 화면에서 결과를 확인한다. |
+
+## 2) 사용 권한과 사전 준비
+
+| 기능·버튼 | 메뉴 권한·추가 조건 | 준비할 데이터 |
+| --- | --- | --- |
+| 화면 진입 | `/tax-invoice/notification-service-settings` 메뉴 접근을 확인한다. 아래 API 권한은 작업별 서버 검사 기준이다. | SmartWork 계정 |
+| 알림발송 서비스 설정 조회 | `/tax-invoice/notification-service-settings` `VIEW` | `NotificationServiceSettingsSearchRequest` `searchType`, `keyword`, `dtiSms`, `rdtiSms`, `page`, `size` |
+
+코드에서 확인한 버튼·작업명은 **검색**이다. 작업과 대상 상태에 따라 표시가 달라질 수 있다.
+
+## 3) 화면 사용 절차
+
+1. **SB 서비스관리 > 전자세금계산서 > 알림발송 서비스 설정 조회**를 연다. `/tax-invoice/notification-service-settings`를 연다.
+2. **업체 조건**, **전체**, **사업자번호**, **회사명**, **매출(개별)**, **역발행(개별)** 중 필요한 조건과 값을 확인한다. 할 작업에 맞춰 **검색** 중 해당 버튼을 선택한다.
+3. **알림발송 서비스 설정 조회** 결과에서 대상과 상태를 확인한다. 세부 이력이나 처리 화면으로 이동할 때 같은 식별자를 유지한다.
+
+## 4) 입력·표시 데이터
+
+| 화면 항목 | 구분·필수 | 형식·기본값·제약 | 의미·API 필드·원천 |
+| --- | --- | --- | --- |
+| 업체 조건 | 입력 또는 선택 | 화면 상태·입력 조건에 따라 표시 | 화면에서 확인하는 항목 · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L24) |
+| 전체 | 화면 항목 | 화면 상태·입력 조건에 따라 표시 | 화면 필드 `all` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L32) |
+| 사업자번호 | 화면 항목 | 화면 상태·입력 조건에 따라 표시 | 화면 필드 `D` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L33) |
+| 회사명 | 화면 항목 | 화면 상태·입력 조건에 따라 표시 | 화면 필드 `C` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L34) |
+| 매출(개별) | 화면 항목 | 화면 상태·입력 조건에 따라 표시 | 화면에서 확인하는 항목 · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L45) |
+| 역발행(개별) | 화면 항목 | 화면 상태·입력 조건에 따라 표시 | 화면에서 확인하는 항목 · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L58) |
+| 번호 | 출력 | 조회 응답 기준 | 화면 필드 `no` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L77) |
+| 매출 설정 | 입력 또는 선택 | 화면 상태·입력 조건에 따라 표시 | API 요청 `dtiSms` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L80) |
+| 매출 메세지 | 출력 | 조회 응답 기준 | 화면 필드 `dtiMsg` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L81) |
+| 역발행 설정 | 입력 또는 선택 | 화면 상태·입력 조건에 따라 표시 | API 요청 `rdtiSms` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L82) |
+| 역발행 메세지 | 출력 | 조회 응답 기준 | 화면 필드 `rdtiMsg` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L83) |
+| 위수탁 설정 | 출력 | 조회 응답 기준 | 화면 필드 `bdtiSms` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L84) |
+| 위수탁 메세지 | 출력 | 조회 응답 기준 | 화면 필드 `bdtiMsg` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L85) |
+| 매출 | 출력 | 조회 응답 기준 | 화면 필드 `salesGroup` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L93) |
+| 역발행 | 출력 | 조회 응답 기준 | 화면 필드 `reverseGroup` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L94) |
+| 위수탁 | 출력 | 조회 응답 기준 | 화면 필드 `consignmentGroup` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L95) |
+| 설정 | 입력 또는 선택 | 화면 상태·입력 조건에 따라 표시 | API 요청 `dtiSms` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L98) |
+| 메세지 | 출력 | 조회 응답 기준 | 화면 필드 `dtiMsg` · [표시·입력 소스](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L99) |
+
+## 5) API·DB·연계
+
+| 작업 | API·권한 | 입력 → 결과 | 데이터 원천·변경 영향 |
+| --- | --- | --- | --- |
+| 알림발송 서비스 설정 조회 | `GET /api/v1/tax-invoice/notification-service-settings` · `/tax-invoice/notification-service-settings` `VIEW` · [Controller](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/api/service/taxinvoice/notificationservicesettings/NotificationServiceSettingsController.kt#L46) | `NotificationServiceSettingsSearchRequest` `searchType`, `keyword`, `dtiSms`, `rdtiSms`, `page`, `size` → `success`, `data`, `error`, `content`, `totalElements`, `totalPages`, `currentPage`, `size` | `smartwork.dbo.usp_notification_service_settings_select` · 코드 연계 트랜잭션 |
+
+| DB 객체 또는 저장소 | 입력·출력 계약 | 읽기·쓰기 대상 및 규칙 | 확인 근거 |
+| --- | --- | --- | --- |
+| `smartwork.dbo.usp_notification_service_settings_select` | @PAGE int, @PAGESIZE int, @SCH_TYPE varchar(1), @SCH_KEYWORD varchar(100), @DTI_SMS varchar(1), @RDTI_SMS varchar(1) | 정의 참조 `SmartBill3.dbo.COMPANY`, `SB_DTI.dbo.COMPANY_DTICONFIG` | [Mapper](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/backend/src/main/kotlin/com/bizon/smartwork/core/service/taxinvoice/notificationservicesettings/repository/NotificationServiceSettingsMapper.kt#L30) · [2026-11-11 개발 SQL Server 메타데이터](../../references/all-pages-database.md#object-2535e300129c67ba) |
+
+## 6) 예외 상황과 운영 확인
+
+| 상황 | 확인할 항목 | 관리자 대응·문의에 필요한 정보 |
+| --- | --- | --- |
+| 결과가 없거나 대상이 다름 | 업체 조건, 전체, 사업자번호, 회사명, 매출(개별), 역발행(개별) | 현재 경로와 조회 대상, 적용한 조건을 확인하고 다시 조회한다. |
+| 메뉴가 보이지 않거나 작업이 거부됨 | SB 서비스관리 > 전자세금계산서 > 알림발송 서비스 설정 조회의 접근 권한과 위 작업별 액션 | 권한 담당에게 메뉴 경로와 필요한 작업을 전달한다. |
+| 검색 결과가 없습니다. | 업체 조건, 전체, 사업자번호, 회사명, 매출(개별), 역발행(개별) | 조건을 확인한다. 계속 발생하면 요청 시각과 마스킹한 식별자를 운영 담당에게 전달한다. |
+
+## 7) 검증·출처
+
+| 검증 항목 | 근거·환경 | 상태·확인일 |
+| --- | --- | --- |
+| 대상 선정 | [전체 화면 인벤토리](../../inventory/all-pages.md) | 현재 등록 업무 라우트 2026-11-11 |
+| 메뉴·화면·라우트 | [라우트 선언](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/app/routes/domains/TaxInvoiceRoutes.tsx#L39) · [NotificationServiceSettings.tsx](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/NotificationServiceSettings.tsx#L131) | 코드 확인 2026-11-11 · dc216b313 |
+| 권한·API·업무 규칙 | [프런트엔드 요청](https://github.com/thebusinesson/smartwork/blob/dc216b3130faabcfc1dce7dbc9bd2e3b8fbecefc/frontend/src/feature/service/taxinvoice/api/notificationSettingsApi.ts#L21) | 코드 확인 · API 표의 Controller 기준 2026-11-11 |
+| DB 정의·파일·외부 연계 | [개발 DB 정의와 조회 범위](../../references/all-pages-database.md) | 직접 경로 객체 1개 중 개발 메타데이터 확인 1개 · 2026-11-11 |
+| Demo DB 대조 | [페이지별 Demo 대조](../../references/all-pages-demo.md#page-8408443d7ac15163) | Demo 메타데이터 1/1개 확인 · 2026-11-11 |
+| 화면 재현 | 실제 검증 계정과 데이터가 있는 환경 | 신규 브라우저 실행 미확인 · 해당 메뉴 운영 담당 확인 |
+| 배포 환경·DB 실행 | 배포 권한·업무 저장·외부 처리 | 미확인 · 해당 환경의 운영·기술 담당 확인 |

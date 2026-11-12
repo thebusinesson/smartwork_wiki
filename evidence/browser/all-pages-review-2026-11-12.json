@@ -1,0 +1,239 @@
+{
+  "date": "2026-11-12",
+  "source": "b923849c5",
+  "environment": "로컬 SmartWork",
+  "scope": "브라우저 직접 진입과 문서에 기재된 화면 요소 표시 확인. 일반 조회 요청 허용. API 쓰기 메서드는 인증 요청 외 차단.",
+  "anonymous": [
+    {
+      "path": "/hub-collab/project-completion",
+      "redirect": "/",
+      "loginForm": true
+    }
+  ],
+  "pages": [
+    {
+      "path": "/hub-collab/project-completion",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-vendor/platform-management",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/payment/bulk-account-deposit",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/payment/head-office-deposit",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/payment/head-office-deposit-register",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/payment/head-office-deposit-register/detail",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/payment/os-iv-deposit",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-service/service-notice-email",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-service/service-notice-email/new",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-service/service-notice-email/customer-email-send",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-service/service-notice-email/send-history",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/billing-management/bulk-receipt-issue",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    },
+    {
+      "path": "/billing-management/bulk-receipt-issue-logs",
+      "displayed": [],
+      "status": "화면 확인 제한",
+      "finalPath": "/",
+      "apiStatus": []
+    }
+  ],
+  "login": {
+    "responses": [
+      200,
+      401
+    ]
+  },
+  "menuNavigation": [
+    {
+      "path": "/hub-collab/project-completion",
+      "displayed": [],
+      "status": "메뉴 진입 미확인",
+      "finalPath": "/dashboard",
+      "apiStatus": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "path": "/hub-vendor/platform-management",
+      "displayed": [],
+      "status": "메뉴 진입 미확인",
+      "finalPath": "/dashboard",
+      "apiStatus": []
+    },
+    {
+      "path": "/payment/bulk-account-deposit",
+      "displayed": [],
+      "status": "메뉴 진입 확인",
+      "finalPath": "/payment/bulk-account-deposit",
+      "apiStatus": [
+        200
+      ]
+    },
+    {
+      "path": "/payment/head-office-deposit",
+      "displayed": [
+        "본사 입금 관리",
+        "검색",
+        "다운로드"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/payment/head-office-deposit",
+      "apiStatus": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "path": "/payment/head-office-deposit-register",
+      "displayed": [
+        "본사 입금 등록",
+        "검색"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/payment/head-office-deposit-register",
+      "apiStatus": [
+        200,
+        200
+      ]
+    },
+    {
+      "path": "/payment/os-iv-deposit",
+      "displayed": [
+        "단발성 입금 관리",
+        "검색",
+        "다운로드"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/payment/os-iv-deposit",
+      "apiStatus": [
+        200,
+        200
+      ]
+    },
+    {
+      "path": "/hub-service/service-notice-email",
+      "displayed": [
+        "검색",
+        "다운로드"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/hub-service/service-notice-email",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-service/service-notice-email/customer-email-send",
+      "displayed": [
+        "검색",
+        "다운로드"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/hub-service/service-notice-email/customer-email-send",
+      "apiStatus": []
+    },
+    {
+      "path": "/hub-service/service-notice-email/send-history",
+      "displayed": [
+        "검색",
+        "다운로드"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/hub-service/service-notice-email/send-history",
+      "apiStatus": []
+    },
+    {
+      "path": "/billing-management/bulk-receipt-issue",
+      "displayed": [
+        "영수 대량 발행",
+        "검색"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/billing-management/bulk-receipt-issue",
+      "apiStatus": [
+        200
+      ]
+    },
+    {
+      "path": "/billing-management/bulk-receipt-issue-logs",
+      "displayed": [
+        "영수 대량 발행 오류 로그 조회",
+        "검색"
+      ],
+      "status": "메뉴 진입 및 표시 확인",
+      "finalPath": "/billing-management/bulk-receipt-issue-logs",
+      "apiStatus": [
+        200,
+        200,
+        200
+      ]
+    }
+  ]
+}
